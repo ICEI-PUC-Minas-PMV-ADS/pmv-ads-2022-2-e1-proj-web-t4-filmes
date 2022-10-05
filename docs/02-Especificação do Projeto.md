@@ -1,91 +1,174 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
 Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Personas são exemplos de usuários de sites e aplicativos de streaming que foram usadas para levantar as informações sobre o problema em questão. Apresentando quatro exemplos de diferentes idades e ocupações a fim de tentar abranger o maior espectro possível de usuários de Streamings e consumidores de conteúdo de áudio-visual. 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
++ ### Rafaela Andrade
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+	![Foto representativa](https://user-images.githubusercontent.com/13721147/194158525-bbc9cf21-13af-47a7-ba23-97f21870d676.png) 
+
+	+ **Idade**: 21 anos
+
+	+ **Ocupação**:  
+	Estudante universitária de curso em período semi-integral. Divide apartamento com amigas da mesma Universidade
+
+	+ **Aplicativos**:  
+Youtube; Netflix; Amazon Prime;
+
+	+ **Motivações**:  
+		+ Apaixonada por filmes e séries
+		+  Gosta de conversar sobre o conteúdo de filmes com os amigos e a família
+
+	+ **Frustrações**:  
+		+ Pouco tempo livre para buscar novos conteúdos
+		+  Falta de informações sobre os filmes e séries e não pode deixar opinião ou ver a opinião de outros.
+		
+	+ **Hobbies, História**:  
+		+ Maratonar séries com os amigos e/ou família.
+		+  Poder usar o tempo livre com mais qualidade
+		
+
+
++ ### João Arruda Jr.
+
+	![Foto representativa](https://user-images.githubusercontent.com/13721147/194162795-998632ec-3ce9-4959-bd37-d89d362249cf.png) 
+
+	+ **Idade**: 32 anos
+
+	+ **Ocupação**:  
+	Administrador. Gerente de vendas em loja do Shopping Iguatemi. Atua também em treinamento de equipes para a rede desta loja.
+
+	+ **Aplicativos**:  
+Youtube; Netflix; Amazon Prime; HBO Prime, Globo Play; Canais digitais de TV aberta;
+
+	+ **Motivações**:  
+		+ Gosta de receber recomendações de títulos.
+		+  Gosta de recomendações feitas por pessoas
+
+	+ **Frustrações**:  
+		+ Chega em casa tarde e perde muito tempo para encontrar filmes de seu gosto.
+		+  Mesmo depois de muito tempo perdido, decepciona-se com os filmes que assisti por recomendação do streaming.
+		
+	+ **Hobbies, História**:  
+		+ Era mais realizado com as recomendações do funcionário da loja de DVD, locadoras e conversas com amigos.
+	
+ 
+ 
+ + ### Graça Silva Dias
+
+	![Foto representativa](https://user-images.githubusercontent.com/13721147/194163415-1477a5d7-7985-4c97-bee3-3177eb849e86.png) 
+
+	+ **Idade**: 43 anos
+
+	+ **Ocupação**:  
+	Graduada em Ciências Sociais. Longa carreira como Assistente Social no encaminhamento de crianças em situação de risco familiar.
+
+	+ **Aplicativos**:  
+Netflix; Amazon Prime; NET On Demand; Globo Play; Canais digitais de TV aberta
+
+	+ **Motivações**:  
+		+ Encontrar pessoas que tenham gostos similares.
+		+  Algumas histórias reais podem ser usadas no trabalho.
+
+	+ **Frustrações**:  
+		+ Não pode trocar informações sobre os conteúdos com outros usuários no streaming.
+		+  Não tenho a liberdade de filtrar os resultados de busca como quero
+		
+	+ **Hobbies, História**:  
+		+ Filmes de histórias reais para inspirar a mim mesma e aos outros.
+
+
+
++ ### Emídio Conceição
+	![Foto representativa](https://user-images.githubusercontent.com/13721147/194163883-11e63444-74da-4499-884e-13bbf5f50c07.png) 
+
+	+ **Idade**: 67 anos
+
+	+ **Ocupação**:  
+	Engenheiro Mecânico, PHD em Astrofísica e Pós Doutorado em Física Quântica.
+Engenheiro Sênior no Instituto Nacional de Pesquisas Espaciais INPE.
+Atualmente aposentado.
+
+	+ **Aplicativos**:  
+Netflix; Disney; NET on Demand; Canais digitais de TV aberta
+
+	+ **Motivações**:  
+		+ Ver lugares que não pude ver pessoalmente.
+		+  Encontrar filmes que marcaram a minha vida e títulos semelhantes.
+
+	+ **Frustrações**:  
+		+ Só saberei se gosto de um filme após vê-lo. O mecanismo entende que: por que vi, gostei. E recomenda similares na minha lista. E eu não gosto..
+
+		
+	+ **Hobbies, História**:  
+		+ Quando eu era jovem, poucos filmes eram produzidos. Hoje em dia meus filhos e netos comentam sobre tantos filmes e séries a serem produzidos que fico entusiasmado.
+
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+Partindo das informações que as Personas apresentaram, chegou-se à conclusão das seguintes histórias de usuário relevantes ao problema identificado.
+|Eu como... `Persona`| Quero/Preciso ... `Funcionalidade` |Para ... `Motivo/Valor`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+|Rafaela Andrade  | Encontrar com facilidade filmes e séries que venham ao encontro de preferências pessoais.           | Receber resultados mais assertivos de acordo com sugestão (título, ator, autor, etc..) selecionada pelo usuário.               |
+|Rafaela Andrade  | Visualizar o pôster e informações dos filmes e séries (ficha técnica) e ver também comentários de pessoas que já assistiram esse conteúdo.           | Assistir conteúdos baseados na opinião de outros usuários.               |
+|João Arruda Jr.  | Recomendações personalizadas.          | Escolher características importantes para a seleção de similaridades de títulos de preferência.               |
+|João Arruda Jr.  | Recomendações feitas por pessoas.         | Aumentar as chances de encontrar conteúdos alinhados com as expectativas do usuário.               |
+|Graça Silva Dias  | Ter um perfil de usuário no streaming que permite trocar experiências e informações com outros usuários.  | Dar e receber recomendações pessoais.  |
+|Graça Silva Dias  | Novas opções de gêneros (categorias ou subcategorias) - (tags) de filmes baseadas no conteúdo | Usar no trabalho conteúdos importantes discutidos em filmes e séries.             |
+|Emídio Conceição  | Que conteúdos que já tenha visto, mas, não gostou sejam descartados, não sendo utilizados usados nos dados para recomendações de novos conteúdos. | Participar ativamente dos dados que os mecanismos de recomendação de títulos utilizam.           
+|Emídio Conceição  | Ter um espaço onde os filmes e séries que tenha visto e mais gostou fossem mantidos. | Uma lista dos conteúdos já vistos e preferidos é até mais importante do que a lista de desejos dos conteúdos que ainda não foram vistos.
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+Os requisitos de um projeto são suas pretensões e necessidades. De maneira geral, os requisitos de um projeto são propriedades que refletem as utilidades e funcionalidades do projeto, expectativas de seus criadores e buscam atender a necessidade de seus futuros usuários. Os requisitos são parte fundamental na estruturação de um projeto de software, são utilizados como abstrações de recursos e aplicabilidades, ajudando na formação de um projeto sólido criando propósitos bem definidos e objetivos claros. 
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+A ideia de requisito funcional vem de requisitos que atendem funcionalidades. Os requisitos funcionais são ações apresentadas pelo projeto criadas para atenderem seus requisitos.
+
+A tabela a seguir apresenta a lista de requisitos funcionais deste projeto, ordenando-os por prioridade.
+
+
+|     ID       |     Descrição                                                                                                                                                                     |     Prioridade    |
+|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
+|     RF-01    |     O site   deve apresentar uma funcionalidade de pesquisa de filmes recomendados   baseados em um título (ator, autor, diretor, TAG, etc..) a critério do   usuário.            |     Alta          |
+|     RF-02    |     O usuário   poderá selecionar TAGS para classificar os filmes que já viu.                                                                                                     |     Alta          |
+|     RF-03    |     O site   deve obrigatoriamente requisitar ao usuário seu cadastro na plataforma.                                                                                              |     Alta          |
+|     RF-04    |     O site deve permitir realizar comentários sobre filmes                                                                                                                        |     Alta          |
+|     RF-05    |     O site deve permitir atribuir nota pessoal a filmes já   vistos                                                                                                               |     Alta          |
+|     RF-06    |     O site   deve apresentar, para cada filme e serie, a possibilidade de o usuário   visualizar seu pôster e informações (ficha técnica) e comentários de quem já   assistiu.    |     Média         |
+|     RF-07    |     O usuário deve ser questionado se gosta ou não de um   conteúdo quando termina de assistir.                                                                                   |     Média         |
+|     RF-08    |     O site   deve permitir a correlação de filmes baseadas nos comentários e recomendações   de usuários.                                                                         |     Média         |
+|     RF-09    |     O site   deve apresentar um catálogo de títulos (sites e séries) obtidos através de   uma API.                                                                                |     Média         |
+|     RF-10    |     O site   deve manter a funcionalidade de perfis de usuários, mantendo para cada   perfil  informações personalizadas (por   exemplo: títulos preferidos).                     |     Média         |
+|     RF-11    |     O site   deve apresentar em sua página principal, recomendações personalizadas   baseadas no perfil de cada usuário                                                           |     Baixa         |
 
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+“A forma como o sistema fará para executar um requisito funcional”, esta é normalmente a definição de requisito não funcional. De forma mais ampla, os requisitos não funcionais são funcionalidades que não podem ser atendidas por requisitos funcionais.
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+A tabela a seguir apresenta a lista de requisitos não funcionais deste projeto, pontuando sua prioridade.
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+
+|     ID        |     Descrição                                                                                                            |     Prioridade    |
+|---------------|--------------------------------------------------------------------------------------------------------------------------|-------------------|
+|     RNF-01    |     O site deve   ser compatível com os principais navegadores do mercado (Google Chrome,   Firefox, Microsoft Edge).    |     Alta          |
+|     RNF-02    |     O site deve   ser de fácil navegação entre suas telas                                                                |     Alta          |
+|     RNF-03    |     O site   deverá ser responsivo, permitindo a visualização em um celular de forma   adequada                          |     Média         |
+|     RNF-04    |     O site   deverá ser de código aberto                                                                                 |     Média         |
+
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+Restrições são obrigações claras e objetivas do projeto. A tabela a seguir mostra a lista de restrições do projeto.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|     ID        |     Descrição                                                                                           |
+|---------------|---------------------------------------------------------------------------------------------------------|
+|     RE-01     |     A equipe   não pode subcontratar o desenvolvimento do trabalho.                                     |
+|     RE-02     |     O site não pode   conter conhecimentos além daqueles aprendidos durante o semestre.                 |
+|     RE-03     |     O site não   poderá ser utilizado para fins lucrativos durante, ou após o seu   desenvolvimento.    |
+|     RNF-04    |                                                                                                         |
