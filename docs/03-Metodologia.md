@@ -8,9 +8,9 @@ Toda ferramenta tem seu propósito; a tabela seguinte irá explicar em que ambie
 
 |              Ambiente              |  Plataforma  |                                    Link de Acesso                                    |
 |:----------------------------------:|:------------:|:------------------------------------------------------------------------------------:|
-|     Repositório de código fonte    |    GitHub    |                                                                                      |
+|     Repositório de código fonte    |    GitHub    | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes       |
 |        Documentos do projeto       | Google Drive | https://drive.google.com/drive/folders/1POynLcQ6bOiBFRq-0w5JRyjmy7eRR508?usp=sharing |
-| Projeto de Interface e  Wireframes |   MarvelApp  |                                                                                      |
+| Projeto de Interface e  Wireframes |   MarvelApp  | https://marvelapp.com/whiteboard/AkRMLcgAiwuiBpcDas4w                                |
 |      Gerenciamento do Projeto      |    Trello    | https://trello.com/b/TMofVulh                                                        |
 
 
