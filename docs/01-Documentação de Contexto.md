@@ -24,6 +24,7 @@ Isso fica explicitado em uma pesquisa que fizemos, onde mais de 75% dos entrevis
 ## Objetivos
 
 O objetivo geral deste trabalho é criar uma aplicação web que viabilize a conexão de filmes correlatos a partir de perfis de usuários.
+
 Como objetivos específicos temos:
 
 -	Identificação de perfis de usuários
