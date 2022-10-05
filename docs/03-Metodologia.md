@@ -1,9 +1,18 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+A metodologia em si é uma das partes mais importantes para o desenvolvimento do projeto, pois, “com organização e tempo, acha-se o segredo de fazer tudo e bem feito.” (PITÁGORAS). Com isso em mente, a equipe decidiu por fazer uso de diversas ferramentas, de organização, agilidade, manutenção de código, comunicação entre outras, essas sendo citadas nesse tópico.
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+## Relação de Ambientes de Trabalho
+Toda ferramenta tem seu propósito; a tabela seguinte irá explicar em que ambiente, e para que, a equipe fez uso delas.
+
+|              Ambiente              |  Plataforma  |                                    Link de Acesso                                    |
+|:----------------------------------:|:------------:|:------------------------------------------------------------------------------------:|
+|     Repositório de código fonte    |    GitHub    |                                                                                      |
+|        Documentos do projeto       | Google Drive | https://drive.google.com/drive/folders/1POynLcQ6bOiBFRq-0w5JRyjmy7eRR508?usp=sharing |
+| Projeto de Interface e  Wireframes |   MarvelApp  |                                                                                      |
+|      Gerenciamento do Projeto      |    Trello    | https://trello.com/b/TMofVulh                                                        |
+
 
 ## Controle de Versão
 
@@ -26,52 +35,71 @@ etiquetas:
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
-
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
-
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
+Visando realizar o maior número de tarefas no menor tempo possível, a equipe escolheu adotar metodologias ágeis, mais especificamente o Scrum para definir com funcionará o processo de desenvolvimento, pois, com ele todos do grupo conseguem trabalhar de uma maneira criativa e adaptável, onde um membro da equipe fica a cargo de exercer uma, ou mais, funções e responsabilidades claras, atribuídas a ele por si próprio a cada estágio do projeto, com intuito de no final juntar todas as partes e chegar ao resultado final da forma mais harmoniosa.
 
-Apresente a divisão de papéis entre os membros do grupo.
+Com o Scrum, utilizaremos também princípios do Microsoft Solutions Framework (MSF), o qual é um framework flexível criado para guiar projetos de desenvolvimento de software. Nele há alguns mindsets que implementamos em conjunto aos princípios do Scrum, os dois funcionando de forma compatível, uma vez que o MSF atua na parte de gerenciamento de desenvolvimento e o Scrum na parte de organização do projeto. Os mindsets que serão utilizados:
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
++ **Qualidade definida pelo cliente:** uma vez que o site é para ajudar o usuário a partir de notas de outros usuários, é de extrema importância que eles deem seu feedback continuo, para que o site melhore baseando-se neles.
+
+
++ **Equipe em pares:** é improvável que uma só pessoa desenvolva todas as partes do projeto perfeitamente em tempo hábil, por isso terá muitas partes em duplas, para agilizar o desenvolvimento e melhorar a qualidade geral.
+
+
++ **Entrega frequente de versões:** quanto mais rápido uma parte do site for desenvolvida, mais rápido ela poderá ser testada, utilizada, revisada, e, potencialmente, refeita com melhorias.
+
+
++ **Desejo de aprender:** o desenvolvimento de um site não é uma tarefa fácil, ela requer tempo, conhecimento e muita dedicação. Todos os dias os integrantes do projeto terão que aprender uma nova habilidade, sempre buscando evoluir individualmente para realizar entregas de melhor qualidade.
+
+
++ **Orgulho no trabalho individual:** trabalha em conjunto com o mindset anterior, uma vez que, a cada novo aprendizado, o integrante se sente realizado por conseguir executar com maestria uma tarefa que antes parecia impossível, assim, conseguindo cada vez mais ajudar no projeto e se sentir bem consigo mesmo no processo.
+
+A organização da equipe se dá da seguinte forma:
+
++ Scrum Master: Álvaro Emanuel
++ Product Owner: Vitor Silva
+
++ Equipe de Desenvolvimento:
+	- Carlos Reinis 
+	- Camila
+	- Breno Morais
+	- Álvaro Emanuel
++ Equipe de Design:
+	- Carlos Reinis
+	- Vítor Silva
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Com relação a organização e distribuição das tarefas do projeto, a equipe utiliza a plataforma Trello, onde é possível criar Listas, Cartões, Etiquetas, Botões personalizados com ações automáticas, entre diversas outras funcionalidades que impactam positivamente na eficiência do grupo.
+
+O nosso ambiente de trabalho no Trello está organizado da seguinte forma:
+
+- `Recursos para Projetos`: guarda todas informações importantes do projeto como um todo, encontra-se nessa Lista os links do nosso Google Drive, GitHub, MarvelApp, o próprio Trello, reunião semanal com a orientadora, e possíveis avisos importantes.
+
+- `A fazer`: Recebe todas tarefas a serem executadas na etapa atual, cada uma delas tendo descrição própria de dicas de como realiza-la, ideias do que acrescentar de conteúdo, data limite e etiquetas informando sua prioridade.
+
+- `Em desenvolvimento`: Esta lista mostra todas tarefas que estão sendo desenvolvidas, sendo que cada tarefa irá conter o nome do integrante e a data em que ele se atribuiu ela, sendo que pode conter um ou mais membros na mesma tarefa.
+
+- `Concluído`: Aqui vão as tarefas já completas, servindo como um histórico do que já foi feito, contendo a data de conclusão e quem a revisou.
+
+Tais listas estão disponíveis no ambiente de trabalho desenvolvimento na ferramenta de gerenciamento de projetos do Trello, está disponível na URL https://trello.com/b/TMofVulh , apresentado, no estado atual, na Figura a seguir:
+
 
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- Canva.
+- Marvel.
+- GitHub.
+- Git.
+- Microsoft Teams.
+- Visual Studio Code.
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
+O Visual Studio Code foi escolhido porque ele possui uma integração com o
+GitHub muito fácil de se utilizar. O Microsoft Teams utilizadas possuem
 integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
+diagramas utilizamos o Marvel, por melhor captar as
 necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
