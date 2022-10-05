@@ -6,7 +6,7 @@
 
 `2º SEMESTRE DE 2022`
 
-Esse é um projeto tem como foco em dar ao usuário a opção de encontrar filmes correlatos, filmes que são quase identicos em todos os aspectos, a partir de uma aplicação web, qual conecta diversos usuários que dão sua opinião pessoal sobre qual filme acham que parece com qual, assim gerando um sistema de recomendação orgânico e muito mais assertivo do que um gerado automaticamente por máquina.
+Esse projeto tem como foco em dar ao usuário a opção de encontrar filmes correlatos, filmes que são quase identicos em todos os aspectos, a partir de uma aplicação web, qual conecta diversos usuários que dão sua opinião pessoal sobre qual filme acham que parece com qual, assim gerando um sistema de recomendação orgânico e muito mais assertivo do que um gerado automaticamente por máquina.
 
 ## Integrantes
 
