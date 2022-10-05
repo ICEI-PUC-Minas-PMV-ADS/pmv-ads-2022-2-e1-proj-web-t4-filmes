@@ -1,47 +1,54 @@
 # Introdução
 
-Grupo de filmes
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Em um mundo globalizado em que a todo momento surgem novas informações e tendências, a vida das pessoas começou a exigir estarem atualizadas sobre tudo o tempo todo, levando a maioria das pessoas ao desgaste no fim do dia. Para o seu momento de lazer, muitas buscam a alternativa mais simples e que lhe traga maior diversão em um curto período, que, na maioria das vezes, acaba por ser filmes e séries, o tão falado streaming, onde são diariamente lançados novos conteúdos e sempre busca atender a todos os gostos, segundo um levantamento  do instituto FX Research, em 2021 foram contabilizadas 559 séries em produção e 496 exibidas, isso tudo apenas nos EUA.
 
-## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Consumir esse tipo de entretenimento causa prazer às pessoas, trazendo uma ótima sensação de recompensa ao nosso cérebro, sensação essa parecida a que temos quando realizamos algo que gostamos no nosso dia a dia, como aponta o experimento  do University College de Londres realizado em 2019, onde é apontado que 55% dos voluntários que participaram do experimento acreditam que a experiência de passar duas horas assistindo filmes foi “terapêutica em nível emocional e sentiram um aumento de felicidade”, 75% sentiram totalmente envolvidos nos filmes, e 45% se sentiram renovados ao final das duas horas. Diante disso, o experimento conclui que “os filmes são um dos únicos lugares restantes onde você pode sair da realidade e se desconectar dos problemas”.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Seres humanos estão sempre em busca desse prazer, pensamento qual nos leva a crer que repetir essa prática de assistir o mesmo filme que gostamos recorrentemente, em busca de cada vez mais prazer, incentivando as pessoas a procurarem outros filmes parecidos com aqueles que mais lhe agradaram.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+Diante de tais análises, surge a necessidade de formas e mecanismos para encontrar esses filmes “gêmeos”, uma plataforma de indicação de títulos que considere não somente os gêneros, modelos ou estilos, mas também o consenso social sobre quais filmes e séries são realmente similares , de maneira qual consuma o menor tempo possível do usuário, enquanto entrega a mais prática experiência possível.
 
 > **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+> - [Levantamento do instituto FX Research](https://variety.com/2022/tv/news/original-tv-series-tally-2021-1235154979)
+> - [Experimento do University College de Londres](https://doceru.com/doc/8e0n5e1)
+
+## Problema
+A maioria das pessoas que consomem filmes não gostam quando acabam por assistir algo e no final sentem-se frustrados por aquilo não ser o que esperava.
+
+Atualmente não existem meios para encontrar filmes correlatos, e os que existem são de difícil entendimento, criando um grande problema que consome muito tempo e acaba até mesmo chateando a pessoa que pesquisa, onde, na maioria das vezes, termina encontrando vários filmes de mesmo gênero, porém, não obtém a informação de qual é realmente parecido, e o quanto se parece.
+
+Desta forma, o problema a ser resolvido é a falta de mecanismos que conectem filmes correlatos a partir de um perfil de usuário.
+
+Isso fica explicitado em uma pesquisa que fizemos, onde mais de 75% dos entrevistados responderam que acabam encontrando outros filmes parecidos baseando-se em seu gênero, o que compõem a resposta para a taxa de mais de 95% de descontentamento observada em relação a filmes que assistiram esperando que fossem de uma forma, porém, no final foram totalmente diferentes, apenas desperdiçando o  seu tempo, qual já foi encurtado já na parte da pesquisa do filme correlato, como apontam as respostas do acumulado de mais de 57% dos entrevistados, quais responderam que alguns levam de 16 minutos até mesmo mais de uma hora para encontrar algum filme que lhes agradem, ou seja, se forem assistir a um filme de 120 minutos, levam, em média, um quarto do longa-metragem apenas procurando por ele.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo geral deste trabalho é criar uma aplicação web que viabilize a conexão de filmes correlatos a partir de perfis de usuários.
+Como objetivos específicos temos:
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+-	Identificação de perfis de usuários
+-	Conexão de filmes a perfis de usuários
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A maioria dos usuários da internet pesquisam antes de tomar suas decisões. Em uma pesquisa realizada em 2017 pela AvellareDuarte Consultoria afirma que 73% dos entrevistados pesquisam na internet antes de realizar alguma compra, e 64% deles que acessaram a internet na última semana acreditam que consultar as opiniões de outras pessoas na internet os ajudaria a tomar importantes decisões de compra.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Dessa forma, uma porcentagem significativa dos inquiridos compreendeu que pesquisar antes de tomar suas decisões é algo crucial para aumentar as chances de acerto na hora da escolha, tendo a conveniência do acesso à Internet mais importante do que o seu preço.
+
+Cruzando tais análises, é possível traçar uma linha que leva à conclusão de que as pessoas com certeza pesquisariam antes de investir seu tempo em um filme que não irá satisfazê-las, muitas vezes buscando essa recomendação em sites de compilação de melhores filmes, ou cruzando os gêneros que gostam, porém, é alta a chance dessas pessoas acabarem por não encontrar um filme parecido com aquele que assistiu previamente e deseja a mesma experiência.
+
 
 > **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+> - [Pesquisa AvellareDuarte Consultoria](https://www.avellareduarte.com.br/fases-projetos/conceituacao/demandas-do-publico/pesquisas-de-usuarios-atividades-2/dados-sobre-o-publico-alvo/internet-no-brasil-2017-estatisticas/)
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+Assistir filmes e séries se tornou um novo passatempo para a maioria das pessoas, nossa pesquisa mostrou que mesmo as pessoas não nascidas na “era da tecnologia”, ou seja, durante os anos 2000, se converteram para o streaming. A taxa de pessoas entrevistadas que tem de 21 até 40 anos soma mais de 68% das respostas, além disso, de acordo com um levantamento  recente da Kantar Ibope Media, os horários onde as pessoas mais assistem vídeos são 18:00 e 22:00 horários estes onde as pessoas estão chegando em casa após um longo dia de trabalho ou de estudos.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+Os mais jovens também não estão fora do escopo, pois, tratando-se de uma forma de entretenimento para toda a família, entende-se que os filmes, séries e outros produtos similares, abrangem praticamente toda a população e possivelmente todas as idades, desde os mais jovens até os mais idosos.
+
+Tendo isso em mente, o foco deste trabalho está em pessoas jovens-adultas e adultas de todos grupos e classes sociais, que tenham parte do tempo ocupada com trabalho ou estudos, com interesses nesse tipo de entretenimento, e que gostariam de ter novas recomendações baseadas em seu próprio interesse para que assim não tenham o desgaste de ter que procurar algum filme ou série que se encaixe no seu gosto, já tendo elas prontas e listadas.
+
 
 > **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+> - [Levantamento da Kantar Ibope Media](https://www.kantaribopemedia.com/estudos-type/inside-video-2022/)
