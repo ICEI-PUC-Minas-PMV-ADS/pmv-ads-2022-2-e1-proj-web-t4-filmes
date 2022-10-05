@@ -1,23 +1,24 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de Aplicação Web Front-End - Turma 04`
 
-`SEMESTRE`
+`2º SEMESTRE DE 2022`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Esse é um projeto tem como foco em dar ao usuário a opção de encontrar filmes correlatos, filmes que são quase identicos em todos os aspectos, a partir de uma aplicação web, qual conecta diversos usuários que dão sua opinião pessoal sobre qual filme acham que parece com qual, assim gerando um sistema de recomendação orgânico e muito mais assertivo do que um gerado automaticamente por máquina.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Álvaro Emanuel Gonçalves Soares
+* Breno Morais Gonçalves
+* Camila de Oliveira Reis Carvalho
+* Carlos Eduardo Reinis
+* Vitor Silva Oliveira
 
 ## Orientador
 
-* Nome completo do professor 1
+* Sandra Maria Silveira
 
 ## Instruções de utilização
 
