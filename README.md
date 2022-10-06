@@ -16,7 +16,7 @@ Esse projeto tem como foco ofercer ao usuário uma plataforma para encontrar fil
 * Carlos Eduardo Reinis
 * Vitor Silva Oliveira
 
-## Orientador
+## Orientadora
 
 * Sandra Maria Silveira
 
