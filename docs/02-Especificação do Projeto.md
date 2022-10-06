@@ -171,3 +171,5 @@ Restrições são obrigações claras e objetivas do projeto. A tabela a seguir 
 |     RE-01     |     A equipe   não pode subcontratar o desenvolvimento do trabalho.                                     |
 |     RE-02     |     O site não pode   conter conhecimentos além daqueles aprendidos durante o semestre.                 |
 |     RE-03     |     O site não   poderá ser utilizado para fins lucrativos durante, ou após o seu   desenvolvimento.    |
+
+> carlos reinis
