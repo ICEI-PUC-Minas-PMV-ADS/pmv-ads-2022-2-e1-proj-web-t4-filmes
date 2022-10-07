@@ -9,7 +9,7 @@ Tratando-se de um sistema que necessita do usuário para alcançar o objetivo de
 
 A Figura A abaixo apresenta o fluxo de navegação do usuário pelas telas do site proposto. Mais detalhes no wireframe interativo, em: [Marvel] https://marvelapp.com/whiteboard/AkRMLcgAiwuiBpcDas4w 
 
-![UserFlow](img/1Fluxo.png)
+(img/1Fluxo.png)
 
 ## Wireframes
 
@@ -39,3 +39,9 @@ A página de cadastro será onde o usuário terá seu primeiro contato com a pla
 > - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
 > - [Axure](https://www.axure.com/edu) (Licença Educacional)
 > - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+
+
+
+
+
+
