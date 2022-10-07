@@ -1,15 +1,13 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+O projeto tem identidade visual padronizada entre as telas para facilitar a fluidez e navegabilidade do usuário, além disso, existe a intenção de seguir o padrão já adotado pelos principais sites de Streaming da atualidade, com o objetivo de alcançar um ambiente já conhecido e confortável para os usuários finais.
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+ Tratando-se de um sistema que necessita do usuário para alcançar o objetivo desejado na correlação de títulos com preferências e possibilidade de personalização, nota-se a necessidade de participação do usuário ativamente na plataforma para obtermos o resultado desejado. Portanto, entende-se ser necessária a criação de cadastro / perfil de usuário.
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+## Fluxo do usuário (User Flow)
 
-## User Flow
-
-![Exemplo de UserFlow](img/userflow.jpg)
+![UserFlow]([img/userflow.jpg](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/Telas_Vitor/Fluxo.png))
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
