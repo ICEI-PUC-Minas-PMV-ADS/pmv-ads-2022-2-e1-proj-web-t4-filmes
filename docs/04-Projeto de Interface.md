@@ -1,4 +1,3 @@
-
 # Projeto de Interface
 
 O projeto tem identidade visual padronizada entre as telas para facilitar a fluidez e navegabilidade do usuário, além disso, existe a intenção de seguir o padrão já adotado pelos principais sites de Streaming da atualidade, com o objetivo de alcançar um ambiente já conhecido e confortável para os usuários finais.
@@ -17,21 +16,51 @@ Conforme mostra o fluxo de páginas do projeto, as telas apresentam entre si uma
 **Cabeçalho** – local onde será disposto o logo do site e suas principais páginas.
 **Conteúdo** – Local que apresentará, para cada tela, seu conteúdo personalizado.
 
-![Wireframes](img/2Estrutura Base.png)
+![Wireframes](img/2Estruturabase.png)
 
 A estrutura base das telas do projeto se mantém o mais simples e genérica o possível para mantermos a possibilidade de especificação de cada tela futuramente.
 
-##Página de Cadastro
+## Página de Cadastro
 
 A página de cadastro será onde o usuário terá seu primeiro contato com a plataforma. Para evitar uma possível aparência contra-intuitiva nesta tela, o que poderia ocasionar em uma perda de interesse do usuário, esta página deverá apresentar uma aparência limpa, minimalista e intuitiva.
 
-![Página de Cadastro](img/3Pagina de Cadastro.png)
- 
+![Pagina de Cadastro](img/3Pagina de Cadastro.png)
 
-![Wireframes](img/Estruturabase.png)
+## Página de Log-In
 
+Pelos mesmos motivos da página de cadastro a tela de log-in também deve manter uma aparência simples. A tela de log-in será onde o usuário acessará a plataforma com credenciais previamente cadastradas.
 
+![Pagina de Log-in](img/4Pagina de Login.png)
 
+## Página Inicial
+
+A página inicial é a primeira tela que possui, de fato, algumas das principais funcionalidades da plataforma. Ela é a primeira página que contém em sua estrutura o padrão da plataforma, apresentando ao usuário o cabeçalho e trazendo em seu bloco de conteúdo, recomendações de títulos.
+
+![Pagina Inicial](img/5Pagina Inicial.png)
+
+## Página de Procura
+
+A página de procura compreende uma das principais funcionalidades da plataforma, a recomendação de títulos através de um outro. O conteúdo da página se compõe de uma barra de pesquisa onde o usuário poderá inserir um título, um botão de pesquisa e um sub-bloco onde serão exibidos títulos relacionados.
+
+![Pagina de Procura](img/6Pagina de Pesquisa.png)
+
+## Página de Perfil
+
+A página de perfil manterá informações de perfil personalizadas para cada usuário, como por exemplo foto, nome, descrição, títulos favoritos e conquistas no site.
+
+![Pagina de Procura](img/7Pagina de Perfil.png)
+
+## Página de Filme
+
+Quando necessária a visualização de filmes, estes devem ser apresentados em uma nova tela, contendo seu poster, nome, descrição, nota, comentários, entre outros. Para provar esta função, será criada a tela de filmes. Uma página que se adaptará para cada título selecionado, suprindo necessidades de páginas como por exemplo a página de perfil e página de procura de títulos.
+
+![Pagina de Procura](img/8Pagina de filme.png)
+
+## Página de Comentário
+
+A página de comentário possibilitará ao usuário inserir um comentário em um filme, assim, ajudando outro usuário a se decidir. A página de comentário deverá sem simples e será criada como um popup.
+
+![Pagina de Procura](img/9Popup de Comentario.png)
 
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
@@ -41,9 +70,3 @@ A página de cadastro será onde o usuário terá seu primeiro contato com a pla
 > - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
 > - [Axure](https://www.axure.com/edu) (Licença Educacional)
 > - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
-
-
-
-
-
-
