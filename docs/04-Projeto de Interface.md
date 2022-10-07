@@ -3,26 +3,34 @@
 
 O projeto tem identidade visual padronizada entre as telas para facilitar a fluidez e navegabilidade do usuário, além disso, existe a intenção de seguir o padrão já adotado pelos principais sites de Streaming da atualidade, com o objetivo de alcançar um ambiente já conhecido e confortável para os usuários finais.
 
- Tratando-se de um sistema que necessita do usuário para alcançar o objetivo desejado na correlação de títulos com preferências e possibilidade de personalização, nota-se a necessidade de participação do usuário ativamente na plataforma para obtermos o resultado desejado. Portanto, entende-se ser necessária a criação de cadastro / perfil de usuário.
+Tratando-se de um sistema que necessita do usuário para alcançar o objetivo desejado na correlação de títulos com preferências e possibilidade de personalização, nota-se a necessidade de participação do usuário ativamente na plataforma para obtermos o resultado desejado. Portanto, entende-se ser necessária a criação de cadastro / perfil de usuário.
 
 ## Fluxo do usuário (User Flow)
 
-![UserFlow]([img/userflow.jpg](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/Telas_Vitor/Fluxo.png))
+A Figura A abaixo apresenta o fluxo de navegação do usuário pelas telas do site proposto. Mais detalhes no wireframe interativo, em: [Marvel] https://marvelapp.com/whiteboard/AkRMLcgAiwuiBpcDas4w 
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
-
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
+![UserFlow](img/1Fluxo.png)
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+Conforme mostra o fluxo de páginas do projeto, as telas apresentam entre si uma estrutura padrão que é apresentada a seguir. Nesta estrutura existem 2 grandes blocos que dividem a página, são eles:
+###Cabeçalho – local onde será disposto o logo do site e suas principais páginas.
+###Conteúdo – Local que apresentará, para cada tela, seu conteúdo personalizado.
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+![Wireframe](img/2Estrutura Base.png)
+
+A estrutura base das telas do projeto se mantém o mais simples e genérica o possível para mantermos a possibilidade de especificação de cada tela futuramente.
+
+##Página de Cadastro
+
+A página de cadastro será onde o usuário terá seu primeiro contato com a plataforma. Para evitar uma possível aparência contra-intuitiva nesta tela, o que poderia ocasionar em uma perda de interesse do usuário, esta página deverá apresentar uma aparência limpa, minimalista e intuitiva.
+
+![Página de Cadastro](img/3Pagina de Cadastro.png)
  
+
+
+
+
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
 > - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
