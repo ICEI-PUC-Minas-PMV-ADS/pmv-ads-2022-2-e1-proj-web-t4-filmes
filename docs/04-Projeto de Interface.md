@@ -9,7 +9,7 @@ Tratando-se de um sistema que necessita do usuário para alcançar o objetivo de
 
 A Figura A abaixo apresenta o fluxo de navegação do usuário pelas telas do site proposto. Mais detalhes no wireframe interativo, em: [Marvel] https://marvelapp.com/whiteboard/AkRMLcgAiwuiBpcDas4w 
 
-(img/1Fluxo.png)
+![User Flow](img/1Fluxo.png)
 
 ## Wireframes
 
