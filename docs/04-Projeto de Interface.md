@@ -14,10 +14,10 @@ A Figura A abaixo apresenta o fluxo de navegação do usuário pelas telas do si
 ## Wireframes
 
 Conforme mostra o fluxo de páginas do projeto, as telas apresentam entre si uma estrutura padrão que é apresentada a seguir. Nesta estrutura existem 2 grandes blocos que dividem a página, são eles:
-###Cabeçalho – local onde será disposto o logo do site e suas principais páginas.
-###Conteúdo – Local que apresentará, para cada tela, seu conteúdo personalizado.
+**Cabeçalho** – local onde será disposto o logo do site e suas principais páginas.
+**Conteúdo** – Local que apresentará, para cada tela, seu conteúdo personalizado.
 
-![Wireframe](img/2Estrutura Base.png)
+![Wireframes](img/2Estrutura Base.png)
 
 A estrutura base das telas do projeto se mantém o mais simples e genérica o possível para mantermos a possibilidade de especificação de cada tela futuramente.
 
@@ -27,6 +27,8 @@ A página de cadastro será onde o usuário terá seu primeiro contato com a pla
 
 ![Página de Cadastro](img/3Pagina de Cadastro.png)
  
+
+![Wireframes](img/Estruturabase.png)
 
 
 
