@@ -10,7 +10,7 @@ Nossa solução conta com as seguintes tecnologias:
 
 - `Javascript`: É uma linguagem de programação interpretada com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.
 
-- `Github Pages`: É um serviço de hospedagem de site estático que usa arquivos HTML, CSS e JavaScript diretamente de um repositório no GitHub
+- `Github Pages`: É um serviço de hospedagem de site estático que usa arquivos HTML, CSS e JavaScript diretamente de um repositório no GitHub.
 
 - `IMDb API`: É um serviço web para receber informações de filmes, séries e elencos, e incluem itens como especificações de filmes, imagens, pôsteres, trailers, classificação e muito mais.
 Diagrama de componentes
@@ -19,22 +19,21 @@ Diagrama de componentes
 
 ![Diagrama de arquitetura](https://user-images.githubusercontent.com/69819769/194718392-d4c2cc2d-f343-4785-aa73-19f05e903a53.png)
 
-*Figura X - Diagrama de arquitetura*
 
 ## Diagrama de componentes
 
- solução implementada conta com os seguintes módulos:
+ Solução implementada conta com os seguintes módulos:
  
- - `Navegador` - Interface básica do sistema
+ - `Navegador` - Interface básica do sistema.
  
  - `Páginas Web` - Conjunto de arquivos HTML, CSS, JavaScript e imagens que implementam as funcionalidades do sistema.
 
 + `Local Storage` - armazenamento mantido no Navegador, onde são implementados bancos de dados baseados em JSON. São eles: 
 	- `Cadastro` - Login e senha do usuário
  
-	- `Comentários` - registro de opiniões dos usuários sobre os filmes
+	- `Comentários` - Registro de opiniões dos usuários sobre os filmes.
 
-	- `Perfil` - Informações da pagina de perfil do usuário
+	- `Perfil` - Informações da pagina de perfil do usuário.
 
 	- `Indicações` - Filmes selecionados pelo site para o usuário.
 
@@ -50,4 +49,4 @@ site é mantido no ambiente da URL:
 https://pages.github.com/ 
 
 A publicação do site no Github Pages é feita por meio de uma submissão do projeto no site do Github.
-Vá em configurações (Settings). Na seção code e automation, clique em Pages. Na opção Source, abra o menu suspenso e selecione uma fonte de publicação, ou seja, a branch que desejar.
+Para submeter um projeto, vá em configurações (Settings). Na seção code e automation, clique em Pages. Na opção Source, abra o menu suspenso e selecione uma fonte de publicação, ou seja, a branch que desejar.
