@@ -18,7 +18,7 @@ Diagrama de componentes
   Segue abaixo os componentes que fazem parte da nossa solução:
 
 ![Diagrama de arquitetura](https://user-images.githubusercontent.com/69819769/194718392-d4c2cc2d-f343-4785-aa73-19f05e903a53.png)
-
+*Figura X - Diagrama de arquitetura*
 
 ## Diagrama de componentes
 
