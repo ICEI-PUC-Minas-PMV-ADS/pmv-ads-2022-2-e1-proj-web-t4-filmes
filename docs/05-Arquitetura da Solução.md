@@ -38,7 +38,7 @@ Diagrama de componentes
 
 	- `Indicações` - Filmes selecionados pelo site para o usuário.
 
-- `News API` - plataforma que permite o acesso aos filmes exibidos no site.
+- `IMDb API` - plataforma que permite o acesso aos filmes exibidos no site.
 
 - `Hospedagem` - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
 
