@@ -6,7 +6,7 @@ Tratando-se de um sistema que necessita do usuário para alcançar o objetivo de
 
 ## Fluxo do usuário (User Flow)
 
-A Figura A abaixo apresenta o fluxo de navegação do usuário pelas telas do site proposto. Mais detalhes no wireframe interativo, em: [Marvel] https://marvelapp.com/whiteboard/AkRMLcgAiwuiBpcDas4w 
+A Figura A abaixo apresenta o fluxo de navegação do usuário pelas telas do site proposto. Mais detalhes no wireframe interativo, em: [Marvel] https://marvelapp.com/prototype/71i5fe5
 
 ![User Flow](img/1Fluxo.png)
 
