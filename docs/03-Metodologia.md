@@ -88,8 +88,6 @@ Tais listas estão disponíveis no ambiente de trabalho desenvolvimento na ferra
 
 ![image](https://user-images.githubusercontent.com/13721147/194719101-4c26ae40-c914-482b-8886-ace95e273b20.png)
 
-*Figura 1 - Imagem do Trello*
-
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
