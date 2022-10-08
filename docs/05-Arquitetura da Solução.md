@@ -23,7 +23,31 @@ Diagrama de componentes
 
 ## Diagrama de componentes
 
+ solução implementada conta com os seguintes módulos:
+ 
+ - `Navegador` - Interface básica do sistema
+ 
+ - `Páginas Web` - Conjunto de arquivos HTML, CSS, JavaScript e imagens que implementam as funcionalidades do sistema.
 
++ `Local Storage` - armazenamento mantido no Navegador, onde são implementados bancos de dados baseados em JSON. São eles: 
+	- `Cadastro` - Login e senha do usuário
+ 
+	- `Comentários` - registro de opiniões dos usuários sobre os filmes
+
+	- `Perfil` - Informações da pagina de perfil do usuário
+
+	- `Indicações` - Filmes selecionados pelo site para o usuário.
+
+- `News API` - plataforma que permite o acesso aos filmes exibidos no site.
+
+- `Hospedagem` - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
 
 ## Hospedagem
 
+Nosso site utiliza a plataforma Github Pages como ambiente de hospedagem. O 
+site é mantido no ambiente da URL:
+
+https://pages.github.com/ 
+
+A publicação do site no Github Pages é feita por meio de uma submissão do projeto no site do Github.
+Vá em configurações (Settings). Na seção code e automation, clique em Pages. Na opção Source, abra o menu suspenso e selecione uma fonte de publicação, ou seja, a branch que desejar.
