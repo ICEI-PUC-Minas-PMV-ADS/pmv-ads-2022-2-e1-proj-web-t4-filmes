@@ -3,18 +3,23 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OK Play - Bem Vindo!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>OK Play - Cadastro</title>
     <link rel="icon" type="image/x-icon" href="imgs/Favicon_OK_Button_01.jpg">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+      <!-- Ranking Estrela Bootstrap CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    
+      <!-- Inserir Arquivo Bootstrap CSS -->    
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 <style> 
 
 body {
@@ -47,8 +52,9 @@ section {
     
     float: left;
     background-color: rgb(236, 234, 234);
-    width: 64%;
+    width: 49%;
     min-height: 300px;
+    font-size: small;
 }
 section.destaque form {
     padding-left: 15%;
@@ -101,15 +107,19 @@ aside {
     display: inline-block;
     float: right;
     background-color: rgb(236, 234, 234);
-    width: 34%;
+    width: 49%;
     min-height: 300px;
     margin-left: 5px;
     margin-right: 5px;
     padding-left: 10px;
     padding-right: 10px;
     align-content: center;
-    text-align: center;
+    text-align: left;
     
+}
+
+aside div {
+    font-size: small;
 }
 
 aside div.form-check {
@@ -234,43 +244,163 @@ label.star:before {
             </div>
         </nav>
 
-    <section class="destaque">
+    <section>
         
+        <form class="cadastro">
+            <h1> Informações Pessoais: </h1>
         <form>
-            <h1> </h1>
-            <h1> Cadastro </h1>
-            <div class="form-group">
-                <label for="exampleInputEmail1">e-mail</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Confirme e-mail</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Confirme Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-
-            <h1> </h1>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                <label for="InputName">Nome</label>
+                <input type="text" class="form-control" id="inputName">
+              </div>
+                <div class="form-group col-md-5">
+                <label for="InputName">Sobrenome</label>
+                <input type="text" class="form-control" id="inputSurname">
+              </div>
             
-            <a href="04_Criar_Perfil_page.html"> <small>Leia os Termos e Uso de Dados </small> </a>
+            <div class="form-group col-md-2">
+                <label for="inputGener">Genero</label>
+                <select id="inputGener" class="form-control">
+                  <option selected>Escolha...</option>
+                  <option>Masc</option>
+                  <option>Fem</option>
+                  <option>Outro</option>
+                  <option>Não Informar</option>
+                </select>
+            </div>
+            <div class="form-group col-md-12"> 
+                <div class="custom-file">
+                  <label for="inputFile">Foto</label>
+                  <input id="inputFile" type="file" multiple class="custom-file-input" multiple>
+                  <label class="custom-file-label" for="inputFile">Foto (jpeg, png ou gif)</label>
+                    
+                </div>
+            </div>
+              <div class="form-row">
+                <div class="form-group col-md-8">
+                  <label for="inputCity">Cidade</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputCountry">País</label>
+                  <select id="inputCountry" class="form-control">
+                    <option selected>Escolha...</option>
+                    <option>Brasil</option>
+                    <option>Alemanha</option>
+                    <option>Portugal</option>
+                    <option>Outro</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="inputFilmData1">Filme ou Série I</label>
+                    <input type="text" class="form-control" id="inputFilmData1">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="inputFilmData2">Filme ou Série II</label>
+                    <input type="text" class="form-control" id="inputFilmData2">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="inputFilmData3">Filme ou Série III</label>
+                    <input type="text" class="form-control" id="inputFilmData3">
+                  </div>
+              </div>
 
-            <h1> </h1>
-            <p> </p>
-
-            <button type="submit" class="btn btn-primary">Criar Perfil</button>
-            <a href="04_Criar_Perfil_P2_page.html">next</a>
         </form>
         
     </section>
 
     <aside>
         
+        <form class="cadastro">
+            <h1> Preferências: </h1>
+        <div class="form-group">
+            <label for="FormControlSelect2">Metragem:</label>
+            <select multiple class="form-control" id="FormControlSelect2">
+            <option selected>Escolha...</option>
+            <option>Curta Metragem</option>
+            <option>Longa Metragem</option>
+            <option>Mini-Série</option>
+            <option>Série</option>
+            <option>Indiferente</option>
+            <option>Todos os Tipos</option>
+        </select>
+        </div>
+  
+        <div class="form-group">
+          <label for="FormControlSelect2">Generos Favoritos:</label>
+          <select multiple class="form-control" id="FormControlSelect2">
+            <option selected>Escolha mínimo 3 opções...</option>
+            <option>Ação</option>
+            <option>Anime</option>
+            <option>Aventura</option>
+            <option>Baseado em Fatos Reais</option>
+            <option>Cinema Arte</option>
+            <option>Chanchada</option>
+            <option>Comédia</option>
+            <option>Comédia de Ação</option>
+            <option>Comédia de Terror</option>
+            <option>Comédia Dramática</option>
+            <option>Comédia Romântica</option>
+            <option>Comédia Stand-up</option>
+            <option>Dança</option>
+            <option>Documentário</option>
+            <option>Docuficção</option>
+            <option>Drama</option>
+            <option>Espionagem</option>
+            <option>Faroeste</option>
+            <option>Fantasia</option>
+            <option>Fantasia Ciêntifica</option>
+            <option>Ficção Ciêntifica</option>
+            <option>Guerra</option>
+            <option>Horror</option>
+            <option>Mistério</option>
+            <option>Musical</option>
+            <option>Policial</option>
+            <option>Romance</option>
+            <option>Suspense</option>
+            <option>Suspense-Terror</option>
+            <option>Terror</option>
+            <option>Thriller</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="FormControlSelect2">Streamings:</label>
+            <select multiple class="form-control" id="FormControlSelect2">
+            <option selected>Escolha mínimo 3 opções...</option>
+            <option>Amazon Prime Video</option>
+            <option>Apple TV</option>
+            <option>Disney +</option>
+            <option>HBO Max</option>
+            <option>Hulu</option>
+            <option>MoviesJoy</option>
+            <option>NetFlix</option>
+            <option>PopcornFlix</option>
+            <option>Tubi</option>
+            <option>YouTube</option>
+            <option>Outro</option>
+        </select>
+        </div>
+
+        <h1> </h1>
+            
+            <a href="04_Criar_Perfil_page.html"> <small>Leia os Termos e Uso de Dados </small> </a>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Li e Aceito os termos e uso de dados.
+                </label>
+              </div>
+              
+            <h1> </h1>
+            <p> </p>
+
+            <button type="submit" class="btn btn-primary">Criar Perfil</button>
+            <a href="03_Usuario_Loggado_page.html">next</a>
+            <h1> </h1>
+
+    </form>
 
     </aside>
 
@@ -376,8 +506,23 @@ label.star:before {
         <p> </p>
         <h1> </h1>  
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+
+    <script src="./coverage/bs-custom-file-input.js"></script>
+    <script>
+      bsCustomFileInput.init()
+
+      var btn = document.getElementById('btnResetForm')
+      var form = document.querySelector('form')
+      btn.addEventListener('click', function () {
+        form.reset()
+      })
+    </script>
 
 </body>
 </html>
