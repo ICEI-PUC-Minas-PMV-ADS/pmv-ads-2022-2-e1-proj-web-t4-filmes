@@ -2,18 +2,26 @@
 
 
 
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OK Play - Log-in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>OK Play - Experimente!</title>
     <link rel="icon" type="image/x-icon" href="imgs/Favicon_OK_Button_01.jpg">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+      <!-- Ranking Estrela Bootstrap CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    
+      <!-- Inserir Arquivo Bootstrap CSS -->    
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 <style> 
 
 body {
@@ -46,81 +54,13 @@ section {
     
     float: left;
     background-color: rgb(236, 234, 234);
-    width: 64%;
-    min-height: 300px;
-}
-section.destaque form {
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 10%;
-    padding-top: 5%;
-}
-section div.destaque {
-    display: inline-block;
-    margin: 0;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 20px;
-    padding: 0%;
-    width: 25%;
-    vertical-align: top;
-    background-color: rgb(236, 234, 234);
-    height: 30%;
-    font-size: x-small;
-    text-align: center;
-    align-items: center;
-
-}
-section div.infodestaque {
-    display: inline-block;
-    margin: 0;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 20px;
-    padding: 0%;
-    width: 70%;
-    vertical-align: top;
-    background-color: rgb(236, 234, 234);
-    height: 30%;
-    font-size: 14px;
-    text-align: justify;
-    align-items: left;
-
-}
-
-section.destaque div.opiniao {
-    display: inline-block;
-    align-items: baseline;
     width: 100%;
-    font-size: 14px;
-    text-align: justify;
-} 
-
-aside {
-    display: inline-block;
-    float: right;
-    background-color: rgb(236, 234, 234);
-    width: 34%;
     min-height: 300px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-content: center;
-    text-align: center;
-    
-}
-
-aside div.form-check {
-    font-size: xx-small;
-}
-
-aside div.form-group {
     font-size: small;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-aside div.destaque p {
-    font-size: small;
-}
+           
 
 article {
     display: inline-block;
@@ -195,37 +135,9 @@ label.star:before {
 
 </style>
 
-<script>
 
-    var attempt = 3; // Três tentativas para bloquear login
-    
-    function validate(){
-    var username = document.getElementById("InputEmail1").value;
-    var password = document.getElementById("InputPassword1").value;
-    if ( username == "joaoarruda@gmail.com" && password == "joaosenha1"){
-    alert ("Acessando seu Perfíl");
-    window.location = "http://127.0.0.1:5500/03_Usuario_Loggado_page.html";
-    
-    return false;
-    }
-    else{
-    attempt --;// Decremento de 1 chance a cada tentativa.
-    alert("Você ainda tem "+attempt+" tentativas;");
-    
-    // Desabilitar os campos de entrada de dados após 3 tentativas erradas.
-    if( attempt == 0){
-    document.getElementById("InputEmail1").disabled = true;
-    document.getElementById("InputPassword1").disabled = true;
-    document.getElementById("submit").disabled = true;
-    return false;
-    }
-    }
-    }
-    
-</script>
 
 </head>
-
 <body>
     <header>
         
@@ -261,37 +173,76 @@ label.star:before {
             </div>
         </nav>
 
-    <section class="destaque">
-        
-        <form id="form_id" method="post" name="Log-in">
+    <section>
+        <h2>Experimente</h2>
+        <div class="card-deck">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Insira o 1o Título</h5>
+                <p class="card-text">Pense em um título que gostou muito e que foi a origem de sua busca por outros títulos tão inspiradores quanto este.</p>
+                <div class="form-group col-md-12">
+                    <label for="inputFilmData1">Filme ou Série I</label>
+                    <input type="text" class="form-control" id="inputFilmData1">
+                  </div>
+                </div>  
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Insira o 2o Título</h5>
+                <p class="card-text">Agora quermos saber qual foi o título que assistiu inspirado no título anterior e que esteve de acordo com suas expectativas.</p>
+                <div class="form-group col-md-12">
+                    <label for="inputFilmData1">Filme ou Série I</label>
+                    <input type="text" class="form-control" id="inputFilmData1">
+                  </div>
+              </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Insira o 3o Título</h5>
+                  <p class="card-text">A mesma linha de raciocínio. Insira mais um título que tenha visto e gostado inspirado no primeiro ou segundo títulos que escolheu.</p>
+                  <div class="form-group col-md-12">
+                      <label for="inputFilmData1">Filme ou Série I</label>
+                      <input type="text" class="form-control" id="inputFilmData1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form>
             <h1> </h1>
-            <h1> Log-in </h1>
-            <div class="form-group">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="InputName">Nome</label>
+                <input type="text" class="form-control" id="inputName">
+              </div>
+                <div class="form-group col-md-6">
                 <label for="InputEmail1">e-mail</label>
                 <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="form-group">
-                <label for="InputPassword1">Senha</label>
-                <input type="password" class="form-control" id="InputPassword1">
-            </div>
-            <a href="0X_Password_Rescue_page.html"> <small>Esqueceu sua Senha? Clique aqui. </small> </a>
+              </div>
 
-            <h1> </h1>
-            <small> Ainda não tem cadastro? </small> <br>
-            <a href="04_Criar_Perfil_page.html"> <small>Clique aqui e crie o seu perfil. </small> </a>
-
+            </div>
+        <div>
+            
+            
+            <a href="04_Criar_Perfil_page.html"> <small>Leia os Termos e Uso de Dados </small> </a>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Li e Aceito os termos e uso de dados.
+                </label>
+              </div>
+              
             <h1> </h1>
             <p> </p>
 
-            <input type="button" class="btn btn-primary" value="Entrar" id="submit" onclick="validate()"/>
+            <button type="submit" class="btn btn-primary">Busca Correlação</button>
+            <a href="03_Usuario_Loggado_page.html">next</a>
+            <h1> </h1>
+            
+        </div>
         </form>
-        
     </section>
-
-    <aside>
-        
-
-    </aside>
 
     <article>
         <p>  </p>
@@ -395,8 +346,23 @@ label.star:before {
         <p> </p>
         <h1> </h1>  
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+
+    <script src="./coverage/bs-custom-file-input.js"></script>
+    <script>
+      bsCustomFileInput.init()
+
+      var btn = document.getElementById('btnResetForm')
+      var form = document.querySelector('form')
+      btn.addEventListener('click', function () {
+        form.reset()
+      })
+    </script>
 
 </body>
 </html>
