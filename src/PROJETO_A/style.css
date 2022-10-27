@@ -1,0 +1,121 @@
+
+/* TEMPLATE 00 - Estrutura de áreas - sem sub-div do Main área central */
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-weight: lighter;
+    width: 100%;
+}
+
+header {
+    background-color: #444;
+    color: whitesmoke;
+    width: 100%;
+    min-height: 75px;  
+    border-bottom: 1px solid orange;
+    padding-top: 12px;
+    padding-right: 7px;
+    padding-left: 7px;  
+}
+
+img.UserIdPhoto {
+    align-content: right;
+    float: right;
+}
+
+header div marquee {
+    align-content: space-between;
+}
+
+main {
+    display: inline-block;
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+    min-height: 600px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 7px;
+    padding-left: 7px;
+    
+}
+
+main section.login {
+    padding-top: 50px;
+    padding-left: 35%;
+    padding-right: 35%;
+    font-size: small;
+}
+
+main div {
+    background-color: black;
+    color: whitesmoke;
+
+}
+
+main div h1 h3 h5 {
+    background-color: black;
+    color: whitesmoke;
+
+}
+
+footer {
+    display: inline-block;
+    background-color: #444; 
+    width: 100%; 
+    min-height: 75px;
+    font-size: small; font-weight: lighter; color: orange;
+    text-align: center;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    border-top: 1px solid orange;
+    
+}
+
+footer p {
+    font-size: 7px; font-weight: lighter; 
+    text-align: center;
+    vertical-align: bottom;
+}
+
+
+/* Para os TEMPLATES que tem a área Main sub-dividida  */
+
+
+article {
+    display: block;
+    float: left;
+    background-color: black;
+    width: 100%;
+    min-height: 150px;
+    align-content: center;
+    
+}
+
+article div {
+    display: inline-block;
+    margin: 0;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    padding: 0%;
+    width: 9%;
+    vertical-align: top;
+    background-color: black;
+    height: 30%;
+    font-size: xx-small;
+    text-align: center;
+    align-items: center;
+
+}
+
+h1 {
+    font-size: large; 
+}
+
+
+
+
