@@ -24,8 +24,10 @@ let passSuccess = document.querySelector('#passSuccess')
 
 let userLogged = [];
 
+let userList = JSON.parse(localStorage.getItem('userList') || '[]')
+
 nome.addEventListener('keyup', ()=>{
-    if(nome.value.length <= 2){
+    if(nome.value.length <= 3){
         labelNome.setAttribute('style', 'color: red')
         labelNome.innerHTML = 'Nome *Insira no minimo 3 caracteres' 
         nome.setAttribute('style', 'border-color: red')
@@ -92,10 +94,18 @@ confirmSenha.addEventListener('keyup', ()=>{
     }
 })
 
+function preventCopy(){
+    for(let i = 0; i < userList.length; i++){
+        if(email.value == userList[i].email){
+            return true;
+        }
+    }
+}
+
 function cadastrar(){
-    if(passNome && passEmail && passSenha && passConfirmSenha){ 
-        let userList = JSON.parse(localStorage.getItem('userList') || '[]')
-        
+    if(!preventCopy()){
+    
+    if(passNome && passEmail && passSenha && passConfirmSenha){
         userList.push(
             {
                 nome: nome.value,
@@ -130,6 +140,13 @@ function cadastrar(){
         passSuccess.setAttribute('style','display: none')
         passSuccess.innerHTML = ''  
     }
+}
+else{
+    passError.setAttribute('style','display: block')
+    passError.innerHTML = 'Usuário já existente'
+    passSuccess.setAttribute('style','display: none')
+    passSuccess.innerHTML = '' 
+}
 }
 
 olhoSenha.addEventListener('click', ()=>{
