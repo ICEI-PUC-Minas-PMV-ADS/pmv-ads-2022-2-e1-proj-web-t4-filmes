@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.title{
+    color: white;
+    text-align: center;
+}
+
+.title > img{
+    width: 100px;
+    height: 100px;
+    object-fit: fill;
+    object-position: center;
+}
+
+body{
+    background-color: #1E1E1E;
+}
+
+.label-div{
+    color: white;
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.card{
+    background-color: #343434;
+    width: 400px;
+    padding: 30px;
+    border-radius: 4%;
+    -webkit-box-shadow: 1px 3px 40px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 40px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 3px 40px 0px rgba(0,0,0,0.75);
+}
+
+.label-div input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid rgb(255, 115, 0);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 300ms ease-out;
+    border-radius: 0;
+    color: white;
+}
+
+.label-div input:focus{
+    border-bottom: 1px solid rgb(255, 166, 0);
+}
+
+.label-div label{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all 300ms ease-out;
+}
+
+.label-div input:focus + label,
+.label-div input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: rgb(255, 166, 0);
+}
+
+button{
+    background-color: transparent;
+    border-color: rgb(255, 115, 0);
+    color: white;
+    padding: 7px;
+    font-weight: 500;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all 200ms ease-out;
+}
+
+button:hover{
+    background-color: rgb(255, 115, 0);
+}
+
+.btn-div{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-eye,
+.fa-eye-slash{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(255, 130, 13);
+    transition: all 200ms ease-out;
+}
+
+#passError{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 145, 145);
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    font-weight: bold;
+}
+
+#passSuccess{
+    text-align: center;
+    color: rgb(92, 240, 92);
+    background-color: rgb(54, 179, 54);
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
