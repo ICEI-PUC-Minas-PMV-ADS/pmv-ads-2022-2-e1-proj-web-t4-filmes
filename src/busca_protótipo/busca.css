@@ -34,7 +34,7 @@ a:hover {
 
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #2C2C2C;
 }
 
 .pipoco {
@@ -113,13 +113,13 @@ body {
 
 #searchInput {
     padding: 10px;
-
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     align-content: center;
     border-radius: 10px;
+    text-align: center;
 
 
 }
@@ -127,14 +127,13 @@ body {
 .filme {
 
     padding: 10px;
-    width: 25%;
     text-align: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     transform: scale(0.98);
-    color: white;
-    background-color: rgb(36, 0, 0);
-    border: solid 1px rgb(0, 0, 0);
+    color: rgb(250, 248, 248);
+    background-color: transparent;
+    border: solid 1px transparent;
     border-radius: 10px;
     cursor: pointer;
 }
