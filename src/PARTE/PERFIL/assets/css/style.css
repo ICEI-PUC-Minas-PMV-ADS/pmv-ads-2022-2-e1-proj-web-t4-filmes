@@ -70,6 +70,8 @@ body{
 }
 
 .edit-perfil-foto{
+    display: flex;
+    justify-content: center;
     position: absolute;
     top: 16em;
     bottom: 0;
@@ -348,6 +350,20 @@ dialog[close]{
         font-size: 14pt;
         margin-top: 2em;
         padding: 1rem;
+    }
+
+    .perfil-nome{
+        justify-content: center;
+        display: flex;
+        width: 40%;
+        position: absolute;
+        
+    }
+}
+
+@media screen and (max-width: 400px){
+    .perfil-nome{
+        width: 75%;
     }
 }
 

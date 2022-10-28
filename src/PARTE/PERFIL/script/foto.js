@@ -13,6 +13,7 @@ var fotoPath;
 userLogged = JSON.parse(localStorage.getItem('userLogged'))
 userList = JSON.parse(localStorage.getItem('userList'))
 
+
 setFotos()
 
 function setFotos(){
@@ -27,18 +28,12 @@ function setFotos(){
 }
 
 function saveUserFoto(){
-    for(u of userList){
-        if(userLogged.nome == userList.nome){
-            userLogged[0] = {
-                ...userLogged[0],
-                foto: fotoPath
-            }
-            u.foto = fotoPath
-            localStorage.setItem('userLogged', JSON.stringify(userLogged))
-            localStorage.setItem('userList', JSON.stringify(userList))
-            break
-        }
-    }
+    userList.find(u => u.email == userLogged[0].email).foto = fotoPath
+
+    userLogged[0].foto = fotoPath
+
+    localStorage.setItem('userList',JSON.stringify(userList))
+    localStorage.setItem('userLogged',JSON.stringify(userLogged))
 }
 
 function fecharPopupFoto(){

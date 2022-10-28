@@ -15,7 +15,6 @@ setPerfilNome()
 
 function setPerfilNome(){
     perfilNome.textContent = userLogged[0].nome;
-    console.log(perfilNome.value);
 }
 
 

@@ -25,18 +25,12 @@ function setBanners(){
 }
 
 function saveUserBanner(){
-    for(u of userList){
-        if(userLogged.nome == userList.nome){
-            userLogged[0] = {
-                ...userLogged[0],
-                banner: bannerPath
-            }
-            u.banner = bannerPath
-            localStorage.setItem('userLogged', JSON.stringify(userLogged))
-            localStorage.setItem('userList', JSON.stringify(userList))
-            break
-        }
-    }
+    userList.find(u => u.email == userLogged[0].email).banner = bannerPath
+
+    userLogged[0].banner = bannerPath
+
+    localStorage.setItem('userList',JSON.stringify(userList))
+    localStorage.setItem('userLogged',JSON.stringify(userLogged))
 }
 
 function fecharPopupBanner(){
@@ -82,7 +76,6 @@ BannerBtnDialogCancel.addEventListener('click', () =>{
 BannerBtnDialogOK.addEventListener('click', () =>{
     if(inputBanner.value !== ''){
     fecharPopupBanner()
-    console.log('sdassad')
     }
     else{
         alert('Faça upload da imagem primeiro!')
