@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    overflow-x: hidden;
+}
+
+.user-info{
+    display: flex;
+    gap: 100px;
+}
+
+.container-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-perfil-foto > svg{
+    transform: translate(-1em, 15em);
+    z-index: 101;
+}
+
+.edit-perfil-foto{
+    display: flex;
+    flex-direction: row;
+    transform: translate(3em, -3em);
+}
+
+.edit-perfil-foto > img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    box-shadow: 0px 7px 10px 5px rgba(0, 0, 0, 0.20);
+    transition: all 400ms ease-out;
+    object-fit: cover;
+}
+
+.lapis-perfil-ft,
+.lapis-banner{
+    fill: white;
+    height: 48px;
+    width: 48px;
+}
+
+.edit-perfil-foto:hover > img{
+    box-shadow: 0px 7px 10px 5px rgba(255, 255, 255, 0.20);
+    border-radius: 30%;
+    filter: grayscale(0.4);
+    opacity: 0.9;
+    
+}
+
+.edit-perfil-foto:hover > svg{
+    opacity: 1;
+    transition: all 400ms ease-out;
+}
+
+.separador{
+    transform: translate(7%, -1em);
+    height: 1px;
+    width: 18em;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.span-nome{
+    transform: translateX(10%);
+}
+
+.perfil-nome{
+    font-family: "Rubik", sans-serif;
+    font-size: 23pt;
+    font-weight: 500;
+    color: white;
+}
+
+
+/* -*-*- Texto da bio -*-*-* */
+.bio-block{
+    width: 50%;
+    transform: translateY(3em);
+}
+
+.bio-text{
+    font-family: "Rubik",sans-serif;
+    font-size: 16pt;
+    color: white;
+    font-weight: 300;
+}
+
+
+@media screen and (max-width: 768px){
+    .user-info{
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio-text{
+        text-align: center;
+    }
+
+    .span-nome,
+    .separador{
+        transform: translate(0, 0);
+    }
+
+    .edit-perfil-foto{
+        transform: translate(2em, -3em);
+    }
+
+    .edit-perfil-foto > svg{
+        transform: translate(-2em, 0);
+    }
+}

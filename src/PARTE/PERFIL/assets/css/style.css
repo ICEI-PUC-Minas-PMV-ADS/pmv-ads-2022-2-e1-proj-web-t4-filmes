@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700&display=swap');
 
 *{
     padding: 0;
@@ -33,7 +34,7 @@
 
 .titulo{
     color: aliceblue;
-    font-family: "Poppins",sans-serif;
+    font-family: "Rubik",sans-serif;
     font-size: 23pt;
     transition: all 600ms ease-out;
 }
@@ -69,82 +70,6 @@ body{
     object-position: center;
 }
 
-.edit-perfil-foto{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 16em;
-    bottom: 0;
-    left: calc(4em - 5px);
-    height: 0;
-}
-
-.edit-perfil-foto > img{
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    box-shadow: 0px 7px 10px 5px rgba(0, 0, 0, 0.20);
-    transition: all 400ms ease-out;
-    object-fit: cover;
-}
-
-.lapis-perfil-ft,
-.lapis-banner{
-    fill: white;
-    position: absolute;
-    top: 15em;
-    left: 15em;
-    height: 48px;
-    width: 48px;
-}
-
-.edit-perfil-foto:hover > img{
-    box-shadow: 0px 7px 10px 5px rgba(255, 255, 255, 0.20);
-    border-radius: 30%;
-    filter: grayscale(0.4);
-    opacity: 0.9;
-    
-}
-
-.edit-perfil-foto:hover > svg{
-    opacity: 1;
-    transition: all 400ms ease-out;
-}
-
-.separador{
-    position: absolute;
-    height: 1px;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.3);
-    top: calc(36em - 20px);
-    left: calc(4em - 20px);
-}
-
-.perfil-nome{
-    width: 20%;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 23pt;
-    position: absolute;
-    color: white;
-    top: 36rem;
-    left: calc(4rem - 10px);
-}
-
-/* -*-*- Texto da bio -*-*-* */
-.bio-block{
-    position: absolute;
-    padding: 3rem;
-    left: 25rem;
-    width: 60%;
-}
-
-.bio-text{
-    font-family: "Poppins",sans-serif;
-    font-size: 16pt;
-    color: white;
-    font-weight: 300;
-}
 
 /* -*-*- Popup da tag dialog -*-*-* */
 #popup-perfil-foto::backdrop{
@@ -153,7 +78,7 @@ body{
 
 #popup-perfil-foto,
 #popup-perfil-Banner{
-    font-family: "Poppins",sans-serif;
+    font-family: "Rubik",sans-serif;
     background: #1E1E1E;
     color: white;
     margin: auto;
@@ -341,29 +266,3 @@ dialog[close]{
     opacity: 1;
     transition: all 400ms ease-out;
 }
-
-@media screen and (max-width: 768px){
-    .bio-block{
-        left: 1rem;
-        top: 37rem;
-        width: 90%;
-        font-size: 14pt;
-        margin-top: 2em;
-        padding: 1rem;
-    }
-
-    .perfil-nome{
-        justify-content: center;
-        display: flex;
-        width: 40%;
-        position: absolute;
-        
-    }
-}
-
-@media screen and (max-width: 400px){
-    .perfil-nome{
-        width: 75%;
-    }
-}
-
