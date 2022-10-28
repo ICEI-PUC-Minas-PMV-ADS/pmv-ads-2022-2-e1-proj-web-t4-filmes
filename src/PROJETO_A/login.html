@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+
+    <link rel="icon" type="image/x-icon" href="imgs/Favicon_OK_Button_01.jpg">  
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+
+<body>
+
+<header>
+    
+    <div>
+        <a href="http://127.0.0.1:5500/V03/login.html">
+        <img src="imgs/Logo_Lightining_01.jpg" width="50" height="50"  alt="Logo Projeto Filmes">
+        </a>
+    
+    <marquee scrollamount="5" width="80%" >
+        <strong># PREMIRE #</strong> Anunciado proximo lançamento da Marvel Studios USA para o mais novo título da série X-Men. Poucas informações foram divulgadas, mas, já se sabe que trará uma grande surpresa sobre o personagem de Logan. Aguarde por nossas proximas informações.
+        <strong># CANNES #</strong> Os reporteres da E! já estão a postos para a cobertura da 76 edição do mais famoso festival de cinema do mundo, que será realizado de 16 a 27 de maio de 2023. Todos muito ansiosos para os resultados deste ano. Boa sorte a todos os concorrentes! Acompanhe nossa cobertura completa.
+        <strong># HOLLYWOOD #</strong> Agora as notícias mais quentes das nossas queridas atrizes e atores de HollyWood. Vídeos da babá do Jason Sudeikis e da Olivia Wilde contando sobre a traição de Olivia junto com Harry Styles; Não existem por aí muitas celebridades que tenham tido relacionamentos longos e felizes. Gerenciar vida afetiva, família e fama parece ser complicado e a maioria das estrelas passou por, pelo menos, um divórcio na vida. Embora a maior parte dos famosos tenha um número normal de relacionamentos (a fila anda, não é mesmo?), há alguns que se destacam por aparecerem constantemente na primeira página das revistas de fofoca com seu último affair. É difícil dizer se eles não têm muita sorte no amor ou se apenas gostam mesmo de namorar bastante!
+    </marquee>
+    
+    <a href="http://127.0.0.1:5500/V03/login.html">  
+        <img src="imgs/New_User_444_circ.jpg" width="50" height="50" class="UserIdPhoto" id="userphoto" alt="Usuario" >
+        <label class="UserIdPhoto" id="userphoto" for="imgs/New_User_444_circ">Log in</label>
+        </a>
+    </div>
+
+</header>
+
+<main>
+        <section class="login">
+            <div class="login">
+                <div id="login">
+                    <div id="login-row" class="row justify-content-center">
+                        <div id="login-column" class="col-md-12">
+                            <form id="login-form" class="form" method="post" name="login" onsubmit="loginUser (this)">
+                                <h1> </h1>
+                                <h4> Log-in </h4>
+                                <div class="form-group">
+                                    <label for="username" class="text"> e-mail</label>
+                                    <input type="text" name="username" class="form-control" id="username" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="text">Senha</label>
+                                    <input type="password" name="password" class="form-control" id="password" >
+                                </div>            
+                        
+                                    <input type="submit" name= "submit" class="btn btn-primary" value="Entrar" id="submit"/> <br>
+                                    <h1> </h1>     
+                            </form>
+
+                                <h1> </h1>
+                                <p> </p>
+                                <small> Ainda não tem cadastro? </small> <br>
+                                <a href="modal" type="link" class="text" data-toggle="modal" data-target="#loginModal">Clique aqui e crie o seu perfil.</a> <br>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    <!-- Modal - Novo Usuário / Cadastro Novo Usuário -->
+  <div class="modal fade" id="loginModal" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Cadastro de Novo Usuário</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&Star;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div id="login-box" class="col-md-12">
+                <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
+                    <div class="form-group">
+                        <label for="login" class="text">Usuário (*)</label><br>
+                        <input type="text" name="txt_login" id="txt_login" class="form-control" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="nome" class="text">Nome completo (*)</label><br>
+                        <input type="text" name="txt_nome" id="txt_nome" class="form-control" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text">email (*)</label><br>
+                        <input type="text" name="txt_email" id="txt_email" class="form-control" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="senha" class="text">Senha (*)</label><br>
+                        <input type="password" name="txt_senha" id="txt_senha" class="form-control" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="senha2" class="text">Confirmação de Senha (*)</label><br>
+                        <input type="password" name="txt_senha2" id="txt_senha2" class="form-control" required="">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required="">
+                        <label class="form-check-label" for="defaultCheck1">
+        
+                        <a href="modal3" type="link" class="text" data-toggle="termosModal" data-target="#termosModal">Li e Aceito os termos e uso de dados.</a> <br>
+                        </label>
+                      </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" id="btn_salvar" class="btn btn-primary">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
+<footer>
+       
+    <div>
+        <a href="https://www.instagram.com/carlosreinis/">
+        <img height="30px" src="imgs/instagram_icon.png" alt="Instagram">
+        </a>
+        -
+        <a href="https://www.linkedin.com/in/carlos-reinis/">
+        <img height="30px" src="imgs/linkedin_icon.png" alt="Linkedin">
+        </a>
+        -
+        <a href="https://de-de.facebook.com/">
+        <img height="30px" src="imgs/fb_icon.png" alt="Facebook Meta">
+        </a>
+        -
+        <a href="https://twitter.com/">
+        <img height="30px" src="imgs/twiter_icon.png" alt="Twitter">
+        </a>
+    </div>
+
+<h1> </h1>
+<p> 
+    <a href="https://carlosreinis.com/" target="_blank">  Copyright (2022) ABCV Group </a>
+</p>
+</footer>
+
+<script src="login.js"></script>
+<script>
+    
+    //processar o formulário de login
+    function processaFormLogin (event) {                
+            event.preventDefault ();
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Valida login
+            resultadoLogin = loginUser (username, password);
+            if (resultadoLogin) {
+                window.location.href = '00_Template_Filmes.html';
+            }
+            else {
+                alert ('Usuário ou senha incorretos. \n Por favor, tente novamente.');
+            }
+    }
+
+    function salvaLogin (event) {
+        
+        event.preventDefault ();
+
+        let login  = document.getElementById('txt_login').value;
+        let nome   = document.getElementById('txt_nome').value;
+        let email  = document.getElementById('txt_email').value;
+        let senha  = document.getElementById('txt_senha').value;
+        let senha2 = document.getElementById('txt_senha2').value;
+        if (senha != senha2) {
+            alert ('As senhas devem ser iguais. \n Por favor, verifique.');
+            return
+        }
+
+        // Adiciona o usuário no banco de dados
+        addUser (nome, login, senha, email);
+        alert ('Usuário salvo com sucesso. Proceda com o login para ');
+
+        // Oculta a div modal do login
+        $('#loginModal').modal('hide');
+    }
+
+    //manipulador do evento submit
+    document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
+
+
+    // botao click sava login
+    document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);     
+       
+</script>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+
+
+</body>
+</html>
+       
