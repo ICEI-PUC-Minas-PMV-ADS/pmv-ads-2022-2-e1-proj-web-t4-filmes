@@ -15,74 +15,74 @@ userList = JSON.parse(localStorage.getItem('userList'))
 
 setBanners()
 
-function setBanners(){
-    if(typeof userLogged[0].banner === 'undefined'){
-        perfilBanner.src  = "assets/imgs/ft-perfil.png"
+function setBanners() {
+    if (typeof userLogged[0].banner === 'undefined') {
+        perfilBanner.src = "assets/imgs/ft-perfil.png"
     }
-    else{
-    perfilBanner.src  = userLogged[0].banner;
+    else {
+        perfilBanner.src = userLogged[0].banner;
     }
 }
 
-function saveUserBanner(){
+function saveUserBanner() {
     userList.find(u => u.email == userLogged[0].email).banner = bannerPath
 
     userLogged[0].banner = bannerPath
 
-    localStorage.setItem('userList',JSON.stringify(userList))
-    localStorage.setItem('userLogged',JSON.stringify(userLogged))
+    localStorage.setItem('userList', JSON.stringify(userList))
+    localStorage.setItem('userLogged', JSON.stringify(userLogged))
 }
 
-function fecharPopupBanner(){
+function fecharPopupBanner() {
     popupBanner.setAttribute('style', 'animation: hide 1s ease normal');
     setTimeout(() => {
         popupBanner.close()
         popupBanner.setAttribute('style', 'animation: show 1s ease normal');
     }, 700);
-    
+
 }
 
-inputBanner.addEventListener('change', (e) =>{
+inputBanner.addEventListener('change', (e) => {
     divInputBanner.setAttribute('style', 'display:flex')
 
     const inputTarget = e.target;
     const file = inputTarget.files[0];
 
-      const reader = new FileReader();
-  
-      reader.addEventListener("load", function (e) {
+    const reader = new FileReader();
+
+    reader.addEventListener("load", function (e) {
         const readerTarget = e.target;
         bannerPath = readerTarget.result;
         BannerPreview.src = readerTarget.result;
-      });
-  
-      reader.readAsDataURL(file);
+    });
+
+    reader.readAsDataURL(file);
 });
 
-popupBanner.addEventListener('close', () =>{
+popupBanner.addEventListener('close', () => {
     inputBanner.value = '';
     inputBanner.src = '';
     divInputBanner.setAttribute('style', 'display:none')
 });
 
-openBannerEditor.addEventListener('click', () =>{
+openBannerEditor.addEventListener('click', () => {
     popupBanner.showModal()
 })
 
-BannerBtnDialogCancel.addEventListener('click', () =>{
+BannerBtnDialogCancel.addEventListener('click', () => {
     fecharPopupBanner()
 })
 
-BannerBtnDialogOK.addEventListener('click', () =>{
-    if(inputBanner.value !== ''){
-    fecharPopupBanner()
+BannerBtnDialogOK.addEventListener('click', () => {
+    if (inputBanner.value !== '') {
+        fecharPopupBanner()
     }
-    else{
+    else {
         alert('Faça upload da imagem primeiro!')
     }
 })
 
-BannerForm.addEventListener('submit', (e) =>{
+BannerForm.addEventListener('submit', (e) => {
     e.preventDefault();
     saveUserBanner();
     setBanners()

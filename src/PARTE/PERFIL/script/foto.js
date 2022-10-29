@@ -16,76 +16,76 @@ userList = JSON.parse(localStorage.getItem('userList'))
 
 setFotos()
 
-function setFotos(){
-    if(typeof userLogged[0].foto === 'undefined'){
-        perfilFoto.src  = "assets/imgs/ft-perfil.png"
-        navFoto.src  = "assets/imgs/ft-perfil.png"
+function setFotos() {
+    if (typeof userLogged[0].foto === 'undefined') {
+        perfilFoto.src = "assets/imgs/ft-perfil.png"
+        navFoto.src = "assets/imgs/ft-perfil.png"
     }
-    else{
-    perfilFoto.src  = userLogged[0].foto;
-    navFoto.src  = userLogged[0].foto;
+    else {
+        perfilFoto.src = userLogged[0].foto;
+        navFoto.src = userLogged[0].foto;
     }
 }
 
-function saveUserFoto(){
+function saveUserFoto() {
     userList.find(u => u.email == userLogged[0].email).foto = fotoPath
 
     userLogged[0].foto = fotoPath
 
-    localStorage.setItem('userList',JSON.stringify(userList))
-    localStorage.setItem('userLogged',JSON.stringify(userLogged))
+    localStorage.setItem('userList', JSON.stringify(userList))
+    localStorage.setItem('userLogged', JSON.stringify(userLogged))
 }
 
-function fecharPopupFoto(){
+function fecharPopupFoto() {
     popupFoto.setAttribute('style', 'animation: hide 1s ease normal');
     setTimeout(() => {
         popupFoto.close()
         popupFoto.setAttribute('style', 'animation: show 1s ease normal');
     }, 700);
-    
+
 }
 
-inputFoto.addEventListener('change', (e) =>{
+inputFoto.addEventListener('change', (e) => {
     divInputFoto.setAttribute('style', 'display:flex')
     const inputTarget = e.target;
     const file = inputTarget.files[0];
 
-      const reader = new FileReader();
-  
-      reader.addEventListener("load", function (e) {
+    const reader = new FileReader();
+
+    reader.addEventListener("load", function (e) {
         const readerTarget = e.target;
         fotoPath = readerTarget.result;
         fotoPreview.src = readerTarget.result;
-      });
-  
-      reader.readAsDataURL(file);
+    });
+
+    reader.readAsDataURL(file);
 });
 
-popupFoto.addEventListener('close', () =>{
+popupFoto.addEventListener('close', () => {
     inputFoto.value = '';
     inputFoto.src = '';
     divInputFoto.setAttribute('style', 'display:none')
 });
 
-openFotoEditor.addEventListener('click', () =>{
+openFotoEditor.addEventListener('click', () => {
     popupFoto.showModal()
 
 })
 
-fotoBtnDialogCancel.addEventListener('click', () =>{
+fotoBtnDialogCancel.addEventListener('click', () => {
     fecharPopupFoto()
 })
 
-fotoBtnDialogOK.addEventListener('click', () =>{
-    if(inputFoto.value !== ''){
-    fecharPopupFoto()
+fotoBtnDialogOK.addEventListener('click', () => {
+    if (inputFoto.value !== '') {
+        fecharPopupFoto()
     }
-    else{
+    else {
         alert('Faça upload da imagem primeiro!')
     }
 })
 
-fotoForm.addEventListener('submit', (e) =>{
+fotoForm.addEventListener('submit', (e) => {
     e.preventDefault();
     saveUserFoto();
     setFotos()

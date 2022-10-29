@@ -14,6 +14,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
+    
 }
 
 body {
@@ -21,17 +22,6 @@ body {
     color: whitesmoke;
     font-weight: lighter;
     width: 100%;
-}
-
-header {
-    background-color: var(--cinzaEscuro);
-    color: whitesmoke;
-    width: 100%;
-    min-height: 75px;  
-    border-bottom: 1px solid var(--laranja);
-    padding-top: 12px;
-    padding-right: 7px;
-    padding-left: 7px;  
 }
 
 img.UserIdPhoto {
@@ -43,7 +33,7 @@ main {
     background-color: var(--cinza);
     color: whitesmoke;
     width: 100%;
-    min-height: 600px;
+    min-height: 100vh;
 }
 
 .loginDiv{
@@ -54,6 +44,7 @@ main {
     -webkit-box-shadow: 1px 3px 40px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 3px 40px 0px rgba(0,0,0,0.75);
     box-shadow: 1px 3px 40px 0px rgba(0,0,0,0.75);
+    font-size: 12pt;
 }
 
 main section.login {
@@ -61,7 +52,6 @@ main section.login {
     align-items: center;
     justify-content: center;
     transform: translateY(6em);
-    font-size: small;
 }
 
 .form-control{
@@ -104,35 +94,36 @@ main section.login {
     color: white;
 }
 
-.form-group input:focus + label{
+.form-group input:focus + label,
+.form-group input:valid + label{
     font-size: 13px;
     margin-top: 0;
     color: rgb(255, 166, 0);
 }
 
+#btnLogin{
+    background-color: transparent;
+    border-color: var(--laranja);
+    color: white;
+    padding: 7px;
+    font-weight: 500;
+    font-size: 12pt;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all 200ms ease-out;
+}
+
+#btnLogin:hover{
+    background-color: var(--laranja);
+}
+
+#login-column h4{
+    text-align: center;
+}
+
 main div h1 h3 h5 {
     background-color: black;
     color: whitesmoke;
-}
-
-footer {
-    display: inline-block;
-    background-color: var(--cinzaEscuro);
-    width: 100%; 
-    min-height: 75px;
-    font-size: small; 
-    font-weight: lighter; 
-    color: var(--laranja);
-    text-align: center;
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px;
-    border-top: 1px solid var(--laranja);
-}
-
-footer p {
-    font-size: 7px; font-weight: lighter; 
-    text-align: center;
-    vertical-align: bottom;
 }

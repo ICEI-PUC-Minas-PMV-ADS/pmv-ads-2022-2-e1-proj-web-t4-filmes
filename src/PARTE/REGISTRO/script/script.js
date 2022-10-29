@@ -29,17 +29,17 @@ userLogged = [];
 userList = JSON.parse(localStorage.getItem('userList') || '[]')
 
 // Gera Id único de Usuário por Timecode
-function generateUUID() { 
+function generateUUID() {
     var d = new Date().getTime();
-    var d2 = (performance && performance.now && (performance.now()*1000)) || 0;
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var d2 = (performance && performance.now && (performance.now() * 1000)) || 0;
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
         var r = Math.random() * 16;
-        if(d > 0){
-            r = (d + r)%16 | 0;
-            d = Math.floor(d/16);
+        if (d > 0) {
+            r = (d + r) % 16 | 0;
+            d = Math.floor(d / 16);
         } else {
-            r = (d2 + r)%16 | 0;
-            d2 = Math.floor(d2/16);
+            r = (d2 + r) % 16 | 0;
+            d2 = Math.floor(d2 / 16);
         }
         return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
     });
@@ -47,16 +47,16 @@ function generateUUID() {
 
 
 
-nome.addEventListener('keyup', ()=>{
-    if(nome.value.length <= 3){
+nome.addEventListener('keyup', () => {
+    if (nome.value.length <= 3) {
         labelNome.setAttribute('style', 'color: red')
-        labelNome.innerHTML = 'Nome *Insira no minimo 3 caracteres' 
+        labelNome.innerHTML = 'Nome *Insira no minimo 3 caracteres'
         nome.setAttribute('style', 'border-color: red')
         passNome = false;
     }
-    else{
+    else {
         labelNome.setAttribute('style', 'color: green')
-        labelNome.innerHTML = 'Nome' 
+        labelNome.innerHTML = 'Nome'
         nome.setAttribute('style', 'border-color: green')
         passNome = true;
     }
@@ -65,18 +65,18 @@ nome.addEventListener('keyup', ()=>{
 function validarEmail(email) {
     var regexEmail = /\S+@\S+\.\S+/;
     return regexEmail.test(email);
-  }
+}
 
-email.addEventListener('keyup', ()=>{
-    if(!validarEmail(email.value)){
+email.addEventListener('keyup', () => {
+    if (!validarEmail(email.value)) {
         labelEmail.setAttribute('style', 'color: red')
-        labelEmail.innerHTML = 'E-mail *Formato de E-mail inválido' 
+        labelEmail.innerHTML = 'E-mail *Formato de E-mail inválido'
         email.setAttribute('style', 'border-color: red')
         passEmail = false;
     }
-    else{
+    else {
         labelEmail.setAttribute('style', 'color: green')
-        labelEmail.innerHTML = 'E-mail' 
+        labelEmail.innerHTML = 'E-mail'
         email.setAttribute('style', 'border-color: green')
         passEmail = true;
     }
@@ -84,105 +84,104 @@ email.addEventListener('keyup', ()=>{
     contEmail = 0;
 })
 
-senha.addEventListener('keyup', ()=>{
-    if(senha.value.length < 4){
+senha.addEventListener('keyup', () => {
+    if (senha.value.length < 4) {
         labelSenha.setAttribute('style', 'color: red')
-        labelSenha.innerHTML = 'Senha *Insira no minimo 4 caracteres' 
+        labelSenha.innerHTML = 'Senha *Insira no minimo 4 caracteres'
         senha.setAttribute('style', 'border-color: red')
         passSenha = false;
     }
-    else{
+    else {
         labelSenha.setAttribute('style', 'color: green')
-        labelSenha.innerHTML = 'Senha' 
+        labelSenha.innerHTML = 'Senha'
         senha.setAttribute('style', 'border-color: green')
         passSenha = true;
     }
 })
 
-confirmSenha.addEventListener('keyup', ()=>{
-    if(confirmSenha.value != senha.value){
+confirmSenha.addEventListener('keyup', () => {
+    if (confirmSenha.value != senha.value) {
         labelConfirmSenha.setAttribute('style', 'color: red')
-        labelConfirmSenha.innerHTML = 'Confirmar senha *As senhas não coincidem' 
+        labelConfirmSenha.innerHTML = 'Confirmar senha *As senhas não coincidem'
         confirmSenha.setAttribute('style', 'border-color: red')
         passConfirmSenha = false;
     }
-    else{
+    else {
         labelConfirmSenha.setAttribute('style', 'color: green')
-        labelConfirmSenha.innerHTML = 'Confirmar senha' 
+        labelConfirmSenha.innerHTML = 'Confirmar senha'
         confirmSenha.setAttribute('style', 'border-color: green')
         passConfirmSenha = true;
     }
 })
 
-function preventCopy(){
-    for(let i = 0; i < userList.length; i++){
-        if(email.value == userList[i].email){
+function preventCopy() {
+    for (let i = 0; i < userList.length; i++) {
+        if (email.value == userList[i].email) {
             return true;
         }
     }
 }
 
-function cadastrar(){
-    if(!preventCopy()){
-    
-    if(passNome && passEmail && passSenha && passConfirmSenha){
-        userList.push(
-            {
-                id: generateUUID(),
-                nome: nome.value,
-                email: email.value,
-                senha: senha.value
-            }
-        )
+function cadastrar() {
+    if (!preventCopy()) {
 
-        localStorage.setItem('userList', JSON.stringify(userList))
-        
-        passSuccess.setAttribute('style','display: block')
-        passSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>'
-        passError.setAttribute('style','display: none')
-        passError.innerHTML = '' 
+        if (passNome && passEmail && passSenha && passConfirmSenha) {
+            userList.push(
+                {
+                    id: generateUUID(),
+                    nome: nome.value,
+                    email: email.value,
+                    senha: senha.value
+                }
+            )
 
-        setTimeout(() => {
-            window.location.pathname = "../../../src/PROJETO_A/login.html";
-        }, 2000);
+            localStorage.setItem('userList', JSON.stringify(userList))
+
+            passSuccess.setAttribute('style', 'display: block')
+            passSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>'
+            passError.setAttribute('style', 'display: none')
+            passError.innerHTML = ''
+
+            setTimeout(() => {
+                window.location.pathname = "../../../src/PROJETO_A/login.html";
+            }, 2000);
+        }
+        else {
+            passError.setAttribute('style', 'display: block')
+            passError.innerHTML = 'Preencha os dados corretamente'
+            passSuccess.setAttribute('style', 'display: none')
+            passSuccess.innerHTML = ''
+        }
     }
-    else{
-        passError.setAttribute('style','display: block')
-        passError.innerHTML = 'Preencha os dados corretamente'
-        passSuccess.setAttribute('style','display: none')
-        passSuccess.innerHTML = ''  
+    else {
+        passError.setAttribute('style', 'display: block')
+        passError.innerHTML = 'Usuário já existente'
+        passSuccess.setAttribute('style', 'display: none')
+        passSuccess.innerHTML = ''
     }
 }
-else{
-    passError.setAttribute('style','display: block')
-    passError.innerHTML = 'Usuário já existente'
-    passSuccess.setAttribute('style','display: none')
-    passSuccess.innerHTML = '' 
-}
-}
 
-olhoSenha.addEventListener('click', ()=>{
+olhoSenha.addEventListener('click', () => {
     const inputSenha = document.querySelector('#senha')
 
-    if(inputSenha.getAttribute('type') == 'password')
-    {
-    inputSenha.setAttribute('type', 'text')
-    olhoSenha.setAttribute('class', 'fa fa-eye-slash')}
-    else{
+    if (inputSenha.getAttribute('type') == 'password') {
+        inputSenha.setAttribute('type', 'text')
+        olhoSenha.setAttribute('class', 'fa fa-eye-slash')
+    }
+    else {
         inputSenha.setAttribute('type', 'password')
         olhoSenha.setAttribute('class', 'fa fa-eye')
     }
 })
 
-olhoSenhaConfirm.addEventListener('click', ()=>{
+olhoSenhaConfirm.addEventListener('click', () => {
     const inputConfirmSenha = document.querySelector('#confirmSenha')
 
-    if(inputConfirmSenha.getAttribute('type') == 'password')
-    {
+    if (inputConfirmSenha.getAttribute('type') == 'password') {
         inputConfirmSenha.setAttribute('type', 'text')
         olhoSenhaConfirm.setAttribute('class', 'fa fa-eye-slash')
     }
-    else{
+    else {
         inputConfirmSenha.setAttribute('type', 'password')
         olhoSenhaConfirm.setAttribute('class', 'fa fa-eye')
     }

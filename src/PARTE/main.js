@@ -3,7 +3,7 @@ window.onload = () => {
 
     setTimeout(() => {
         transicao_el.classList.remove('ativa');
-    }, 500);
+    }, 250);
 }
 
 const perfilNome = document.querySelector('.perfil-nome')
@@ -13,12 +13,12 @@ let userList = JSON.parse(localStorage.getItem('userList'))
 
 setPerfilNome()
 
-function setPerfilNome(){
-    if(perfilNome){
-        if(userLogged[0].nome == 'null'){
+function setPerfilNome() {
+    if (perfilNome) {
+        if (userLogged[0].nome == 'null') {
             perfilNome.textContent = 'Deslogado';
         }
-        else{
+        else {
             perfilNome.textContent = userLogged[0].nome;
         }
     }
