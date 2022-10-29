@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/infos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="../../assets/js/main.js"></script>
     <script defer src="script/foto.js"></script>
     <script defer src="script/banner.js"></script>
+    <script defer src="script/nome.js"></script>
     <script defer src="../../components/header.js"></script>
     <link rel="stylesheet" href="../../assets/css/transitions.css">
     <title>Perfil</title>
@@ -71,6 +73,24 @@
             </form>
 
         </dialog>
+        <dialog id="popup-perfil-nome">
+            <h1>Nome de Usuário</h1>
+            <p>Altere seu nome de usuário</p>
+
+            <form name="nomeForm" method="dialog" id="nomeForm">
+               
+                <label for="perfil-nome-upload" id="labelNomeUpload">Novo nome</label>
+                <input type="text" id="perfil-nome-upload" placeholder="" maxlength="16" required>
+
+                <small>Tamanho máximo: 16 caracteres</small>
+
+                <span class="btnSpan">
+                    <button type="submit" class="btnDialogOK" id="btnNomeOK">OK</button>
+                    <button type="reset" class="btnDialogCancel" id="btnNomeCancel">Cancelar</button>
+                </span>
+            </form>
+
+        </dialog>
         <div class="user-info">
             <div class="container-img">
                 <div class="perfil-foto">
@@ -83,8 +103,9 @@
                     </a>
                 </div>
                 <div class="separador"></div>
-                <div class="span-nome">
+                <div class="span-nome" id="edit-nome">
                     <h1 class="perfil-nome"></h1>
+                    <img class="lapis-nome" src="https://img.icons8.com/material-outlined/24/FFFFFF/edit--v1.png"/>
                 </div>
             </div>
             <div class="bio-block">

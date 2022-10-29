@@ -77,7 +77,8 @@ body{
 }
 
 #popup-perfil-foto,
-#popup-perfil-Banner{
+#popup-perfil-Banner,
+#popup-perfil-nome{
     font-family: "Rubik",sans-serif;
     background: #1E1E1E;
     color: white;
@@ -124,7 +125,8 @@ dialog[close]{
 }
 
 #popup-perfil-foto h1,
-#popup-perfil-Banner h1{
+#popup-perfil-Banner h1,
+#popup-perfil-nome h1{
     align-items: center;
     border-bottom: 1px solid #CCC;
     margin-bottom: 1rem;
@@ -136,13 +138,16 @@ dialog[close]{
 #popup-perfil-foto small::before,
 #popup-perfil-foto small::after,
 #popup-perfil-Banner small::before,
-#popup-perfil-Banner small::after {
+#popup-perfil-Banner small::after,
+#popup-perfil-nome small::before,
+#popup-perfil-nome small::after {
     content: "\A";
     white-space: pre;
 }
 
 #popup-perfil-foto small,
-#popup-perfil-Banner small{
+#popup-perfil-Banner small,
+#popup-perfil-nome small{
     display: flex;
     align-self: center;
     justify-content: center;
@@ -265,4 +270,35 @@ dialog[close]{
 .edit-banner:hover > svg{
     opacity: 1;
     transition: all 400ms ease-out;
+}
+
+/* -*-*- Popup da tag dialog -*-*-* */
+#popup-perfil-nome::backdrop{
+    background:rgba(0, 0, 0, 0.30)
+}
+
+#perfil-nome-upload{
+    justify-content: center;
+    text-align: center;
+    background-color:  rgba(0, 0, 0, 0.20);
+    border-color: rgba(255 255 255 / .1);
+    border-radius: .5rem;
+    outline: none;
+    padding: 8px;
+    color: white;
+    font-size: 16pt;
+} 
+
+#labelNomeUpload{
+    position: absolute;
+    left: 2em;
+}
+
+#popup-perfil-nome > p{
+    text-align: center;
+    padding: 1em;
+}
+
+#nomeForm > small{
+    margin-top: 12px;
 }

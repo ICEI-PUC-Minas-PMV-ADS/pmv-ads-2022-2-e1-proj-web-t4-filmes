@@ -13,7 +13,6 @@ var fotoPath;
 userLogged = JSON.parse(localStorage.getItem('userLogged'))
 userList = JSON.parse(localStorage.getItem('userList'))
 
-
 setFotos()
 
 function setFotos() {
