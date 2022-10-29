@@ -2,7 +2,7 @@
 class Header extends HTMLElement{
     constructor(){
         super()
-    
+        this.userLogged = JSON.parse(localStorage.getItem('userLogged'))
         this.build()
     }
 
@@ -13,7 +13,7 @@ class Header extends HTMLElement{
         const header = this.createGeneric('header', 'header')
 
         const logo = this.createGeneric('img', 'logo')
-        logo.src = '../../../assets/pipoca.png'
+        logo.src = '../../assets/imgs/pipoca.png'
 
         const nav = this.createGeneric('nav', 'header-buttons-container')
 
@@ -31,7 +31,13 @@ class Header extends HTMLElement{
         profileName.innerHTML = this.getAttribute('user-name')
 
         const profileImage = this.createGeneric('img', 'profile-image')
-        profileImage.src = this.getAttribute('user-image')
+    
+            if (typeof userLogged[0].foto === 'undefined') {
+                profileImage.src = "../../assets/imgs/profile-image.jpg"
+            }
+            else {
+                profileImage.src = userLogged[0].foto;
+            }
 
         header.appendChild(logo)
 
@@ -115,6 +121,7 @@ class Header extends HTMLElement{
                 height: 45px;
                 border-radius: 50%;
                 transition: 0.3s ease-out;
+                object-fit: cover;
             }
 
             .profile-image:hover{

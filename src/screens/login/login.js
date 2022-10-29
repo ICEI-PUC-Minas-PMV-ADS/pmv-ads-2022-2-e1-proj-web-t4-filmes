@@ -46,7 +46,7 @@ function loginUser (login, senha) {
     // Valida login
     const resultadoLogin = loginUser (username, password);
     if (resultadoLogin) {
-        window.location.href = '../../../src/PARTE/PERFIL/index.html';
+        window.location.href = '../../screens/profile/index.html';
     }
     else {
         alert ('Usuário ou senha incorretos. \n Por favor, tente novamente.');

@@ -8,8 +8,8 @@ window.onload = () => {
 
 const perfilNome = document.querySelector('.perfil-nome')
 
-let userLogged = JSON.parse(localStorage.getItem('userLogged'))
-let userList = JSON.parse(localStorage.getItem('userList'))
+let userLogged = JSON.parse(localStorage.getItem('userLogged') || '[]')
+let userList = JSON.parse(localStorage.getItem('userList') || '[]')
 
 setPerfilNome()
 

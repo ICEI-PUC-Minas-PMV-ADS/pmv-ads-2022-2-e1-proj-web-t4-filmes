@@ -17,7 +17,7 @@ setBanners()
 
 function setBanners() {
     if (typeof userLogged[0].banner === 'undefined') {
-        perfilBanner.src = "assets/imgs/ft-perfil.png"
+        perfilBanner.src = "../../assets/imgs/profile-image.jpg"
     }
     else {
         perfilBanner.src = userLogged[0].banner;
@@ -31,6 +31,8 @@ function saveUserBanner() {
 
     localStorage.setItem('userList', JSON.stringify(userList))
     localStorage.setItem('userLogged', JSON.stringify(userLogged))
+
+    location.reload()
 }
 
 function fecharPopupBanner() {

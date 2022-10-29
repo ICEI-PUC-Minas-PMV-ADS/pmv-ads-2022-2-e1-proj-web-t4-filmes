@@ -6,7 +6,7 @@ const fotoBtnDialogCancel = document.querySelector('#btnFotoCancel')
 const fotoBtnDialogOK = document.querySelector('#btnFotoOK')
 const fotoPreview = document.querySelector('.fotoUploadPreview')
 const perfilFoto = document.querySelector('#perfil-foto')
-const navFoto = document.querySelector('#perfil-nav-foto')
+const navFoto = document.querySelector('#header')
 const fotoForm = document.querySelector('#fotoForm')
 
 var fotoPath;
@@ -18,12 +18,11 @@ setFotos()
 
 function setFotos() {
     if (typeof userLogged[0].foto === 'undefined') {
-        perfilFoto.src = "assets/imgs/ft-perfil.png"
-        navFoto.src = "assets/imgs/ft-perfil.png"
+        perfilFoto.src = "../../assets/imgs/profile-image.jpg"
     }
     else {
         perfilFoto.src = userLogged[0].foto;
-        navFoto.src = userLogged[0].foto;
+        navFoto.setAttribute('user-image', userLogged[0].foto)
     }
 }
 
@@ -34,6 +33,8 @@ function saveUserFoto() {
 
     localStorage.setItem('userList', JSON.stringify(userList))
     localStorage.setItem('userLogged', JSON.stringify(userLogged))
+
+    location.reload()
 }
 
 function fecharPopupFoto() {

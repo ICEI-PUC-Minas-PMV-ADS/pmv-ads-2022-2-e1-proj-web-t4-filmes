@@ -115,51 +115,56 @@ confirmSenha.addEventListener('keyup', () => {
 })
 
 function preventCopy() {
-    for (let i = 0; i < userList.length; i++) {
-        if (email.value == userList[i].email) {
-            return true;
+        if(userList){
+        for (let i = 0; i < userList.length; i++) {
+            if (email.value == userList[i].email) {
+                return true;
+            }
         }
     }
+    else{return false;}
 }
 
 function cadastrar() {
-    if (!preventCopy()) {
+        if (!preventCopy()) {
 
-        if (passNome && passEmail && passSenha && passConfirmSenha) {
-            userList.push(
-                {
-                    id: generateUUID(),
-                    nome: nome.value,
-                    email: email.value,
-                    senha: senha.value
-                }
-            )
+            if (passNome && passEmail && passSenha && passConfirmSenha) {
+                console.log(userList)
 
-            localStorage.setItem('userList', JSON.stringify(userList))
+                userList.push(
+                    {
+                        id: generateUUID(),
+                        nome: nome.value,
+                        email: email.value,
+                        senha: senha.value
+                    }
+                )
 
-            passSuccess.setAttribute('style', 'display: block')
-            passSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>'
-            passError.setAttribute('style', 'display: none')
-            passError.innerHTML = ''
+                localStorage.setItem('userList', JSON.stringify(userList))
 
-            setTimeout(() => {
-                window.location.pathname = "../../../src/PROJETO_A/login.html";
-            }, 2000);
+                passSuccess.setAttribute('style', 'display: block')
+                passSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>'
+                passError.setAttribute('style', 'display: none')
+                passError.innerHTML = ''
+
+                setTimeout(() => {
+                    window.location.pathname = "../../src/screens/login/login.html";
+                }, 2000);
+            }
+            else {
+                passError.setAttribute('style', 'display: block')
+                passError.innerHTML = 'Preencha os dados corretamente'
+                passSuccess.setAttribute('style', 'display: none')
+                passSuccess.innerHTML = ''
+            }
         }
         else {
             passError.setAttribute('style', 'display: block')
-            passError.innerHTML = 'Preencha os dados corretamente'
+            passError.innerHTML = 'Usuário já existente'
             passSuccess.setAttribute('style', 'display: none')
             passSuccess.innerHTML = ''
         }
     }
-    else {
-        passError.setAttribute('style', 'display: block')
-        passError.innerHTML = 'Usuário já existente'
-        passSuccess.setAttribute('style', 'display: none')
-        passSuccess.innerHTML = ''
-    }
-}
 
 olhoSenha.addEventListener('click', () => {
     const inputSenha = document.querySelector('#senha')

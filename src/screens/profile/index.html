@@ -7,28 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/infos.css">
-    <script defer src="../main.js"></script>
+    <script defer src="../../assets/js/main.js"></script>
     <script defer src="script/foto.js"></script>
     <script defer src="script/banner.js"></script>
-    <link rel="stylesheet" href="../transitions.css">
+    <script defer src="../../components/header.js"></script>
+    <link rel="stylesheet" href="../../assets/css/transitions.css">
     <title>Perfil</title>
 </head>
 
 <body>
 
     <div class="transicao transicao-1 ativa"></div>
+    
+    <my-header id="header" user-name="usuario"></my-header>
 
-    <header class="cabecalho">
-        <a href="#" class="logo">
-            <img src="assets/imgs/logo.png" alt="Logo do site">
-        </a>
-        <div class="titulo">Perfil</div>
-        <div class="perfil-nav-placeholder">
-            <a href="#" class="perfil-nav">
-                <img src="" alt="" id="perfil-nav-foto">
-            </a>
-        </div>
-    </header>
     <main>
         <dialog id="popup-perfil-Banner">
             <h1>Banner do Perfil</h1>
