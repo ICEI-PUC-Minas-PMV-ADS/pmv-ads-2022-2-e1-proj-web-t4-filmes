@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie</title>
+    <link rel="shortcut icon" href="#">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <script src="../../components/starRater.js" type="module" defer></script>
+    <script src="../../components/header.js" defer></script>
+    <script src="../../components/caroussel.js"></script>
+</head>
+
+<body>
+    <my-header user-name="ÁLVARO" user-image="https://img.freepik.com/vetores-premium/homem-perfil-caricatura_18591-58482.jpg?w=2000"></my-header>
+
+    <main>
+        <div class="poster-container">
+            <img src="../assets/Ldr.jpg" alt="" class="movie-poster">
+            <star-rater class="star-rater"></star-rater>
+        </div>
+
+        <div class="info-container">
+            <h1 class="movie-title"></h1>
+            <p class="movie-overview"></p>
+        </div>
+
+        <div class="rater-container">
+            <input type="range" min="1" max="100" class="slider" id="myRange" style="width: 15.6rem">
+        </div>
+
+        <div class="all-comments-container" style="margin: 50px 0 0 45px">
+            <my-caroussel></my-caroussel>
+        </div>
+
+        <div class="add-comment-container"></div>
+
+        <div class="close-container" >
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+        </div>
+        
+    </main>
+</body>
+
+</html>
