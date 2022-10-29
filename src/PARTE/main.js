@@ -14,8 +14,14 @@ let userList = JSON.parse(localStorage.getItem('userList'))
 setPerfilNome()
 
 function setPerfilNome(){
-    perfilNome.textContent = userLogged[0].nome;
+    if(perfilNome){
+        if(userLogged[0].nome == 'null'){
+            perfilNome.textContent = 'Deslogado';
+        }
+        else{
+            perfilNome.textContent = userLogged[0].nome;
+        }
+    }
 }
-
 
 

@@ -12,6 +12,7 @@
 
 main{
     overflow-x: hidden;
+    height: 100vh;
 }
 
 .user-info{
@@ -74,7 +75,11 @@ main{
 }
 
 .span-nome{
-    transform: translateX(10%);
+    transform: translateX(9%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .perfil-nome{
@@ -96,6 +101,7 @@ main{
     font-size: 16pt;
     color: white;
     font-weight: 300;
+    line-height: 150%;
 }
 
 
@@ -111,9 +117,13 @@ main{
         text-align: center;
     }
 
-    .span-nome,
     .separador{
         transform: translate(0, 0);
+        margin-bottom: 10px;
+    }
+
+    .span-nome{
+        transform: translateX(0%);
     }
 
     .edit-perfil-foto{
@@ -122,5 +132,9 @@ main{
 
     .edit-perfil-foto > svg{
         transform: translate(-2em, 0);
+    }
+
+    .bio-block{
+        width: 80%;
     }
 }

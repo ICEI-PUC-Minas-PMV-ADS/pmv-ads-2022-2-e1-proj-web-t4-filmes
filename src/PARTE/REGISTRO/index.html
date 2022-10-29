@@ -22,15 +22,14 @@
             <div id="passError"></div>
             <div id="passSuccess"></div>
 
-            <!-- COLOCAR RESITRÇÃO DE MAX CARACTER -->
             <div class="label-div">
-                <input type="text" id="nome" placeholder="" required maxlength="16" minlength="3">
-                <label id="labelNome" for="usuario">Nome</label>
+                <input type="text" id="nome" placeholder="" required maxlength="16">
+                <label id="labelNome" for="nome">Nome</label>
             </div>
 
             <div class="label-div">
                 <input type="text" id="email" placeholder="" required>
-                <label id="labelEmail" for="usuario">E-mail</label>
+                <label id="labelEmail" for="email">E-mail</label>
             </div>
 
 
@@ -42,12 +41,12 @@
 
             <div class="label-div">
                 <input type="password" id="confirmSenha" placeholder="" required>
-                <label id="labelConfirmSenha" for="senha">Confirmar senha</label>
+                <label id="labelConfirmSenha" for="confirmSenha">Confirmar senha</label>
                 <i id="eyeConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
             </div>
 
             <div class="btn-div">
-                <button onclick='cadastrar()'>Cadastrar</button>
+                <button id="btnCadastrar">Cadastrar</button>
             </div>
 
         </div>

@@ -17,14 +17,35 @@ const confirmSenha = document.querySelector('#confirmSenha')
 const labelConfirmSenha = document.querySelector('#labelConfirmSenha')
 let passConfirmSenha = false;
 
+const btnCadastrar = document.querySelector('#btnCadastrar')
+
 let contEmail = 0;
 
 let passError = document.querySelector('#passError')
 let passSuccess = document.querySelector('#passSuccess')
 
-let userLogged = [];
+userLogged = [];
 
-let userList = JSON.parse(localStorage.getItem('userList') || '[]')
+userList = JSON.parse(localStorage.getItem('userList') || '[]')
+
+// Gera Id único de Usuário por Timecode
+function generateUUID() { 
+    var d = new Date().getTime();
+    var d2 = (performance && performance.now && (performance.now()*1000)) || 0;
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random() * 16;
+        if(d > 0){
+            r = (d + r)%16 | 0;
+            d = Math.floor(d/16);
+        } else {
+            r = (d2 + r)%16 | 0;
+            d2 = Math.floor(d2/16);
+        }
+        return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+    });
+}
+
+
 
 nome.addEventListener('keyup', ()=>{
     if(nome.value.length <= 3){
@@ -41,14 +62,13 @@ nome.addEventListener('keyup', ()=>{
     }
 })
 
-email.addEventListener('focusout', ()=>{
-    for(c of email.value){
-        if(c == '@' || c == '.'){
-            contEmail++;
-        }
-    }
-    
-    if(contEmail < 2){
+function validarEmail(email) {
+    var regexEmail = /\S+@\S+\.\S+/;
+    return regexEmail.test(email);
+  }
+
+email.addEventListener('keyup', ()=>{
+    if(!validarEmail(email.value)){
         labelEmail.setAttribute('style', 'color: red')
         labelEmail.innerHTML = 'E-mail *Formato de E-mail inválido' 
         email.setAttribute('style', 'border-color: red')
@@ -108,6 +128,7 @@ function cadastrar(){
     if(passNome && passEmail && passSenha && passConfirmSenha){
         userList.push(
             {
+                id: generateUUID(),
                 nome: nome.value,
                 email: email.value,
                 senha: senha.value
@@ -120,18 +141,9 @@ function cadastrar(){
         passSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>'
         passError.setAttribute('style','display: none')
         passError.innerHTML = '' 
-        // GAMBIARRA
-        userLogged.push({
-                nome: nome.value,
-                email: email.value,
-                senha: senha.value,
-            })
-
-        localStorage.setItem('userLogged', JSON.stringify(userLogged))
-        // GAMBIARRA
 
         setTimeout(() => {
-            window.location.pathname = '../PERFIL/index.html';
+            window.location.pathname = "../../../src/PROJETO_A/login.html";
         }, 2000);
     }
     else{
@@ -175,3 +187,5 @@ olhoSenhaConfirm.addEventListener('click', ()=>{
         olhoSenhaConfirm.setAttribute('class', 'fa fa-eye')
     }
 })
+
+btnCadastrar.addEventListener('click', cadastrar)

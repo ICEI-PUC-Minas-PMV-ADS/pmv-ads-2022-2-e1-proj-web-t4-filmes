@@ -27,15 +27,8 @@
         <img src="imgs/Logo_Lightining_01.jpg" width="50" height="50"  alt="Logo Projeto Filmes">
         </a>
     
-    <marquee scrollamount="5" width="80%" >
-        <strong># PREMIRE #</strong> Anunciado proximo lançamento da Marvel Studios USA para o mais novo título da série X-Men. Poucas informações foram divulgadas, mas, já se sabe que trará uma grande surpresa sobre o personagem de Logan. Aguarde por nossas proximas informações.
-        <strong># CANNES #</strong> Os reporteres da E! já estão a postos para a cobertura da 76 edição do mais famoso festival de cinema do mundo, que será realizado de 16 a 27 de maio de 2023. Todos muito ansiosos para os resultados deste ano. Boa sorte a todos os concorrentes! Acompanhe nossa cobertura completa.
-        <strong># HOLLYWOOD #</strong> Agora as notícias mais quentes das nossas queridas atrizes e atores de HollyWood. Vídeos da babá do Jason Sudeikis e da Olivia Wilde contando sobre a traição de Olivia junto com Harry Styles; Não existem por aí muitas celebridades que tenham tido relacionamentos longos e felizes. Gerenciar vida afetiva, família e fama parece ser complicado e a maioria das estrelas passou por, pelo menos, um divórcio na vida. Embora a maior parte dos famosos tenha um número normal de relacionamentos (a fila anda, não é mesmo?), há alguns que se destacam por aparecerem constantemente na primeira página das revistas de fofoca com seu último affair. É difícil dizer se eles não têm muita sorte no amor ou se apenas gostam mesmo de namorar bastante!
-    </marquee>
-    
     <a href="http://127.0.0.1:5500/V03/login.html">  
-        <img src="imgs/New_User_444_circ.jpg" width="50" height="50" class="UserIdPhoto" id="userphoto" alt="Usuario" >
-        <label class="UserIdPhoto" id="userphoto" for="imgs/New_User_444_circ">Log in</label>
+        <img src="" width="50" height="50" class="UserIdPhoto" id="userphoto" alt="Usuario" >
         </a>
     </div>
 
@@ -43,89 +36,34 @@
 
 <main>
         <section class="login">
-            <div class="login">
+            <div class="loginDiv">
                 <div id="login">
                     <div id="login-row" class="row justify-content-center">
                         <div id="login-column" class="col-md-12">
-                            <form id="login-form" class="form" method="post" name="login" onsubmit="loginUser (this)">
+
                                 <h1> </h1>
                                 <h4> Log-in </h4>
                                 <div class="form-group">
-                                    <label for="username" class="text"> e-mail</label>
-                                    <input type="text" name="username" class="form-control" id="username" >
+                                    <input type="email" class="form-control" id="username" >
+                                    <label for="username" class="text"> E-mail</label>
                                 </div>
                                 <div class="form-group">
+                                    <input type="password" class="form-control" id="password" >
                                     <label for="password" class="text">Senha</label>
-                                    <input type="password" name="password" class="form-control" id="password" >
                                 </div>            
-                        
-                                    <input type="submit" name= "submit" class="btn btn-primary" value="Entrar" id="submit"/> <br>
-                                    <h1> </h1>     
-                            </form>
+                                    <button class="btn btn-primary" id="btnLogin">Entrar</button> <br>
+
 
                                 <h1> </h1>
                                 <p> </p>
                                 <small> Ainda não tem cadastro? </small> <br>
-                                <a href="modal" type="link" class="text" data-toggle="modal" data-target="#loginModal">Clique aqui e crie o seu perfil.</a> <br>
+                                <a href="../../../src/PARTE/REGISTRO/index.html" type="link" class="text">Clique aqui e crie o seu perfil.</a> <br>
                                 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-    <!-- Modal - Novo Usuário / Cadastro Novo Usuário -->
-  <div class="modal fade" id="loginModal" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Cadastro de Novo Usuário</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&Star;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            <div id="login-box" class="col-md-12">
-                <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
-                    <div class="form-group">
-                        <label for="login" class="text">Usuário (*)</label><br>
-                        <input type="text" name="txt_login" id="txt_login" class="form-control" required="">
-                    </div>
-                    <div class="form-group">
-                        <label for="nome" class="text">Nome completo (*)</label><br>
-                        <input type="text" name="txt_nome" id="txt_nome" class="form-control" required="">
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="text">email (*)</label><br>
-                        <input type="text" name="txt_email" id="txt_email" class="form-control" required="">
-                    </div>
-                    <div class="form-group">
-                        <label for="senha" class="text">Senha (*)</label><br>
-                        <input type="password" name="txt_senha" id="txt_senha" class="form-control" required="">
-                    </div>
-                    <div class="form-group">
-                        <label for="senha2" class="text">Confirmação de Senha (*)</label><br>
-                        <input type="password" name="txt_senha2" id="txt_senha2" class="form-control" required="">
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required="">
-                        <label class="form-check-label" for="defaultCheck1">
-        
-                        <a href="modal3" type="link" class="text" data-toggle="termosModal" data-target="#termosModal">Li e Aceito os termos e uso de dados.</a> <br>
-                        </label>
-                      </div>
-                </form>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" id="btn_salvar" class="btn btn-primary">Salvar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
 </main>
 
 <footer>
@@ -155,57 +93,6 @@
 </footer>
 
 <script src="login.js"></script>
-<script>
-    
-    //processar o formulário de login
-    function processaFormLogin (event) {                
-            event.preventDefault ();
-
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-
-            // Valida login
-            resultadoLogin = loginUser (username, password);
-            if (resultadoLogin) {
-                window.location.href = '00_Template_Filmes.html';
-            }
-            else {
-                alert ('Usuário ou senha incorretos. \n Por favor, tente novamente.');
-            }
-    }
-
-    function salvaLogin (event) {
-        
-        event.preventDefault ();
-
-        let login  = document.getElementById('txt_login').value;
-        let nome   = document.getElementById('txt_nome').value;
-        let email  = document.getElementById('txt_email').value;
-        let senha  = document.getElementById('txt_senha').value;
-        let senha2 = document.getElementById('txt_senha2').value;
-        if (senha != senha2) {
-            alert ('As senhas devem ser iguais. \n Por favor, verifique.');
-            return
-        }
-
-        // Adiciona o usuário no banco de dados
-        addUser (nome, login, senha, email);
-        alert ('Usuário salvo com sucesso. Proceda com o login para ');
-
-        // Oculta a div modal do login
-        $('#loginModal').modal('hide');
-    }
-
-    //manipulador do evento submit
-    document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
-
-
-    // botao click sava login
-    document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);     
-       
-</script>
-
-
 
 
 
