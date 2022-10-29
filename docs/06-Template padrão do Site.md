@@ -12,32 +12,31 @@ Para a identidade visual optou-se por um design simples, leve e fluido e a palhe
     ![Foto representativa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/Palheta_Cores_Site_Abobe.jpg)
     (Figura xx)
 
+O template criado esta disponível no link https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/tree/main/src e é composto pelos seguintes layouts:
 
-# Tela Inicial
+ + ### Tela Inicial / Log-in
+ + ### Tela de Cadastro de Novo Usuário
+ + ### Tela de Perfil de Usuário
+ + ### Tela de Busca de Filmes e/ou Séries
+ + ### Tela de Detalhes (Poster) de Filmes e/ou Séries
+
+## Tela Inicial / Log-in
 
 Atendendo á RF-03, onde o site deve obrigatóriamente requisitar ao usuário seu cadastro na plataforma, optou-se pela tela inicial ser o Log-in do usuário e a possibilidade de também criar perfil de novo usuário. O tratamento de dados prevê que endereço de e-mail não possa se reperir, portanto, sendo uma chave primária de cadastro do usuário e senha como no mínimo 5 caracteres. Abaixo a figura xx apresenta a tela inicial do site.
 
 
-# Tela de Cadastro do Novo Usuário
+## Tela de Cadastro do Novo Usuário
 
 Através da tela de log-in o visitante que ainda não é usuário pode clicar em "Criar novo cadastro" e acessar a tela de cadastro de perfil de usuário que se apresenta abaixo na figura xx.
 A tela de cadastro de usuário é formada pelos campos: 
 
 Após o cadastro de um novo perfil de usuário o cliente é encaminhado para a página de Log-in.
 
-# Tela de Perfil de Usuário
+## Tela de Perfil de Usuário
 
 
-# Tela de Busca de Filmes e/ou Séries
+## Tela de Busca de Filmes e/ou Séries
 
-# Tela de Detalhes / Poster dos Filmes e/ou Séries
+## Tela de Detalhes (Poster) dos Filmes e/ou Séries
 
 
-com a definição de identidade visual, aspectos de responsividade e iconografia.
-
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
