@@ -9,7 +9,8 @@ A área central e principal tem diferentes atribuições nas diferentes páginas
 A área de rodapé apresenta aviso de copyright e link para as principais redes sociais: Facebook; Twitter; Instagram e Linkedin.
 
 Para a identidade visual optou-se por um design simples, leve e fluido e a palheta de cores apresentada abaixo na figura xx.
-
+    ![Foto representativa]https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/Palheta_Cores_Site_Abobe.jpg
+    (Figura xx)
 
 
 # Tela Inicial
