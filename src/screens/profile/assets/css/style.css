@@ -13,48 +13,6 @@
     opacity: 0;
 }
 
-.cabecalho{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-justify: center;
-    height: 5em;
-    width: 100%;
-    background-color: #1E1E1E;
-}
-
-.logo{
-    margin-left: 1em;
-}
-
-.logo > img{
-    padding-top: 2px;
-    width: 60px;
-}
-
-.titulo{
-    color: aliceblue;
-    font-family: "Rubik",sans-serif;
-    font-size: 23pt;
-    transition: all 600ms ease-out;
-}
-
-.titulo:hover{
-    color: red;
-}
-
-.perfil-nav{
-    border-radius: 50%;
-    margin-right: 1em;
-}
-
-.perfil-nav > img{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
 body{
     background-color: #343434;
 }
@@ -71,14 +29,15 @@ body{
 }
 
 
-/* -*-*- Popup da tag dialog -*-*-* */
+/* -*-*- Popup da tag dialog FOTO e BANNER -*-*-* */
 #popup-perfil-foto::backdrop{
     background:rgba(0, 0, 0, 0.30)
 }
 
 #popup-perfil-foto,
 #popup-perfil-Banner,
-#popup-perfil-nome{
+#popup-perfil-nome,
+#popup-perfil-bio{
     font-family: "Rubik",sans-serif;
     background: #1E1E1E;
     color: white;
@@ -126,6 +85,7 @@ dialog[close]{
 
 #popup-perfil-foto h1,
 #popup-perfil-Banner h1,
+#popup-perfil-nome h1,
 #popup-perfil-nome h1{
     align-items: center;
     border-bottom: 1px solid #CCC;
@@ -140,14 +100,17 @@ dialog[close]{
 #popup-perfil-Banner small::before,
 #popup-perfil-Banner small::after,
 #popup-perfil-nome small::before,
-#popup-perfil-nome small::after {
+#popup-perfil-nome small::after,
+#popup-perfil-bio small::before,
+#popup-perfil-bio small::after {
     content: "\A";
     white-space: pre;
 }
 
 #popup-perfil-foto small,
 #popup-perfil-Banner small,
-#popup-perfil-nome small{
+#popup-perfil-nome small,
+#popup-perfil-bio small{
     display: flex;
     align-self: center;
     justify-content: center;
@@ -272,7 +235,7 @@ dialog[close]{
     transition: all 400ms ease-out;
 }
 
-/* -*-*- Popup da tag dialog -*-*-* */
+/* -*-*- Popup da tag dialog NOME -*-*-* */
 #popup-perfil-nome::backdrop{
     background:rgba(0, 0, 0, 0.30)
 }
@@ -289,16 +252,37 @@ dialog[close]{
     font-size: 16pt;
 } 
 
-#labelNomeUpload{
-    position: absolute;
-    left: 2em;
-}
-
 #popup-perfil-nome > p{
     text-align: center;
     padding: 1em;
 }
 
 #nomeForm > small{
+    margin-top: 12px;
+}
+
+/* -*-*- Popup da tag dialog BIO -*-*-* */
+#popup-perfil-bio::backdrop{
+    background:rgba(0, 0, 0, 0.30)
+}
+
+#perfil-bio-upload{
+    justify-content: center;
+    text-align: center;
+    background-color:  rgba(0, 0, 0, 0.20);
+    border-color: rgba(255 255 255 / .1);
+    border-radius: .5rem;
+    outline: none;
+    padding: 8px;
+    color: white;
+    font-size: 16pt;
+} 
+
+#popup-perfil-bio > p{
+    text-align: center;
+    padding: 1em;
+}
+
+#bioForm > small{
     margin-top: 12px;
 }

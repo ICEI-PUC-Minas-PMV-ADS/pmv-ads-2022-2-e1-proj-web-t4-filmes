@@ -1,4 +1,5 @@
 window.onload = () => {
+    verifyLogin()
     const transicao_el = document.querySelector('.transicao')
 
     setTimeout(() => {
@@ -6,22 +7,11 @@ window.onload = () => {
     }, 250);
 }
 
-const perfilNome = document.querySelector('.perfil-nome')
-
 let userLogged = JSON.parse(localStorage.getItem('userLogged') || '[]')
 let userList = JSON.parse(localStorage.getItem('userList') || '[]')
 
-setPerfilNome()
-
-function setPerfilNome() {
-    if (perfilNome) {
-        if (userLogged[0].nome == 'null') {
-            perfilNome.textContent = 'Deslogado';
-        }
-        else {
-            perfilNome.textContent = userLogged[0].nome;
-        }
+function verifyLogin(){
+    if (!userLogged) {
+        window.location.pathname = "../../screens/login/login.html";
     }
 }
-
-

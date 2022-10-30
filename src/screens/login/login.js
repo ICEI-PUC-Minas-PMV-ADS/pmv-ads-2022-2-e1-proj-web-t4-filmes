@@ -8,6 +8,12 @@ userList = JSON.parse(localStorage.getItem('userList') || '[]')
 
 userLogged = [];
 
+// Se usuário está na tela de login, logo ele não pode estar logado
+emptyUserLogged()
+function emptyUserLogged() {
+    userLogged = [];
+    localStorage.setItem('userLogged', JSON.stringify(userLogged));
+}
 
 // Verifica se o login do usuário está ok e, se positivo, direciona para a página inicial
 function loginUser (login, senha) {

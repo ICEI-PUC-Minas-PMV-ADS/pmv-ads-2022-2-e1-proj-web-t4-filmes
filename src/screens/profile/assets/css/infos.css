@@ -56,7 +56,6 @@ main{
 
 .edit-perfil-foto:hover > img{
     box-shadow: 0px 7px 10px 5px rgba(255, 255, 255, 0.20);
-    border-radius: 30%;
     filter: grayscale(0.4);
     opacity: 0.9;
 }
@@ -109,8 +108,17 @@ main{
 
 /* -*-*- Texto da bio -*-*-* */
 .bio-block{
-    width: 50%;
+    height: fit-content;
+    width: fit-content;
+    max-width: 50%;
     transform: translateY(3em);
+    cursor: pointer;
+    line-break: anywhere;
+    padding: 5px;
+    background-color: rgba(0 0 0 /.1);
+    border-radius: 1rem;
+    box-shadow: 0px 7px 10px 5px rgba(0, 0, 0, 0.20);
+    
 }
 
 .bio-text{
@@ -120,6 +128,22 @@ main{
     font-weight: 300;
     line-height: 150%;
 }
+
+.bio-block:hover > img{
+    height: 24px;
+    width: 24px;
+    opacity: 1;
+}
+
+.lapis-bio{
+    position: absolute;
+    left: 102%;
+    top: 15%;
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    transition: all 400ms ease-out;
+} 
 
 
 @media screen and (max-width: 768px){
@@ -148,10 +172,15 @@ main{
     }
 
     .edit-perfil-foto > svg{
-        transform: translate(-2em, 0);
+        transform: translate(-2em, 17em);
     }
 
     .bio-block{
-        width: 80%;
+        width: fit-content;
+        max-width: 80%;
+    }
+
+    .lapis-bio{
+        top: 10%;
     }
 }

@@ -4,15 +4,28 @@ const inputNome = document.querySelector('#perfil-nome-upload')
 const nomeBtnDialogCancel = document.querySelector('#btnNomeCancel')
 const nomeBtnDialogOK = document.querySelector('#btnNomeOK')
 const nomeForm = document.querySelector('#nomeForm')
+const perfilNome = document.querySelector('.perfil-nome')
 
-var fotoPath;
 userLogged = JSON.parse(localStorage.getItem('userLogged'))
 userList = JSON.parse(localStorage.getItem('userList'))
 
-function saveName() {
-    userList.find(u => u.email == userLogged[0].email).nome = fotoPath
+setPerfilNome()
 
-    userLogged[0].nome = fotoPath
+function setPerfilNome() {
+    if (perfilNome) {
+        if (typeof userLogged[0].nome === 'undefined') {
+            perfilNome.textContent = 'Deslogado';
+        }
+        else {
+            perfilNome.textContent = userLogged[0].nome;
+        }
+    }
+}
+
+function saveName() {
+    userList.find(u => u.email == userLogged[0].email).nome = inputNome.value
+
+    userLogged[0].nome = inputNome.value
 
     localStorage.setItem('userList', JSON.stringify(userList))
     localStorage.setItem('userLogged', JSON.stringify(userLogged))
@@ -41,13 +54,16 @@ nomeBtnDialogOK.addEventListener('click', () => {
         fecharPopupNome()
     }
     else {
-        alert('Faça upload da imagem primeiro!')
+        alert('Insira um novo nome primeiro!')
     }
 })
 
 nomeForm.addEventListener('submit', (e) => {
+    if(!perfilNome.textContent == ''){
     e.preventDefault();
-    saveUserNome();
+    saveName();
+    return true;
+}
 })
 
 
