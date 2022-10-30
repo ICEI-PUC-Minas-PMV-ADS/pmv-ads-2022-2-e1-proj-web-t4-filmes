@@ -43,8 +43,6 @@ window.addEventListener('keyup', e => {
         
         const filteredMovies = Array.from(findMovie(data, movieSearched))
 
-        console.log(filteredMovies.length)
-
         filteredMovies.lenght == 0 ? moviesContainer.innerHTML = "<h1> Não encontrei nenhum filme </h1>" : loadCards(moviesContainer, filteredMovies)
     }
 })

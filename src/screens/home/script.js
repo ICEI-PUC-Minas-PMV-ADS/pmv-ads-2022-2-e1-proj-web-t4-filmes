@@ -1,4 +1,4 @@
-console.log(document.body.offsetWidth)
+//console.log(document.body.offsetWidth)
 
 const movies = [
     {

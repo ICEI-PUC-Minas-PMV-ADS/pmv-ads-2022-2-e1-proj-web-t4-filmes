@@ -82,7 +82,6 @@ class footer extends HTMLElement{
             background-color: #1c1c1c;
             width: 100%;
             height: 70px;
-            position: fixed;
             left: 0;
             bottom: 0;
         }

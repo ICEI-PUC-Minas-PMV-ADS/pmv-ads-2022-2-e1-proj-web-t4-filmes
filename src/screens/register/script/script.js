@@ -129,8 +129,7 @@ function cadastrar() {
         if (!preventCopy()) {
 
             if (passNome && passEmail && passSenha && passConfirmSenha) {
-                console.log(userList)
-
+                
                 userList.push(
                     {
                         id: generateUUID(),

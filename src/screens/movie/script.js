@@ -17,11 +17,9 @@ class MP{
         stars.setAttribute('rate', movie.vote_average)
 
         if(movie.local_status){
-            console.log('ok')
             poster.src = `../../assets/imgs/${movie.file_name}`
         }
         else{
-            console.log('ok')
             poster.src = movie.poster_path
         }
     }

@@ -40,6 +40,13 @@ class Header extends HTMLElement{
                 profileImage.src = this.userLogged[0].foto;
             }
 
+            if (typeof this.userLogged === "undefined" || typeof this.userLogged[0].nome === "undefined") {
+                profileName.textContent = "Usuário"
+            }
+            else {
+                profileName.textContent = this.userLogged[0].nome;
+            }
+
         header.appendChild(logo)
 
         nav.appendChild(linkHome)
