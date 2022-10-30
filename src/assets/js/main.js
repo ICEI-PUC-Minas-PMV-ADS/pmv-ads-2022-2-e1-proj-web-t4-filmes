@@ -1,5 +1,4 @@
 window.onload = () => {
-    verifyLogin()
     const transicao_el = document.querySelector('.transicao')
 
     setTimeout(() => {
@@ -9,9 +8,4 @@ window.onload = () => {
 
 let userLogged = JSON.parse(localStorage.getItem('userLogged') || '[]')
 let userList = JSON.parse(localStorage.getItem('userList') || '[]')
-
-function verifyLogin(){
-    if (!userLogged) {
-        window.location.pathname = "../../screens/login/login.html";
-    }
-}
+let userLoggedIn = JSON.parse(localStorage.getItem('userLoggedIn') || '[]')

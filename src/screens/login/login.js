@@ -7,6 +7,8 @@ const btnLogin = document.querySelector('#btnLogin')
 userList = JSON.parse(localStorage.getItem('userList') || '[]')
 
 userLogged = [];
+userLoggedIn = false;
+localStorage.setItem('userLoggedIn', JSON.stringify(userLoggedIn))
 
 // Se usuário está na tela de login, logo ele não pode estar logado
 emptyUserLogged()
@@ -24,6 +26,9 @@ function loginUser (login, senha) {
         
         // Se encontrou login, carrega usuário corrente e salva no Session Storage
         if (login == usuario.email && senha == usuario.senha) {
+            userLoggedIn = true;
+            localStorage.setItem('userLoggedIn', JSON.stringify(userLoggedIn))
+            
             userLogged.push({
                 id: usuario.id,
                 nome: usuario.nome,

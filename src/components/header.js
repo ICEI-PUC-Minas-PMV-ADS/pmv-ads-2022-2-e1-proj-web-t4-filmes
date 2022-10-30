@@ -31,8 +31,9 @@ class Header extends HTMLElement{
         profileName.innerHTML = this.getAttribute('user-name')
 
         const profileImage = this.createGeneric('img', 'profile-image')
+        profileImage.addEventListener('click', () =>{window.location.href = "../profile/index.html"})
     
-            if (typeof userLogged[0].foto === 'undefined') {
+            if (typeof userLogged === 'undefined' || typeof userLogged[0].foto === 'undefined') {
                 profileImage.src = "../../assets/imgs/profile-image.jpg"
             }
             else {

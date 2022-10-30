@@ -17,7 +17,7 @@ setBanners()
 
 function setBanners() {
     if (typeof userLogged[0].banner === 'undefined') {
-        perfilBanner.src = "../../assets/imgs/profile-image.jpg"
+        perfilBanner.src = "https://s2.glbimg.com/XFA41c4664k4-uMaAguIj6GApq4=/e.glbimg.com/og/ed/f/original/2020/12/09/denise-jans-oavjqz-nfd0-unsplash.jpg"
     }
     else {
         perfilBanner.src = userLogged[0].banner;
