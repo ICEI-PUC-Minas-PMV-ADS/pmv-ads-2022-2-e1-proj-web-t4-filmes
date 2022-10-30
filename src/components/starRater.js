@@ -19,7 +19,7 @@ class starRater extends HTMLElement{
 
         if(percent <= 0.2) return this.createGeneric('div')
         else{
-            percent <= 0.7 ? star.src= '../../../assets/half-star.png': star.src= '../../../assets/star.png'
+            percent <= 0.7 ? star.src= '../../assets/imgs/half-star.png': star.src= '../../assets/imgs/star.png'
             return star
         }
     }

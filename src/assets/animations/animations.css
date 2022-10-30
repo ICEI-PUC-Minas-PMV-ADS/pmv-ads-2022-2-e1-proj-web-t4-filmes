@@ -1,0 +1,12 @@
+.surge{
+    animation: surge .3s ease-in-out;
+}
+
+@keyframes surge{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.7;
+    }
+}

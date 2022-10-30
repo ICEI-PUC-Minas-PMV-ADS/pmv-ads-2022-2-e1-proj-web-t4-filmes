@@ -9,7 +9,6 @@ class MP{
         this.movies = JSON.parse(localStorage.getItem('movies'))
         this.loadMovieData(this.currentMovie())
         this.mappingClose()
-
     }
 
     loadMovieData(movie){
@@ -18,9 +17,11 @@ class MP{
         stars.setAttribute('rate', movie.vote_average)
 
         if(movie.local_status){
-            poster.src = `../../../../assets/${movie.file_name}`
+            console.log('ok')
+            poster.src = `../../assets/imgs/${movie.file_name}`
         }
         else{
+            console.log('ok')
             poster.src = movie.poster_path
         }
     }

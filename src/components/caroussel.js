@@ -87,6 +87,8 @@ class Caroussel extends HTMLElement{
             .card{
                 transition: 0.35s ease-out;
                 opacity: 0.7;
+
+                animation: surge .3s ease-in-out;
             }
 
             .card:hover{
@@ -136,8 +138,21 @@ class Caroussel extends HTMLElement{
             .title-category{
                 color: #FFF;
                 border-bottom: 1px solid #FFF;
-                margin-left: 20px;
+                margin-left: 30px;
                 font-family: Fira Code;
+            }
+
+            .surge{
+                animation: surge .3s ease-in-out;
+            }
+            
+            @keyframes surge{
+                from{
+                    opacity: 0;
+                }
+                to{
+                    opacity: 0.7;
+                }
             }
         `
         return style;
@@ -149,7 +164,7 @@ class Caroussel extends HTMLElement{
         
         let cards = list.map(mov => {
             if(mov.local_status){
-                return this.createCard(`../../../assets/${mov.file_name}`, mov.id)
+                return this.createCard(`../../assets/imgs/${mov.file_name}`, mov.id)
             }
             else{
                 return this.createCard(mov.poster_path, mov.id)

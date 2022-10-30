@@ -3,12 +3,14 @@
     padding: 0;
 }
 
+body{
+    background-color: #1e1e1e;
+}
+
 main{
     width: 100%;
     height: calc(100vh - 70px);
     z-index: 2;
-
-    background-color: #1e1e1e;;
 
     display: grid;
     grid-template-columns: 22% 56% 22%;

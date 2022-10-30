@@ -32,7 +32,7 @@ function saveUserBanner() {
     localStorage.setItem('userList', JSON.stringify(userList))
     localStorage.setItem('userLogged', JSON.stringify(userLogged))
 
-    location.reload()
+    //location.reload()
 }
 
 function fecharPopupBanner() {

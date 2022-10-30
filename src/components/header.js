@@ -33,11 +33,13 @@ class Header extends HTMLElement{
         const profileImage = this.createGeneric('img', 'profile-image')
         profileImage.addEventListener('click', () =>{window.location.href = "../profile/index.html"})
     
-            if (typeof userLogged === 'undefined' || typeof userLogged[0].foto === 'undefined') {
+            if (typeof this.userLogged === undefined || typeof this.userLogged[0].foto === undefined) {
                 profileImage.src = "../../assets/imgs/profile-image.jpg"
+                console.log('ok')
             }
             else {
-                profileImage.src = userLogged[0].foto;
+                profileImage.src = this.userLogged[0].foto;
+                console.log('ok 2')
             }
 
         header.appendChild(logo)
