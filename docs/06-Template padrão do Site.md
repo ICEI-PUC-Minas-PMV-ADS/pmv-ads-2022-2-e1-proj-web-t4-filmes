@@ -40,9 +40,11 @@ Através da tela de log-in o visitante que ainda não é usuário pode clicar em
 ## Tela de Perfil de Usuário
 
 
-[(search_page)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/search_page.png)
+(Figura xx)
 
 ## Tela de Busca de Filmes e/ou Séries
+
+![search_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/search_page.png)
 
 Dentro da tela de busca de filmes, é possivel o usuário buscar titulos especificos de seu interesse, onde através de um click, o usuário será redirecionado a tela de detalhes do filme de seu desejo.
 
