@@ -44,6 +44,7 @@ Através da tela de log-in o visitante que ainda não é usuário pode clicar em
 
 ## Tela de Busca de Filmes e/ou Séries
 
+Dentro da tela de busca de filmes, é possivel o usuário buscar titulos especificos de seu interesse, onde através de um click, o usuário será redirecionado a tela de detalhes do filme de seu desejo.
 
 (Figura xx)
 
