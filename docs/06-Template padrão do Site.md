@@ -41,6 +41,15 @@ Através da tela de log-in o visitante que ainda não é usuário pode clicar em
 
 (Figura xx)
 
+## Tela de Homepage
+
+![home_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/home_page.png)
+
+Na tela de homepage se encontra a principal tela do site, onde nela estará disponivel varios titulos de filmes organizados por tipo de conteudos ou genêro e esses conteudos serão distribuidos por diversos carrosseis.
+
+
+(Figura xx)
+
 ## Tela de Perfil de Usuário
 
 ![profile_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/profile_page.png)
