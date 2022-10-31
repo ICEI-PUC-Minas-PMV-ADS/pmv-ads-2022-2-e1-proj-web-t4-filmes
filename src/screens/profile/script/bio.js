@@ -62,5 +62,3 @@ bioForm.addEventListener('submit', (e) => {
     e.preventDefault();
     saveBio();
 })
-
-
