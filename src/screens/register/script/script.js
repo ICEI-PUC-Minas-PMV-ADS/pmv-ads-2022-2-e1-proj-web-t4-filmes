@@ -147,6 +147,7 @@ function cadastrar() {
                 passError.innerHTML = ''
 
                 setTimeout(() => {
+                    path.resolve()
                     window.location.pathname = "../../src/screens/login/login.html";
                 }, 2000);
             }
