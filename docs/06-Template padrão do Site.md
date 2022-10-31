@@ -2,8 +2,7 @@
 
 O layout padrão do site (HTML e CSS) que será utilizado em todas as páginas, em correspondência ao projeto de Interface elaborado anteriormente, conforme imagem abaixo (figura xx) é formado por uma área de cabeçalho, uma área principal central e um rodapé. A responsividade segue o padrão do Bootstrap.
 
-
-(Figura xx)
+![Movie Page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/template.png)
 
 A área de cabeçalho apresenta a logo marca da empresa; link para a página inicial, link para sistema de busca de filmes; foto do usuário logado e log-out. Quando o usuário não esta logado a área de foto do usuário e log-out torna-se link para a tela de log-in.
 
@@ -23,15 +22,6 @@ O template criado esta disponível no link https://github.com/ICEI-PUC-Minas-PMV
  + ### Tela de Busca de Filmes e/ou Séries
  + ### Tela de Detalhes (Poster) de Filmes e/ou Séries
 
-## Tela Inicial / Log-in
-
-![login_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/login_page.png)
-
-Atendendo á RF-03, onde o site deve obrigatóriamente requisitar ao usuário seu cadastro na plataforma, optou-se pela tela inicial ser o Log-in do usuário e a possibilidade de também criar perfil de novo usuário. O tratamento de dados prevê que endereço de e-mail não possa se reperir, portanto, sendo uma chave primária de cadastro do usuário e senha como no mínimo 5 caracteres. Abaixo a figura xx apresenta a tela inicial do site.
-
-
-(Figura xx)
-
 ## Tela de Cadastro do Novo Usuário
 
 ![register_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/register_page.png)
@@ -39,7 +29,16 @@ Atendendo á RF-03, onde o site deve obrigatóriamente requisitar ao usuário se
 Através da tela de log-in o visitante que ainda não é usuário pode clicar em "Criar novo cadastro" e acessar a tela de cadastro de perfil de usuário que se apresenta abaixo na figura xx. Após o cadastro de um novo perfil de usuário o cliente é encaminhado para a página de Log-in.
 
 
-(Figura xx)
+## Tela de Perfil de Usuário
+
+![profile_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/profile_page.png)
+
+Na tela de perfil de usuário, com o usuário estando devidamente cadastrado e tendo feito o log-in, irá se encontrar o perfil do usuario onde nele existe a possibilidade de alterar o nome, baner e até mesmo a foto de perfil.
+
+A página contempla as seguintes funcionalidades:
+RF-5 O site deve manter a funcionalidade de perfis de usuários, mantendo para cada perfil  informações personalizadas (por exemplo: títulos preferidos).
+RF-8 O site deve obrigatoriamente requisitar ao usuário seu cadastro na plataforma
+
 
 ## Tela de Homepage
 
@@ -48,24 +47,17 @@ Através da tela de log-in o visitante que ainda não é usuário pode clicar em
 Na tela de homepage se encontra a principal tela do site, onde nela estará disponivel varios titulos de filmes organizados por tipo de conteudos ou genêro e esses conteudos serão distribuidos por diversos carrosseis.
 
 
-(Figura xx)
+## Tela Inicial / Log-in
 
-## Tela de Perfil de Usuário
+![login_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/login_page.png)
 
-![profile_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/profile_page.png)
-
-Na tela de perfil de usuário, com o usuário estando devidamente cadastrado e tendo feito o log-in, irá se encontrar o perfil do usuario onde nele existe a possibilidade de alterar o nome, baner e até mesmo a foto de perfil.
-
-
-(Figura xx)
-
+Atendendo á RF-03, onde o site deve obrigatóriamente requisitar ao usuário seu cadastro na plataforma, optou-se pela tela inicial ser o Log-in do usuário e a possibilidade de também criar perfil de novo usuário. O tratamento de dados prevê que endereço de e-mail não possa se reperir, portanto, sendo uma chave primária de cadastro do usuário e senha como no mínimo 5 caracteres. Abaixo a figura xx apresenta a tela inicial do site.
 ## Tela de Busca de Filmes e/ou Séries
 
 ![search_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/search_page.png)
 
 Dentro da tela de busca de filmes, é possivel o usuário buscar titulos especificos de seu interesse, onde através de um click, o usuário será redirecionado a tela de detalhes do filme de seu desejo.
 
-(Figura xx)
 
 ## Tela de Detalhes (Poster) dos Filmes e/ou Séries
 
