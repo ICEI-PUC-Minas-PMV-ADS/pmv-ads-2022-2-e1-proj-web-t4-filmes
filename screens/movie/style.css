@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1e1e1e;
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 70px);
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: 22% 56% 22%;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.poster-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.movie-poster{
+    width: 200px;
+    height: 300px;
+    border: 2px solid #D13A25;
+}
+
+.info-container{
+    color: #FFF;
+    padding: 70px;
+}
+
+.movie-title{
+    text-align: center;
+    font-family: 'Fira Code';
+}
+
+.movie-overview{
+    justify-content: center;
+    font-family: 'Fira Code';
+    font-size: 1.15rem;
+    text-align: justify;
+    line-height: 2.3rem;
+    padding: 20px;
+}
+
+.rater-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-comments-container{
+    grid-column: span 2;
+}
+
+.close-container{
+    position: absolute;
+    top: 4.5rem;
+    right: 1rem;
+
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+  
+.bar-1{
+    position: absolute;
+    height: 7px;
+    width: 25px;
+    margin-top: 24px;
+    background-color: rgb(170, 170, 170);
+    border-radius: 35%;
+    transform: rotate(45deg);
+    transition: all .2s ease-in;
+}
+  
+.bar-2{
+    position: absolute;
+    height: 7px;
+    width: 25px;
+    margin-top: 24px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 35%;
+    transform: rotate(-45deg);
+    transition: all .2s ease-in;
+}
+
+.close-container:hover .bar-1{
+    background-color: #E06031;
+}
+
+.close-container:hover .bar-2{
+    background-color: #E06031;
+}
+
+.close-container:active{
+    scale: .9;
+}

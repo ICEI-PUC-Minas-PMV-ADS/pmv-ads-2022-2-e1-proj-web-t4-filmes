@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie</title>
+    <link rel="shortcut icon" href="#">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../assets/css/transitions.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js" integrity="sha512-yAr4fN9WZH6hESbOwoFZGtSgOP+LSZbs/JeoDr02pOX4yUFfI++qC9YwIQXIGffhnzliykJtdWTV/v3PxSz8aw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../../components/animatedButton.js" defer></script>
+    <script src="./script.js" defer></script>
+    <script src="../../components/starRater.js" type="module" defer></script>
+    <script src="../../components/header.js" defer></script>
+    <script src="../../components/caroussel.js" defer></script>
+    <script defer src="../../assets/js/main.js"></script>
+    <script defer src="../../assets/js/loginWatch.js"></script>
+</head>
+
+<body>
+
+    <my-header user-name="username"></my-header>
+
+    <main>
+        <div class="poster-container">
+            <img alt="" class="movie-poster">
+            <star-rater class="star-rater"></star-rater>
+        </div>
+
+        <div class="info-container">
+            <h1 class="movie-title"></h1>
+            <p class="movie-overview"></p>
+        </div>
+
+        <div class="rater-container">
+            <animated-button style="width: 100px; height: 100px;" speed="1.2" type="reverse" animation="https://assets4.lottiefiles.com/packages/lf20_d0jygpuz.json"></animated-button>
+            <animated-button style="width: 90px; height: 90px;" speed="1" type="reverse" animation="https://assets2.lottiefiles.com/packages/lf20_x4fnw3zb.json"></animated-button>
+        </div>
+
+        <div class="all-comments-container" >
+            <my-caroussel title="Relacionados"></my-caroussel>
+        </div>
+
+        <div class="add-comment-container"></div>
+
+        <div class="close-container" >
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+        </div>
+        
+    </main>
+</body>
+
+</html>

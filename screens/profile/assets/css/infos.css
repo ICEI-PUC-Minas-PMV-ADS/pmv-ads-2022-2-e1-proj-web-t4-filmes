@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.user-info{
+    display: flex;
+    gap: 100px;
+}
+
+.container-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-perfil-foto > svg{
+    transform: translate(-1em, 15em);
+    z-index: 101;
+}
+
+.edit-perfil-foto{
+    display: flex;
+    flex-direction: row;
+    transform: translate(3em, -3em);
+}
+
+.edit-perfil-foto > img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    box-shadow: 0px 7px 10px 5px rgba(0, 0, 0, 0.20);
+    transition: all 400ms ease-out;
+    object-fit: cover;
+}
+
+.lapis-perfil-ft,
+.lapis-banner{
+    fill: white;
+    height: 48px;
+    width: 48px;
+}
+
+.edit-perfil-foto:hover > img{
+    box-shadow: 0px 7px 10px 5px rgba(255, 255, 255, 0.20);
+    filter: grayscale(0.4);
+    opacity: 0.9;
+}
+
+.edit-perfil-foto:hover > svg{
+    opacity: 1;
+    height: 48px;
+    width: 48px;
+    transition: all 400ms ease-out;
+}
+
+.separador{
+    transform: translate(7%, -1em);
+    height: 1px;
+    width: 18em;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.span-nome{
+    transform: translateX(9%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.perfil-nome{
+    font-family: "Rubik", sans-serif;
+    font-size: 23pt;
+    font-weight: 500;
+    color: white;
+}
+
+.lapis-nome{
+    position: absolute;
+    margin-left: 5%;
+    left: 100%;
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    transition: all 400ms ease-out;
+} 
+
+.span-nome:hover > img{
+    height: 24px;
+    width: 24px;
+    opacity: 1;
+}
+
+/* -*-*- Texto da bio -*-*-* */
+.bio-block{
+    height: fit-content;
+    width: fit-content;
+    max-width: 50%;
+    transform: translateY(3em);
+    cursor: pointer;
+    line-break: anywhere;
+    padding: 5px;
+    background-color: rgba(0 0 0 /.1);
+    border-radius: 1rem;
+    box-shadow: 0px 7px 10px 5px rgba(0, 0, 0, 0.20);
+    
+}
+
+.bio-text{
+    font-family: "Rubik",sans-serif;
+    font-size: 16pt;
+    color: white;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.bio-block:hover > img{
+    height: 24px;
+    width: 24px;
+    opacity: 1;
+}
+
+.lapis-bio{
+    position: absolute;
+    left: 102%;
+    top: 15%;
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    transition: all 400ms ease-out;
+} 
+
+
+@media screen and (max-width: 768px){
+    .user-info{
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio-text{
+        text-align: center;
+    }
+
+    .separador{
+        transform: translate(0, 0);
+        margin-bottom: 10px;
+    }
+
+    .span-nome{
+        transform: translateX(0%);
+    }
+
+    .edit-perfil-foto{
+        transform: translate(2em, -3em);
+    }
+
+    .edit-perfil-foto > svg{
+        transform: translate(-2em, 17em);
+    }
+
+    .bio-block{
+        width: fit-content;
+        max-width: 80%;
+    }
+
+    .lapis-bio{
+        top: 10%;
+    }
+}

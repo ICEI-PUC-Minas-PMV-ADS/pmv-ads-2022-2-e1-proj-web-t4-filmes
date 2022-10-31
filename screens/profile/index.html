@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/infos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="../../assets/js/main.js"></script>
+    <script defer src="script/foto.js"></script>
+    <script defer src="script/banner.js"></script>
+    <script defer src="script/nome.js"></script>
+    <script defer src="script/bio.js"></script>
+    <script defer src="../../components/header.js"></script>
+    <script defer src="../../components/footer.js"></script>
+    <link rel="stylesheet" href="../../assets/css/transitions.css">
+    <script defer src="../../assets/js/loginWatch.js"></script>
+    <title>Perfil</title>
+</head>
+
+<body>
+
+    <div class="transicao transicao-1 ativa"></div>
+    
+    <my-header id="header" user-name="usuario"></my-header>
+
+    <main>
+        <dialog id="popup-perfil-Banner">
+            <h1>Banner do Perfil</h1>
+            <p>Faça upload de uma imagem para ser seu Banner do perfil</p>
+
+            <form name="bannerForm" method="dialog" id="BannerForm">
+                <div class="divBannerPreview">PREVIEW
+                    <img src="" alt="" class="BannerUploadPreview">
+                </div>
+                <small>Tamanho recomendado: 1920x1080 max: 3MB</small>
+
+                <label for="perfil-Banner-upload" id="labelBannerUpload">Upload</label>
+                <input type="file" id="perfil-Banner-upload" placeholder="" accept="image/*," required>
+
+                <span class="btnSpan">
+                    <button type="submit" class="btnDialogOK" id="btnBannerOK">OK</button>
+                    <button type="reset" class="btnDialogCancel" id="btnBannerCancel">Cancelar</button>
+                </span>
+            </form>
+
+        </dialog>
+        <div class="banner">
+            <a href="#" class="edit-banner">
+                <img src="https://s2.glbimg.com/XFA41c4664k4-uMaAguIj6GApq4=/e.glbimg.com/og/ed/f/original/2020/12/09/denise-jans-oavjqz-nfd0-unsplash.jpg" alt="" id="perfil-Banner">
+                <svg class="lapis-banner" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9 39h2.2l22.15-22.15-2.2-2.2L9 36.8Zm30.7-24.3-6.4-6.4 2.1-2.1q.85-.85 2.1-.85t2.1.85l2.2 2.2q.85.85.85 2.1t-.85 2.1Zm-2.1 2.1L12.4 42H6v-6.4l25.2-25.2Zm-5.35-1.05-1.1-1.1 2.2 2.2Z" />
+                </svg>
+            </a>
+        </div>
+        <dialog id="popup-perfil-foto">
+            <h1>Foto de Perfil</h1>
+            <p>Faça upload de uma imagem para ser sua foto de perfil</p>
+
+            <form name="fotoForm" method="dialog" id="fotoForm">
+                <div class="divFotoPreview">PREVIEW
+                    <img src="" alt="" class="fotoUploadPreview">
+                </div>
+                <small>Tamanho recomendado: 400x400</small>
+
+                <label for="perfil-foto-upload" id="labelFotoUpload">Upload</label>
+                <input type="file" id="perfil-foto-upload" placeholder="" accept="image/*," required>
+
+                <span class="btnSpan">
+                    <button type="submit" class="btnDialogOK" id="btnFotoOK">OK</button>
+                    <button type="reset" class="btnDialogCancel" id="btnFotoCancel">Cancelar</button>
+                </span>
+            </form>
+
+        </dialog>
+        <dialog id="popup-perfil-nome">
+            <h1>Nome de Usuário</h1>
+            <p>Altere seu nome de usuário</p>
+
+            <form name="nomeForm" method="dialog" id="nomeForm">
+               
+                <input type="text" id="perfil-nome-upload" placeholder="Novo nome" maxlength="16" required>
+
+                <small>Tamanho máximo: 16 caracteres</small>
+
+                <span class="btnSpan">
+                    <button type="submit" class="btnDialogOK" id="btnNomeOK">OK</button>
+                    <button type="reset" class="btnDialogCancel" id="btnNomeCancel">Cancelar</button>
+                </span>
+            </form>
+
+        </dialog>
+        <div class="user-info">
+            <div class="container-img">
+                <div class="perfil-foto">
+                    <a href="#" class="edit-perfil-foto">
+                        <img src="assets/imgs/ft-perfil.png" alt="" id="perfil-foto">
+                        <svg class="lapis-perfil-ft" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 39h2.2l22.15-22.15-2.2-2.2L9 36.8Zm30.7-24.3-6.4-6.4 2.1-2.1q.85-.85 2.1-.85t2.1.85l2.2 2.2q.85.85.85 2.1t-.85 2.1Zm-2.1 2.1L12.4 42H6v-6.4l25.2-25.2Zm-5.35-1.05-1.1-1.1 2.2 2.2Z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="separador"></div>
+                <div class="span-nome" id="edit-nome">
+                    <h1 class="perfil-nome">Usuário Deslogado</h1>
+                    <img class="lapis-nome" src="https://img.icons8.com/material-outlined/24/FFFFFF/edit--v1.png"/>
+                </div>
+            </div>
+            <dialog id="popup-perfil-bio">
+                <h1>Biografia do Usuário</h1>
+                <p>Altere sua biografia</p>
+    
+                <form name="bioForm" method="dialog" id="bioForm">
+                   
+                    <input type="text" id="perfil-bio-upload" placeholder="Nova bio" maxlength="400" required>
+    
+                    <small>Tamanho máximo: 400 caracteres</small>
+    
+                    <span class="btnSpan">
+                        <button type="submit" class="btnDialogOK" id="btnBioOK">OK</button>
+                        <button type="reset" class="btnDialogCancel" id="btnBioCancel">Cancelar</button>
+                    </span>
+                </form>
+    
+            </dialog>
+            <div class="bio-block" id="edit-bio">
+                <img class="lapis-bio" src="https://img.icons8.com/material-outlined/24/FFFFFF/edit--v1.png"/>
+                <p class="bio-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, nesciunt dolore quibusdam dicta
+                    aliquam maiores, excepturi, repellat in eos mollitia quaerat possimus ad tenetur inventore saepe
+                    omnis fugit laboriosam illo.
+                </p>
+            </div>
+        </div>
+    </main>
+    <my-footer></my-footer>
+</body>
+
+</html>

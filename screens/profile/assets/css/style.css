@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.lapis-perfil-ft,
+.lapis-banner{
+    opacity: 0;
+}
+
+body{
+    background-color: #1e1e1e;
+}
+
+.edit-banner{
+    position: relative;
+}
+
+.edit-banner > img{
+    width: 100%;
+    height: 250px;
+	object-fit: cover;
+    object-position: center;
+}
+
+
+/* -*-*- Popup da tag dialog FOTO e BANNER -*-*-* */
+#popup-perfil-foto::backdrop{
+    background:rgba(0, 0, 0, 0.30)
+}
+
+#popup-perfil-foto,
+#popup-perfil-Banner,
+#popup-perfil-nome,
+#popup-perfil-bio{
+    font-family: "Rubik",sans-serif;
+    background: #1E1E1E;
+    color: white;
+    margin: auto;
+    max-width: 50ch;
+    padding: 1em;
+    border: none;
+    border-radius: .5rem;
+    -webkit-box-shadow: 1px 3px 40px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 40px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 3px 40px 0px rgba(0,0,0,0.75);
+    transition: all 400ms ease-out;
+}
+/* Animando o dialog */
+dialog[open] {
+    animation: show 1s ease normal;
+}
+dialog[close]{
+    animation: hide 1s ease normal;
+}
+
+@keyframes show{
+    from {
+        transform: translateY(-110%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+@keyframes hide{
+    10%{opacity: 1}
+    20%{opacity: 0.9}
+    30%{opacity: 0.7}
+    40%{opacity: 0.6}
+    50%{opacity: 0.5}
+    60%{opacity: 0.4}
+    70%{opacity: 0.3}
+    80%{opacity: 0.2}
+    90%{opacity: 0.1}
+    100%{opacity: 0}
+    to {
+        transform: translateY(-110%);
+    }
+}
+
+#popup-perfil-foto h1,
+#popup-perfil-Banner h1,
+#popup-perfil-nome h1,
+#popup-perfil-nome h1{
+    align-items: center;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+/* Colocar um espaço em branco para "Pular linha" */
+#popup-perfil-foto small::before,
+#popup-perfil-foto small::after,
+#popup-perfil-Banner small::before,
+#popup-perfil-Banner small::after,
+#popup-perfil-nome small::before,
+#popup-perfil-nome small::after,
+#popup-perfil-bio small::before,
+#popup-perfil-bio small::after {
+    content: "\A";
+    white-space: pre;
+}
+
+#popup-perfil-foto small,
+#popup-perfil-Banner small,
+#popup-perfil-nome small,
+#popup-perfil-bio small{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+
+/* -*-*- Botão upload -*-*-* */
+#perfil-foto-upload,
+#perfil-Banner-upload{
+    display: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#labelFotoUpload,
+#labelBannerUpload{
+    margin-left: 43%;
+    justify-content: center;
+    text-align: center;
+    background-color:  rgba(0, 0, 0, 0.20);
+    border-color: rgba(255 255 255 / .1);
+    border-radius: .5rem;
+    outline: none;
+    padding: 7px;
+    color: white;
+    cursor: pointer;
+    transition: all 400ms ease-out;
+} 
+
+#labelFotoUpload:hover,
+#labelBannerUpload:hover{
+    background-color: rgb(255, 115, 0);
+    border-color: rgba(255 255 255 / .2);
+}
+
+.btnSpan{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -*-*- Botão de Ok e cancelar -*-*-* */
+.btnDialogOK,
+.btnDialogCancel{
+    text-align: center;
+    width: 5em;
+    height: 3em;
+    background-color:  rgba(0, 0, 0, 0.20);
+    border-color: rgba(255 255 255 / .1);
+    border-radius: .3rem;
+    outline: none;
+    padding: 4px;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 400ms ease-out;
+    
+}
+
+.btnDialogOK:hover,
+.btnDialogCancel:hover{
+    background-color: rgb(255, 115, 0);
+    border-color: rgba(255 255 255 / .2);
+}
+
+/* -*-*- Preview da foto antes de enviar -*-*-* */
+.divFotoPreview,
+.divBannerPreview{
+    display: none;
+    font-weight: bold;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.fotoUploadPreview{
+    margin-top: 1rem;
+    align-self: center;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    box-shadow: 0px 7px 10px 5px rgba(0, 0, 0, 0.20);
+    transition: all 400ms ease-out;
+    object-fit: cover;
+}
+
+.divBannerPreview{
+    scale: .9;
+}
+
+.BannerUploadPreview{
+    margin-top: 1rem;
+    align-self: center;
+    width: 520px;
+    height: 60px;
+    border-radius: 0%;
+    box-shadow: 0px 7px 10px 5px rgba(0, 0, 0, 0.20);
+    transition: all 400ms ease-out;
+    object-fit: cover;
+}
+
+.edit-banner > img{
+    transition: all 400ms ease-out;
+}
+
+.edit-banner:hover > img{
+    filter: grayscale(0.4);
+    opacity: 0.9;
+    transition: all 400ms ease-out;
+}
+
+.edit-banner > svg{
+    position: absolute;
+    z-index: 101;
+    top: -14em;
+    left: 1em;
+}
+
+.edit-banner:hover > svg{
+    opacity: 1;
+    transition: all 400ms ease-out;
+}
+
+/* -*-*- Popup da tag dialog NOME -*-*-* */
+#popup-perfil-nome::backdrop{
+    background:rgba(0, 0, 0, 0.30)
+}
+
+#perfil-nome-upload{
+    justify-content: center;
+    text-align: center;
+    background-color:  rgba(0, 0, 0, 0.20);
+    border-color: rgba(255 255 255 / .1);
+    border-radius: .5rem;
+    outline: none;
+    padding: 8px;
+    color: white;
+    font-size: 16pt;
+} 
+
+#popup-perfil-nome > p{
+    text-align: center;
+    padding: 1em;
+}
+
+#nomeForm > small{
+    margin-top: 12px;
+}
+
+/* -*-*- Popup da tag dialog BIO -*-*-* */
+#popup-perfil-bio::backdrop{
+    background:rgba(0, 0, 0, 0.30)
+}
+
+#perfil-bio-upload{
+    justify-content: center;
+    text-align: center;
+    background-color:  rgba(0, 0, 0, 0.20);
+    border-color: rgba(255 255 255 / .1);
+    border-radius: .5rem;
+    outline: none;
+    padding: 8px;
+    color: white;
+    font-size: 16pt;
+    width: 100%;
+} 
+
+#popup-perfil-bio > p{
+    text-align: center;
+    padding: 1em;
+}
+
+#bioForm > small{
+    margin-top: 12px;
+}

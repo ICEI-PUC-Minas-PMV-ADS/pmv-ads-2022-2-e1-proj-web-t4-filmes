@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+/* TEMPLATE 00 - Estrutura de áreas - sem sub-div do Main área central */
+
+:root{
+    --laranja:rgb(255, 115, 0);
+    --cinza:#1E1E1E;
+    --cinzaEscuro: #111111;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    
+}
+
+body {
+    background-color: var(--cinza);
+    color: whitesmoke;
+    font-weight: lighter;
+    width: 100%;
+}
+
+img.UserIdPhoto {
+    align-content: right;
+    float: right;
+}
+
+main {
+    background-color: var(--cinza);
+    color: whitesmoke;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.loginDiv{
+    background-color: #343434;
+    width: 400px;
+    padding: 30px;
+    border-radius: 4%;
+    -webkit-box-shadow: 1px 3px 40px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 40px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 3px 40px 0px rgba(0,0,0,0.75);
+    font-size: 12pt;
+}
+
+main section.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(6em);
+}
+
+.form-control{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid rgb(255, 115, 0);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 300ms ease-out;
+    border-radius: 0;
+    color: white;
+}
+
+.form-group{
+    color: white;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.form-group label{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all 300ms ease-out;
+}
+
+.form-control:focus{
+    border-bottom: 1px solid rgb(255, 166, 0);
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    color: white;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: rgb(255, 166, 0);
+}
+
+#btnLogin{
+    background-color: transparent;
+    border-color: var(--laranja);
+    color: white;
+    padding: 7px;
+    font-weight: 500;
+    font-size: 12pt;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all 200ms ease-out;
+}
+
+#btnLogin:hover{
+    background-color: var(--laranja);
+}
+
+#login-column h4{
+    text-align: center;
+}
+
+main div h1 h3 h5 {
+    background-color: black;
+    color: whitesmoke;
+}

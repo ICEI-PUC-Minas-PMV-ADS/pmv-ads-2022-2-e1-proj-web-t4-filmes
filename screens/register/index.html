@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" passSuccesscontent="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="script/script.js"></script>
+    <script defer src="../../assets/js/main.js"></script>
+    <link rel="stylesheet" href="../../assets/css/transitions.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div class="transicao transicao-1 ativa"></div>
+
+    <div class="container">
+        <div class="card">
+            <h1 class="title"><img src="assets/imgs/logo.png" alt=""></h1>
+
+            <div id="passError"></div>
+            <div id="passSuccess"></div>
+
+            <div class="label-div">
+                <input type="text" id="nome" placeholder="" required maxlength="16">
+                <label id="labelNome" for="nome">Nome de usuário</label>
+            </div>
+
+            <div class="label-div">
+                <input type="text" id="email" placeholder="" required>
+                <label id="labelEmail" for="email">E-mail</label>
+            </div>
+
+            <div class="label-div">
+                <input type="password" id="senha" placeholder="" required>
+                <label id="labelSenha" for="senha">Senha</label>
+                <i id="eyeSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="label-div">
+                <input type="password" id="confirmSenha" placeholder="" required>
+                <label id="labelConfirmSenha" for="confirmSenha">Confirmar senha</label>
+                <i id="eyeConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="btn-div">
+                <button id="btnCadastrar">Cadastrar</button>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
