@@ -49,6 +49,8 @@ Através da tela de log-in o visitante que ainda não é usuário pode clicar em
 
 ## Tela de Detalhes (Poster) dos Filmes e/ou Séries
 
+A tela de filmes/séries permite ao usuário visualizar informação personalidades para cada filme que ele clicar. A página conta com poster, título, descrição nota entre outros detalhes.
+
 
 (Figura xx)
 
