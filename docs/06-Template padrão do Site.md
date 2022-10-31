@@ -39,9 +39,6 @@ Através da tela de log-in o visitante que ainda não é usuário pode clicar em
 
 ## Tela de Perfil de Usuário
 
-![profile_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/profile_page.png)
-
-Na tela de perfil de usúario, o usuário devidamente cadastrado e tendo feito o log-in no site, conseguirá personalisar seu perfil ao seu gosto, onde terá a possibilidade de alterar sua imagem, baner e até mesmo a sua descrição. 
 
 (Figura xx)
 
@@ -57,8 +54,5 @@ Dentro da tela de busca de filmes, é possivel o usuário buscar titulos especif
 
 ![Movie Page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/movie_page.png)
 
-A tela de filmes/séries permite ao usuário visualizar informação personalidades para cada filme que ele clicar. A página conta com poster, título, descrição nota entre outros detalhes.
-
-
-(Figura xx)
+A tela de filmes/séries permite ao usuário visualizar informação personalidades para cada filme que ele clicar. A página conta com poster, título, descrição, nota, carrossel de filmes relacionados entre outros detalhes. A página também disponibiliza, para cada filme, funcionalidades de comentários, avaliação e favoritar.
 
