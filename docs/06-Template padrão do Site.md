@@ -1,4 +1,4 @@
-# Template padrão do sit
+# Template padrão do site
 
 O layout padrão do site (HTML e CSS) que será utilizado em todas as páginas, em correspondência ao projeto de Interface elaborado anteriormente, conforme imagem abaixo (figura xx) é formado por uma área de cabeçalho, uma área principal central e um rodapé. A responsividade segue o padrão do Bootstrap.
 
