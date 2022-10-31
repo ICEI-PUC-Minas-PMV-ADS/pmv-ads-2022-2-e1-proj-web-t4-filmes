@@ -25,12 +25,16 @@ O template criado esta disponível no link https://github.com/ICEI-PUC-Minas-PMV
 
 ## Tela Inicial / Log-in
 
+![login_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/login_page.png)
+
 Atendendo á RF-03, onde o site deve obrigatóriamente requisitar ao usuário seu cadastro na plataforma, optou-se pela tela inicial ser o Log-in do usuário e a possibilidade de também criar perfil de novo usuário. O tratamento de dados prevê que endereço de e-mail não possa se reperir, portanto, sendo uma chave primária de cadastro do usuário e senha como no mínimo 5 caracteres. Abaixo a figura xx apresenta a tela inicial do site.
 
 
 (Figura xx)
 
 ## Tela de Cadastro do Novo Usuário
+
+![register_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/register_page.png)
 
 Através da tela de log-in o visitante que ainda não é usuário pode clicar em "Criar novo cadastro" e acessar a tela de cadastro de perfil de usuário que se apresenta abaixo na figura xx. Após o cadastro de um novo perfil de usuário o cliente é encaminhado para a página de Log-in.
 
