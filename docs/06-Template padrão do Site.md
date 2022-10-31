@@ -29,25 +29,7 @@ O template criado esta disponível no link https://github.com/ICEI-PUC-Minas-PMV
 Através da tela de log-in o visitante que ainda não é usuário pode clicar em "Criar novo cadastro" e acessar a tela de cadastro de perfil de usuário que se apresenta abaixo na figura xx. Após o cadastro de um novo perfil de usuário o cliente é encaminhado para a página de Log-in.
 
 
-## Tela de Perfil de Usuário
-
-![profile_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/profile_page.png)
-
-Na tela de perfil de usuário, com o usuário estando devidamente cadastrado e tendo feito o log-in, irá se encontrar o perfil do usuario onde nele existe a possibilidade de alterar o nome, baner e até mesmo a foto de perfil.
-
-A página contempla as seguintes funcionalidades:
-RF-5 O site deve manter a funcionalidade de perfis de usuários, mantendo para cada perfil  informações personalizadas (por exemplo: títulos preferidos).
-RF-8 O site deve obrigatoriamente requisitar ao usuário seu cadastro na plataforma
-
-
-## Tela de Homepage
-
-![home_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/home_page.png)
-
-Na tela de homepage se encontra a principal tela do site, onde nela estará disponivel varios titulos de filmes organizados por tipo de conteudos ou genêro e esses conteudos serão distribuidos por diversos carrosseis.
-
-
-## Tela Inicial / Log-in
+## Tela Log-in
 
 ![login_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/login_page.png)
 
@@ -59,9 +41,26 @@ Atendendo á RF-03, onde o site deve obrigatóriamente requisitar ao usuário se
 Dentro da tela de busca de filmes, é possivel o usuário buscar titulos especificos de seu interesse, onde através de um click, o usuário será redirecionado a tela de detalhes do filme de seu desejo.
 
 
+## Tela de Homepage
+
+![home_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/home_page.png)
+
+Na tela de homepage se encontra a principal tela do site, onde nela estará disponivel varios titulos de filmes organizados por tipo de conteudos ou genêro e esses conteudos serão distribuidos por diversos carrosseis.
+
+
 ## Tela de Detalhes (Poster) dos Filmes e/ou Séries
 
 ![Movie Page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/movie_page.png)
 
 A tela de filmes/séries permite ao usuário visualizar informação personalidades para cada filme que ele clicar. A página conta com poster, título, descrição, nota, carrossel de filmes relacionados entre outros detalhes. A página também disponibiliza, para cada filme, funcionalidades de comentários, avaliação e favoritar.
 
+
+## Tela de Perfil de Usuário
+
+![profile_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/profile_page.png)
+
+Na tela de perfil de usuário, com o usuário estando devidamente cadastrado e tendo feito o log-in, irá se encontrar o perfil do usuario onde nele existe a possibilidade de alterar o nome, baner e até mesmo a foto de perfil.
+
+A página contempla as seguintes funcionalidades:
+RF-5 O site deve manter a funcionalidade de perfis de usuários, mantendo para cada perfil  informações personalizadas (por exemplo: títulos preferidos).
+RF-8 O site deve obrigatoriamente requisitar ao usuário seu cadastro na plataforma
