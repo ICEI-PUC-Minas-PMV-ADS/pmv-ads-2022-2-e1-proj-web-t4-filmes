@@ -49,6 +49,8 @@ Através da tela de log-in o visitante que ainda não é usuário pode clicar em
 
 ## Tela de Detalhes (Poster) dos Filmes e/ou Séries
 
+![Foto representativa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/movie_page.jpg)
+
 A tela de filmes/séries permite ao usuário visualizar informação personalidades para cada filme que ele clicar. A página conta com poster, título, descrição nota entre outros detalhes.
 
 
