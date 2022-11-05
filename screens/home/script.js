@@ -9,6 +9,7 @@ const movies = [
         local_status: true,
         overview: "O show gira em torno das aventuras dos membros da família Smith, que consiste nos pais Jerry e Beth, seus filhos Summer e Morty, e o pai de Beth, chamado Rick Sanchez, que mora com eles como hóspede. De acordo com Justin Roiland, a família mora fora da cidade de Seattle, no estado norte-americano de Washington.",
         vote_average: 8.6
+        //correlates: [{id: 2, }, {id: 3, correlations: 1}, {id: 4, correlations: 3}, {id: 5, }, ]
     },
     {
         id: 2,
@@ -84,74 +85,15 @@ const movies = [
     }
 ]
 
-const gallery = document.querySelector('.gallery')
-const arrows = document.querySelectorAll('.arrow')
-
 class HomePage{
     constructor(){
         //configs
         this.writeLocalStorage()
         this.movies = JSON.parse(localStorage.getItem('movies'))
-        this.loadCards()
-        this.mappingArrows()
-        
-        this.cards = document.querySelectorAll('.card')
-        this.mappingCards()
-
-        //variables
-        this.currentCard = 2
     }
 
     writeLocalStorage(){
         localStorage.setItem('movies', JSON.stringify(movies))
-    }
-
-    mappingArrows(){
-        arrows.forEach(arrow => {
-            arrow.addEventListener('click', (e) => {
-                const isLeft = arrow.classList.contains('arrow-left')
-
-                if(isLeft) this.currentCard -= 3
-                else this.currentCard += 3
-
-                if(this.currentCard > this.cards.length) this.currentCard = 2
-                if(this.currentCard < 0) this.currentCard = 6
-
-                this.cards[this.currentCard].scrollIntoView({
-                    inline: 'center',
-                    behavior: 'smooth'
-                })
-            })
-        })
-    }
-
-    mappingCards(){
-        this.cards.forEach(card => {
-            card.addEventListener('click', (e) => {
-                this.writeSessionStorage(e.target.id)
-                window.location.href = '../../screens/movie/index.html';
-            })
-        })
-    }
-
-    loadCards(){
-        this.movies.forEach(mov => {
-            if(mov.local_status){
-                gallery.appendChild(this.createCard('card', `../../../assets/${mov.file_name}`, mov.id))
-            }
-            else{
-                gallery.appendChild(this.createCard('card', mov.poster_path, mov.id))
-            }
-            
-        })
-    }
-
-    createCard(class_name, src, id){
-        const card = document.createElement('img')
-        card.classList.add(class_name)
-        card.setAttribute('id', id)
-        card.src = src
-        return card
     }
 
     writeSessionStorage(value){

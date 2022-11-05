@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(17, 13, 34);
+}
+
+.correlate{
+    position: absolute;
+
+    display: flex;
+    gap: 10px;
+    left: 80%;
+    top: 70%;
+
+    transition: 0.2s ease-out;
+
+}
+
+.correlate:hover{
+    scale: 1.03;
+    cursor: pointer;
+}
+
+.correlate-poster{
+    width: 120px;
+    height: 180px;
+    border: 1px solid #D13A25;
+}
+
+.popup-wrapper{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.8;
+    background-color: rgb(17, 13, 34);
+    z-index: 2;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.popup{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 11, 29);
+}
+
+.search{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 12%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search-input{
+    min-width: 350px;
+
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+
+    background-color: transparent;
+    color: #FFF;
+    border: none;
+    border-bottom: 2px solid #FFF;
+    outline: none;
+
+    font-family: Fira Code;
+    font-size: 1rem;
+
+    transition: 0.4s ease-out;
+}
+
+.search-button{
+    position: relative;
+    width: auto;
+}
+
+.results{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    width: 100%;
+}
+
+.results > span{
+    color: #FFF;
+    font-size: 1.2rem;
+}
+
+.card {
+    width: 120px;
+    height: 180px;
+    
+    transition: 0.4s ease-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
