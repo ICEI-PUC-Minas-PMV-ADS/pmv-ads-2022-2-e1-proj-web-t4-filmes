@@ -140,6 +140,7 @@ body {
 .card:hover {
     scale: 1.1;
 }
+
 .filme .data-image img {
     width: 200px;
     height: 300px;
