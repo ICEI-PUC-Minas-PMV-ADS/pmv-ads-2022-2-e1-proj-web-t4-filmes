@@ -60,7 +60,10 @@ function loginUser (login, senha) {
         window.location.href = '../home/index.html';
     }
     else {
-        alert ('Usuário ou senha incorretos. \n Por favor, tente novamente.');
+        passError.setAttribute('style', 'display: block')
+        passError.innerHTML = 'Usuário ou senha incorretos'
+        passSuccess.setAttribute('style', 'display: none')
+        assSuccess.innerHTML = ''
     }
 }
 

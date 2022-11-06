@@ -127,3 +127,22 @@ main div h1 h3 h5 {
     background-color: black;
     color: whitesmoke;
 }
+
+#passError{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 145, 145);
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    font-weight: bold;
+}
+
+#passSuccess{
+    text-align: center;
+    color: rgb(92, 240, 92);
+    background-color: rgb(54, 179, 54);
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}

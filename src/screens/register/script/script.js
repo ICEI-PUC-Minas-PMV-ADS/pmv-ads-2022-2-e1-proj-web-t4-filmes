@@ -48,7 +48,7 @@ function generateUUID() {
 
 
 nome.addEventListener('keyup', () => {
-    if (nome.value.length <= 3) {
+    if (nome.value.length < 3) {
         labelNome.setAttribute('style', 'color: red')
         labelNome.innerHTML = 'Nome *Insira no minimo 3 caracteres'
         nome.setAttribute('style', 'border-color: red')
