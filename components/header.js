@@ -7,6 +7,8 @@ class Header extends HTMLElement{
     }
 
     build(){
+        let open = 0;
+
         const shadow = this.attachShadow({ mode: 'open' })
         shadow.appendChild(this.styles())
 
@@ -31,7 +33,6 @@ class Header extends HTMLElement{
         profileName.innerHTML = this.getAttribute('user-name')
 
         const profileImage = this.createGeneric('img', 'profile-image')
-        profileImage.addEventListener('click', () =>{window.location.href = "../profile/index.html"})
     
             if (typeof this.userLogged === "undefined" || typeof this.userLogged[0].foto === "undefined") {
                 profileImage.src = "../../assets/imgs/profile-image.jpg"
@@ -47,14 +48,36 @@ class Header extends HTMLElement{
                 profileName.textContent = this.userLogged[0].nome;
             }
 
+        const profileMenu = this.createGeneric('div', 'profile-menu')
+
+        const profileMenuBtn = this.createGeneric('button', 'menu-btn')
+        profileMenuBtn.textContent = "Perfil";
+        profileMenuBtn.addEventListener('click', () =>{window.location.href = "../profile/index.html"})
+
+        const profileMenuLogout = this.createGeneric('button', 'menu-logout')
+        profileMenuLogout.textContent = "Sair";
+
+        profileImage.addEventListener('click', () =>{profileMenu.classList.toggle("profile-menu-open")})
+        profileMenuLogout.addEventListener('click', () =>{
+            userLoggedIn = false;
+            localStorage.setItem('userLoggedIn', JSON.stringify(userLoggedIn));
+            location.reload()
+        })
+
         header.appendChild(logo)
 
         nav.appendChild(linkHome)
-        nav.appendChild(linkSearch)
+        nav.appendChild(linkSearch)        
         header.appendChild(nav)
 
         profileContainer.appendChild(profileName)
         profileContainer.appendChild(profileImage)
+
+        profileMenu.appendChild(profileMenuBtn)
+        profileMenu.appendChild(profileMenuLogout)
+
+        profileContainer.appendChild(profileMenu)
+
         header.appendChild(profileContainer)
 
         shadow.appendChild(header)
@@ -135,6 +158,86 @@ class Header extends HTMLElement{
             .profile-image:hover{
                 cursor: pointer;
                 scale: 1.1;
+            }
+            
+            .profile-menu{
+                z-index: 101;
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                justify-content: space-around;
+                text-align: center;
+                align-items: center;
+                position: absolute;
+                margin-top: 12%;
+                height: 100px;
+                width: 150px;
+                background-color: #1c1c1c;
+                transition: 0.3s ease-out;
+                animation: hide 1s ease normal;
+            }
+
+            .profile-menu-open{
+                display: flex;
+                transition: 0.3s ease-out;
+                animation: show 1s ease normal;
+            }
+            
+            .menu-btn{
+                margin: 5%;
+                border-radius: 6%;
+                border: none;
+                height: 90%;
+                width: 90%;
+                background-color: #1e1e1e;
+                color: #fff;
+
+                text-decoration: none;
+
+                font-family: 'Fira Code', monospace;
+                font-size: 1rem;
+                font-weight: 500;
+
+                transition: 0.3s ease-out;
+            }
+
+            .menu-logout{
+                margin: 5%;
+                border-radius: 6%;
+                border: none;
+                height: 90%;
+                width: 90%;
+                background-color: #1e1e1e;
+                color: #fff;
+
+                text-decoration: none;
+
+                font-family: 'Fira Code', monospace;
+                font-size: 1rem;
+                font-weight: 500;
+
+                transition: 0.3s ease-out;
+            }
+            
+            .menu-logout:hover,
+            .menu-btn:hover{
+                background-color: rgb(255, 157, 66);
+                scale: 1.05;
+                cursor: pointer;
+            }
+
+            .menu-logout:hover{
+                background-color: rgb(255, 94, 66);
+            }
+            
+            @keyframes show{
+                from {
+                    transform: translateX(110%);
+                }
+                to {
+                    transform: translateX(0%);
+                }
+            }
             }`
 
             return style
