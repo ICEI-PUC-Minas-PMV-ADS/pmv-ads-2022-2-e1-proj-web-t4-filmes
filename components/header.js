@@ -60,7 +60,9 @@ class Header extends HTMLElement{
         profileImage.addEventListener('click', () =>{profileMenu.classList.toggle("profile-menu-open")})
         profileMenuLogout.addEventListener('click', () =>{
             userLoggedIn = false;
+            userLogged = '[]'
             localStorage.setItem('userLoggedIn', JSON.stringify(userLoggedIn));
+            localStorage.setItem('userLogged', JSON.stringify(userLogged));
             location.reload()
         })
 
@@ -122,7 +124,7 @@ class Header extends HTMLElement{
             .header-button{
                 color: #dadada;
                 text-decoration: none;
-
+                
                 font-family: 'Fira Code', monospace;
                 font-size: 1.2rem;
                 font-weight: 500;
@@ -185,8 +187,8 @@ class Header extends HTMLElement{
             
             .menu-btn{
                 margin: 5%;
-                border-radius: 6%;
-                border: none;
+                border-radius: 5%;
+                border: 1px solid #000;
                 height: 90%;
                 width: 90%;
                 background-color: #1e1e1e;
@@ -203,8 +205,8 @@ class Header extends HTMLElement{
 
             .menu-logout{
                 margin: 5%;
-                border-radius: 6%;
-                border: none;
+                border-radius: 5%;
+                border: 1px solid #000;
                 height: 90%;
                 width: 90%;
                 background-color: #1e1e1e;
