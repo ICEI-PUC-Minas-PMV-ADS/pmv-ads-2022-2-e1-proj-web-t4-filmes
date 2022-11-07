@@ -1,4 +1,6 @@
-# TÍTULO DO PROJETO
+# Pipoco
+
+![pipoca](https://user-images.githubusercontent.com/13721147/200435536-627747a1-9096-4b63-8feb-06c3f0055eaf.png)
 
 `TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
