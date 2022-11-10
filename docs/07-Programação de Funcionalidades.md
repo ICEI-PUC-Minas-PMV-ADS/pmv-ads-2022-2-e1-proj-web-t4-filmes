@@ -23,7 +23,7 @@ RF-8 O site deve obrigatoriamente requisitar ao usuário seu cadastro na platafo
 
 ![login_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/login_page.png)
 
-Atendendo á RF-03, onde o site deve obrigatóriamente requisitar ao usuário seu cadastro na plataforma, optou-se pela tela inicial ser o Log-in do usuário e a possibilidade de também criar perfil de novo usuário. O tratamento de dados prevê que endereço de e-mail não possa se reperir, portanto, sendo uma chave primária de cadastro do usuário e senha como no mínimo 5 caracteres. Abaixo a figura xx apresenta a tela inicial do site.
+Atendendo á RF-08, onde o site deve obrigatóriamente requisitar ao usuário seu cadastro na plataforma, optou-se pela tela inicial ser o Log-in do usuário e a possibilidade de também criar perfil de novo usuário. O tratamento de dados prevê que endereço de e-mail não possa se reperir, portanto, sendo uma chave primária de cadastro do usuário e senha como no mínimo 5 caracteres. Abaixo a figura xx apresenta a tela inicial do site.
 ## Tela de Busca de Filmes e/ou Séries
 
 ![search_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/search_page.png)
