@@ -62,7 +62,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 ## Plano de Testes Tela de Busca / Procura
 
-|Caso de Teste 1| Busca de Conteúdo com Sucesso |
+|Caso de Teste 6| Busca de Conteúdo com Sucesso |
 |--------------------|------------------------------------|
 |Objetivo do Teste  | Verificar se o sistem de busca entrega o resultado esperado           |
 |Passo 1 | Acessar a tela de busca              |
@@ -73,7 +73,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 Sem outras observações a apresentar.
 
 
-|Caso de Teste 2| Busca de Conteúdo sem Sucesso |
+|Caso de Teste 7| Busca de Conteúdo sem Sucesso |
 |--------------------|------------------------------------|
 |Objetivo do Teste  | Verificar se o sistema de busca entrega resultados consistentes.         |
 |Passo 1 | Acessar a tela de busca              |
@@ -84,7 +84,7 @@ Sem outras observações a apresentar.
 Sem outras observações a apresentar.
 
 
-|Caso de Teste 3| Busca de Conteúdo com Sucesso |
+|Caso de Teste 8| Busca de Conteúdo com Sucesso |
 |--------------------|------------------------------------|
 |Objetivo do Teste  | Verificar se o sistema de busca entrega o resultado esperado quando um texto é colado ao invés de ser digitado.           |
 |Passo 1 | Acessar a tela de busca              |
@@ -95,7 +95,7 @@ Sem outras observações a apresentar.
 Sem outras observações a apresentar.
 
 
-|Caso de Teste 4| Busca de Conteúdo sem Sucesso |
+|Caso de Teste 9| Busca de Conteúdo sem Sucesso |
 |--------------------|------------------------------------|
 |Objetivo do Teste  | Verificar se o sistema de busca entrega o resultado esperado quando um texto é colado ao invés de ser digitado.         |
 |Passo 1 | Acessar a tela de busca              |
