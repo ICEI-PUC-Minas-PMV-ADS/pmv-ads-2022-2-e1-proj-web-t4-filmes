@@ -31,7 +31,29 @@
 ![Teste 3 Sucesso](https://user-images.githubusercontent.com/13721147/200434755-408c0e81-0d45-4962-8ca5-8ab16896117f.gif)
 
 
+## Caso de teste 06 - Busca de Conteúdo com Sucesso 
+
+### Resultado: Acessar a tela de busca; Digitar o nome de conteúdo conhecido, que sabe-se existir no banco de dados (como por exemplo: south park, rick and morty, love death robots, primal); Recebe-se o título pesquisado entregue no resultado da busca com sucesso.
+
 ![Teste 6](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/Teste_06_Busca.gif)
+
+## Caso de teste 07 - Busca de Conteúdo sem Sucesso 
+
+### Resultado: Acessar a tela de busca; Digitar o nome de conteúdo conhecido, que sabe-se não existir no banco de dados (como por exemplo: sauth pork, riqui and morthy, love deth robots, brimal); Não são apresentados resultados da busca.
+
+![Teste 7](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/Teste_07_Busca.gif)
+
+## Caso de teste 08 - Busca de Conteúdo com Sucesso 
+
+### Resultado: Acessar a tela de busca; Colar o nome de conteúdo conhecido, que sabe-se existir no banco de dados (como por exemplo: south park, rick and morty, love death robots, primal); Recebe-se o título pesquisado entregue no resultado da busca com sucesso.
+
+![Teste 8](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/Teste_08_Busca.gif)
+
+## Caso de teste 09 - Busca de Conteúdo sem Sucesso 
+
+### Resultado: Acessar a tela de busca; Colar o nome de conteúdo conhecido, que sabe-se existir no banco de dados (como por exemplo: sauth pork, riqui and morthy, love deth robots, brimal); Não são apresentados resultados da busca.
+
+![Teste 9](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/Teste_09_Busca.gif)
 
 
 
