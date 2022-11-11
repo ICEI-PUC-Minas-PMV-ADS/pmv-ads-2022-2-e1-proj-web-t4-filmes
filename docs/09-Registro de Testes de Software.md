@@ -29,3 +29,11 @@
 ### Resultado: Após clicar em “Sair”, todas informações do usuário logado são limpas do local storage e ele é levado à tela de login.
 
 ![Teste 3 Sucesso](https://user-images.githubusercontent.com/13721147/200434755-408c0e81-0d45-4962-8ca5-8ab16896117f.gif)
+
+
+![Teste 6](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/Teste_06_Busca.gif)
+
+
+
+
+
