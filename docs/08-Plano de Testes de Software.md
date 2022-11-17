@@ -111,6 +111,13 @@ Observações Gerais para o Campo de Busca / Pesquisa:
  - O campo aceita dados alfa-numéricos e caracteres especiais
 
 
+## Plano de Testes Tela inicial / tela do filme
+![10](https://user-images.githubusercontent.com/69819769/202446480-9c9ae31a-2697-4f1a-a629-7cbc5340b780.png)
+![11](https://user-images.githubusercontent.com/69819769/202447037-78d4d28e-5127-4421-99e1-c66183b4a3dd.png)
+![12](https://user-images.githubusercontent.com/69819769/202447063-0145df36-1413-41b3-98f0-562d026f247a.png)
+
+
+
 
 
 
