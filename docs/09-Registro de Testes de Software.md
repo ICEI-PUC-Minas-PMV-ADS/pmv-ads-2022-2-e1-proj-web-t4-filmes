@@ -56,6 +56,23 @@
 ![Teste 9](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes/blob/main/docs/img/Teste_09_Busca.gif)
 
 
+## Caso de teste 10 - Página específica do filme
 
+### Resultado: Ao clicar no filme Bojack Horseman, foi aberto uma nova aba contendo informações relevantes sobre o filme
+
+![10](https://user-images.githubusercontent.com/69819769/202448718-a50131c8-f5bf-407b-98fa-c134c5932332.gif)
+
+
+## Caso de teste 11 - Página especifica do filme dentro de outra página especifica
+
+### Resultado: Ao clicar em algum filme disponível, as informações específicas antes de outro filme, agora passaram a ser do novo filme escolhido.
+
+![11](https://user-images.githubusercontent.com/69819769/202449036-9abb4bfd-61d9-4284-9b23-b2354ff4ed33.gif)
+
+## Caso de teste 12 - Sair da página específica do filme
+
+### Resultado: Após clicar no botão “X”, o site retornou para sua página inicial.
+
+![12](https://user-images.githubusercontent.com/69819769/202449265-cde7947f-8e06-4f8a-bc4a-35bc957f86be.gif)
 
 
