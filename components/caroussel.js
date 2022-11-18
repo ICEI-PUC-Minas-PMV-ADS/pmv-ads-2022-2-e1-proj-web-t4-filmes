@@ -2,7 +2,7 @@ class Caroussel extends HTMLElement{
     constructor(){
         super()
 
-        this.currentCard = 2
+        this.currentCard = 0
 
         this.build()
     }
@@ -44,20 +44,20 @@ class Caroussel extends HTMLElement{
     mappingArrows(ars){
         ars.forEach(arrow => {
             arrow.addEventListener('click', (e) => {
+                
                 const isLeft = arrow.classList.contains('arrow-left')
-
-                if(isLeft) this.currentCard -= 5
-                else this.currentCard += 5
-
+                
+                if(isLeft) this.currentCard -= 3
+                else this.currentCard += 3
+                
                 if(this.currentCard >= this.cards.length - 1) this.currentCard = this.cards.length - 1
                 if(this.currentCard <= 0) this.currentCard = 0
-
-                this.cards[this.currentCard].scrollIntoView({
-                    inline: 'center',
-                    behavior: 'smooth'
-                })
                 
-                window.scroll(0, window.scrollY);
+                this.cards[this.currentCard].scrollIntoView({
+                    inline: 'start',
+                    behavior: 'smooth',
+                    block: 'nearest'
+                })
             })
         })
     }
