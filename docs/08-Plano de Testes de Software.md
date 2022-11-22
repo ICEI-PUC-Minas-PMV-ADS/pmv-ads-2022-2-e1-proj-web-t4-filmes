@@ -116,7 +116,7 @@ Observações Gerais para o Campo de Busca / Pesquisa:
 ![11](https://user-images.githubusercontent.com/69819769/202447037-78d4d28e-5127-4421-99e1-c66183b4a3dd.png)
 ![12](https://user-images.githubusercontent.com/69819769/202447063-0145df36-1413-41b3-98f0-562d026f247a.png)
 
-##Plano de Testes tela de registro
+## Plano de Testes tela de registro
 |Caso de Teste 10| Preenchimento incorreto do formulário |
 |--------------------|------------------------------------|
 |Objetivo do Teste  | Verficar se a partir dos dados fornecidos a funcionalidade de registrar usuário não é possivel de ser concluída |
@@ -134,6 +134,8 @@ Observações Gerais para o Campo de Busca / Pesquisa:
 |Passo 3 | Clicar no botão "registrar" |
 |Resultado  | Ao clicar no botão "registrar" o programa deverá criar um perfil para o usuário e redirecioná-lo para a página de login |
 
+
+## Plano de Testes tela de perfil
 
 |Caso de Teste 12| Alterar foto de perfil |
 |--------------------|------------------------------------|
