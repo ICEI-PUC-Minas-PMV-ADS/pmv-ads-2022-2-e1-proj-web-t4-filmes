@@ -116,10 +116,62 @@ Observações Gerais para o Campo de Busca / Pesquisa:
 ![11](https://user-images.githubusercontent.com/69819769/202447037-78d4d28e-5127-4421-99e1-c66183b4a3dd.png)
 ![12](https://user-images.githubusercontent.com/69819769/202447063-0145df36-1413-41b3-98f0-562d026f247a.png)
 
+##Plano de Testes tela de registro
+|Caso de Teste 10| Preenchimento incorreto do formulário |
+|--------------------|------------------------------------|
+|Objetivo do Teste  | Verficar se a partir dos dados fornecidos a funcionalidade de registrar usuário não é possivel de ser concluída |
+|Passo 1 | Acessar a página de registrar-se |
+|Passo 2 | Preencher os dados incorretamente, por exemplo: nome: vitor - email: vitor@gmail.com - senha: 1234 - confirmação de senha: 4321 |
+|Passo 3 | Clicar no botão "registrar" |
+|Resultado  | Ao clicar no botão "registrar" o programa não deverá criar um perfil para o usuário e deverá indicar qual campo está incorreto |
 
 
+|Caso de Teste 11| Preenchimento correto do formulário |
+|--------------------|------------------------------------|
+|Objetivo do Teste  | Verficar se a partir dos dados fornecidos a funcionalidade de registrar usuario é possivel de ser concluida |
+|Passo 1 | Acessar a página de registrar-se |
+|Passo 2 | Preencher os dados corretamente, por exemplo: nome: vitor - email: vitor@gmail.com - senha: 1234 - confirmação de senha: 1234 |
+|Passo 3 | Clicar no botão "registrar" |
+|Resultado  | Ao clicar no botão "registrar" o programa deverá criar um perfil para o usuário e redirecioná-lo para a página de login |
 
 
+|Caso de Teste 12| Alterar foto de perfil |
+|--------------------|------------------------------------|
+|Objetivo do Teste  | Verificar se o usuário tem possibilidade de alterar a sua foto de perfil |
+|Passo 1 | Acessar a página de perfil |
+|Passo 2 | Clicar na foto de perfil |
+|Passo 3 | Clicar no botão "upload" |
+|Passo 4 | Selecionar uma imagem do computador |
+|Passo 5 | Clicar em "OK" |
+|Resultado  | O site deve editar o perfil do usuario, atualizando sua foto de perfil e também a foto de preview no cabeçalho |
 
 
+|Caso de Teste 13| Alterar banner do perfil |
+|--------------------|------------------------------------|
+|Objetivo do Teste  | Verificar se o usuário tem possibilidade de alterar o banner do seu perfil |
+|Passo 1 | Acessar a página de perfil |
+|Passo 2 | Clicar no banner do perfil |
+|Passo 3 | Clicar no botão "upload" |
+|Passo 4 | Selecionar uma imagem do computador |
+|Passo 5 | Clicar em "OK" |
+|Resultado  | O site deve editar o perfil do usuario, atualizando o banner da página |
 
+
+|Caso de Teste 14| Editar nome do perfil |
+|--------------------|------------------------------------|
+|Objetivo do Teste  | Verificar se o usuário tem possibilidade de alterar o seu nome na página de usuário |
+|Passo 1 | Acessar a página de perfil |
+|Passo 2 | Clicar no nome de usuário do perfil |
+|Passo 3 | Digitar um novo nome de usuário |
+|Passo 5 | Clicar em "OK" |
+|Resultado  | O site deve editar o perfil do usuario, atualizando o nome do usuário na página e no preview do cabeçalho |
+
+
+|Caso de Teste 15| Editar bio do usuário |
+|--------------------|------------------------------------|
+|Objetivo do Teste  | Verificar se o usuário tem possibilidade de alterar o sua biografia na página de usuário |
+|Passo 1 | Acessar a página de perfil |
+|Passo 2 | Clicar na bio |
+|Passo 3 | Digitar uma nova bio |
+|Passo 5 | Clicar em "OK" |
+|Resultado  | O site deve editar o perfil do usuario, atualizando a bio do usuário na página |
