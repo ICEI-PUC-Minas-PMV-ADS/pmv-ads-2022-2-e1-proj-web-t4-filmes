@@ -14,7 +14,6 @@ Esse projeto tem como foco ofercer ao usuário uma plataforma para encontrar fil
 
 * Álvaro Emanuel Gonçalves Soares
 * Breno Morais Gonçalves
-* Camila de Oliveira Reis Carvalho
 * Carlos Eduardo Reinis
 * Vitor Silva Oliveira
 
