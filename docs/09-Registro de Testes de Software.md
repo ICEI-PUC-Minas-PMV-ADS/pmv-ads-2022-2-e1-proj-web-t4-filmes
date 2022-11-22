@@ -76,3 +76,44 @@
 ![12](https://user-images.githubusercontent.com/69819769/202449265-cde7947f-8e06-4f8a-bc4a-35bc957f86be.gif)
 
 
+## Caso de teste 13 - Registro de usuário sem sucesso
+
+### Resultado: Ao clicar no botão "registrar" o programa não deverá criar um perfil para o usuário e deverá indicar qual campo está incorreto.
+
+![registro f](https://user-images.githubusercontent.com/83622295/203382041-d2c785c6-fbd9-45f6-98ee-82842dbfa962.gif)
+
+
+## Caso de teste 14 - Registro de usuário com sucesso
+
+### Resultado: Ao clicar no botão "registrar" o programa deverá criar um perfil para o usuário e redirecioná-lo para a página de login
+
+![registro s](https://user-images.githubusercontent.com/83622295/203382652-86b586a3-9e44-49d0-a10a-1720c411c3b8.gif)
+
+
+## Caso de teste 15 - Editar Foto
+
+### Resultado: O site deve editar o perfil do usuario, atualizando sua foto de perfil e também a foto de preview no cabeçalho
+
+![foto](https://user-images.githubusercontent.com/83622295/203382794-45b3aabe-92ab-4412-8864-8f65348f5284.gif)
+
+
+## Caso de teste 16 - ALterar banner
+
+### Resultado: O site deve editar o perfil do usuario, atualizando o banner da página
+
+![banner](https://user-images.githubusercontent.com/83622295/203382924-7d006a36-ce52-40b0-841c-c2589077734d.gif)
+
+
+## Caso de teste 17 - Alterar nome de usuário
+
+### Resultado: O site deve editar o perfil do usuario, atualizando o nome do usuário na página e no preview do cabeçalho
+
+![nome](https://user-images.githubusercontent.com/83622295/203383072-dd424fec-7d85-4a6c-9056-9c63dd709b10.gif)
+
+
+## Caso de teste 18 - ALterar bio do usuário
+
+### Resultado: O site deve editar o perfil do usuario, atualizando a bio do usuário na página
+
+![bio](https://user-images.githubusercontent.com/83622295/203383203-3a171b22-2c48-4ada-8387-3647ac8f097f.gif)
+
