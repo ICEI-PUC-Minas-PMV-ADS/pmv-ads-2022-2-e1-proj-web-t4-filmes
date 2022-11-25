@@ -66,8 +66,8 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |--------------------|------------------------------------|
 |Objetivo do Teste  | Verificar se o sistem de busca entrega o resultado esperado           |
 |Passo 1 | Acessar a tela de busca              |
-|Passo 2 | Digitar o nome de conteúdo conhecido, que sabe-se existir no banco de dados| 
-|Títulos Usados para Procura  | south park, rick and morty, love death robots, primal               |
+|        | Digitar o nome south park, conteúdo que sabe-se existir no banco de dados| 
+|        | Espera-se receber como resultado o título digitado no campo de busca             |
 |Resultado  | O título pesquisado foi entregue no resultado da busca.               |
 
 Sem outras observações a apresentar.
@@ -77,8 +77,8 @@ Sem outras observações a apresentar.
 |--------------------|------------------------------------|
 |Objetivo do Teste  | Verificar se o sistema de busca entrega resultados consistentes.         |
 |Passo 1 | Acessar a tela de busca              |
-|Passo 2 | Digitar o nome de conteúdo conhecido, que sabe-se não existir no banco de dados| 
-|Títulos Usados para Procura  | sauth pork, riqui and morthy, love deth robots, brimal               |
+|        | Digitar o nome riqui e morthy, conteúdo que sabe-se não existir no banco de dados| 
+|        | Espera-se receber como resultado nenhum título.              |
 |Resultado  | Não foram apresentados resultados.               |
 
 Sem outras observações a apresentar.
@@ -88,8 +88,8 @@ Sem outras observações a apresentar.
 |--------------------|------------------------------------|
 |Objetivo do Teste  | Verificar se o sistema de busca entrega o resultado esperado quando um texto é colado ao invés de ser digitado.           |
 |Passo 1 | Acessar a tela de busca              |
-|Passo 2 | Colar um texto na área de Busca com o nome de um título que sabe-se existir no banco de dados| 
-|Títulos Usados para Procura  | south park, rick and morty, love death robots, primal               |
+|        | Colar um texto na área de Busca com o nome do título south park que sabe-se existir no banco de dados| 
+|        | Espera-se receber como resultado o título inserido por comendo de calagem no campo de busca              |
 |Resultado  | O título pesquisado foi entregue no resultado da busca.               |
 
 Sem outras observações a apresentar.
@@ -99,8 +99,8 @@ Sem outras observações a apresentar.
 |--------------------|------------------------------------|
 |Objetivo do Teste  | Verificar se o sistema de busca entrega o resultado esperado quando um texto é colado ao invés de ser digitado.         |
 |Passo 1 | Acessar a tela de busca              |
-|Passo 2 | Colar um texto na área de Busca com o nome de um título que sabe-se existir no banco de dados| 
-|Títulos Usados para Procura  | sauth pork, riqui and morthy, love deth robots, brimal               |
+|        | Colar um texto na área de Busca com o nome do título riqui and morthi que sabe-se não existir no banco de dados| 
+|        | Espera-se receber como resultado nenhum título.               |
 |Resultado  | Não foram apresentados resultados.               |
 
 Sem outras observações a apresentar.
