@@ -106,14 +106,19 @@ main{
 
 .correlate-container{
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
     justify-content: center;
 }
 
+h2{
+    color: #FFF;
+}
+
 .correlate-button{
     width: 50%;
-    height: 60%;
-    background-color: #D13A25;
+    height: 50%;
 }
 .correlate-button:hover{
     cursor: pointer;
@@ -144,7 +149,7 @@ main{
 
 .popup-search{
     width: 100%;
-    height: 7%;
+    height: 30px;
     text-align: center;
 
     background-color: transparent;
@@ -160,10 +165,38 @@ main{
 }
 
 .popup-results{
+    padding: 30px;
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: #D13A25;
     flex-flow: row wrap;
+    gap: 30px;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+
+    transition: 0.3s ease-out;
+}
+
+.card:hover{
+    scale: 1.06;
+    cursor: pointer;
+}
+
+.correlate-animation-wrapper{
+    display: none;
+    align-items: center;
     justify-content: center;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.verify-animation{
+    width: 5px;
 }
