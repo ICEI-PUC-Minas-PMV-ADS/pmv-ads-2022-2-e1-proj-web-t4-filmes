@@ -45,6 +45,7 @@
         </div>
 
         <div class="correlate-container">
+            <h2>Correlacionar</h2>
             <div class="correlate-button"></div>
         </div>
 
@@ -57,12 +58,26 @@
     <div class="popup-wrapper">
         <div class="popup-container">
             <input type="text" class="popup-search">
-            <div class="popup-results">
-                
-            </div>
+            <div class="popup-results"></div>
         </div>
     </div>
 
+    <div class="correlate-animation-wrapper">
+        <div class="verify-animation"></div>
+    </div>
+
+    <script>
+        const animLink = lottie.loadAnimation({
+            container: document.querySelector('.correlate-button'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '../../assets/animations/link.json'
+        })       
+
+        animLink.play()
+       
+    </script>
 </body>
 
 </html>
