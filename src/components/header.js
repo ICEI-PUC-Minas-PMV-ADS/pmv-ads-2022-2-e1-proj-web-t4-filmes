@@ -122,6 +122,7 @@ class Header extends HTMLElement{
             }
 
             .header-button{
+                outline: none;
                 color: #dadada;
                 text-decoration: none;
                 
@@ -186,6 +187,7 @@ class Header extends HTMLElement{
             }
             
             .menu-btn{
+                outline: none;
                 margin: 5%;
                 border-radius: 5%;
                 border: 1px solid #000;
