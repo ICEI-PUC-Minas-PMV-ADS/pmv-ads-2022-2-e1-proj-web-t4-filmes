@@ -108,18 +108,6 @@ class MP{
             container.appendChild(element)
         })
     }
-
-    verifyAnimation(){
-        const animVerify = lottie.loadAnimation({
-            container: document.querySelector('.correlate-animation-wrapper'),
-            renderer: 'svg',
-            loop: false,
-            autoplay: false,
-            path: 'https://assets7.lottiefiles.com/packages/lf20_2mm5zqab.json'
-        })
-
-        animVerify.goToAndPlay(1, true)
-    }
 }
 
 
