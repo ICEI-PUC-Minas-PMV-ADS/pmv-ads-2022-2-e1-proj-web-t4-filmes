@@ -1,29 +1,23 @@
 message: Please cite this software using these metadata.
-title:
+title: 
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Soares
+    given-names:  Álvaro
+  - family-names: Reinis
+    given-names: Carlos Eduardo
+  - family-names: Morais Gonçalves
+    given-names: Breno
+  - family-names: Silva Oliveira
+    given-names: Vitor
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Maria Silveira
+    given-names: Sandra
 keywords:
-  - 
-  - 
-repository-code: 
+  - Filmes
+  - e-Commerce
+  - Streaming
+  - frontend
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-filmes.git
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2022–12-05
